@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1098620154133",
+    "project_id": "passbook-a6411",
+    "storage_bucket": "passbook-a6411.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098620154133:android:e23d40b41c670b3808391c",
+        "android_client_info": {
+          "package_name": "com.winsoftsc.passbook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6AltWv0Pe4bUt2brmhUTgNPRFk9NSxv0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

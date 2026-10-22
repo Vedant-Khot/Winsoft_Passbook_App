@@ -1,0 +1,885 @@
+Restarted application in 3,199ms.
+I/FLTFireMsgService(12561): FlutterFirebaseMessagingBackgroundService started!
+I/flutter (12561): Splash: Refreshing login session...
+I/flutter (12561): Splash: Fresh login successful.
+I/flutter (12561): ApiService [glms]: Using cached account list.
+I/flutter (12561): ApiService [ledger-cache]: load key=ledger_all_1565_386 source=disk rows=248 jsonBytes=23811
+I/flutter (12561): ApiService [ledger]: fetch start key=ledger_all_1565_386 cachedRows=248 forceRefresh=false forceDeltaFetch=false
+I/flutter (12561): ApiService [passbook]: CACHE-ONLY — skipping network (cached=769, maxDate=2026-08-21 00:00:00.000).
+I/flutter (12561): PassbookAudit [cache-only]: totalRows=769
+I/flutter (12561): PassbookAudit [cache-only]: first dt=01/01/2026 me=1 cobf=B L=10.75 fat=6.7 rate=57.4 amt=617.05 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: first dt=01/01/2026 me=2 cobf=B L=9.7 fat=6.5 rate=56.8 amt=550.96 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: first dt=01/02/2026 me=1 cobf=B L=9.75 fat=7.3 rate=60.4 amt=588.9 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: last dt=31/12/2025 me=2 cobf=B L=10.15 fat=6.6 rate=57.1 amt=579.57 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: last dt=31/12/2025 me=1 cobf=B L=10.9 fat=6.4 rate=50.7 amt=552.63 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: last dt=31/07/2026 me=2 cobf=B L=3.5 fat=6.6 rate=57.1 amt=199.85 mltrno= milksrno=
+I/flutter (12561): ApiService [deductions]: CACHE-ONLY — skipping network (cached=92, maxDate=2026-08-20 00:00:00.000).
+I/flutter (12561): ApiService [bill_transactions]: CACHE-ONLY — skipping network (cached=47, maxDate=2026-08-21 00:00:00.000).
+I/flutter (12561): ApiService [ledger]: NETWORK FULL — forceRefresh=false fullFetchOnly=true cached=248
+I/flutter (12561): ApiService [ledger-cache]: after_save key=ledger_all_1565_386 memoryRows=248 diskRows=248 diskMatch=true jsonBytes=23811 setStringOk=true
+I/flutter (12561): ApiService [ledger]: FULL sync — incoming=248 cached=248 total=248 url=https://api.winsoftsc.com/api/Acctrn/ledger?sbaccno=386&socitycode=1565
+I/flutter (12561): Splash: Delta sync complete.
+I/flutter (12561): ApiService [passbook]: CACHE-ONLY — skipping network (cached=769, maxDate=2026-08-21 00:00:00.000).
+I/flutter (12561): PassbookAudit [cache-only]: totalRows=769
+I/flutter (12561): PassbookAudit [cache-only]: first dt=01/01/2026 me=1 cobf=B L=10.75 fat=6.7 rate=57.4 amt=617.05 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: first dt=01/01/2026 me=2 cobf=B L=9.7 fat=6.5 rate=56.8 amt=550.96 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: first dt=01/02/2026 me=1 cobf=B L=9.75 fat=7.3 rate=60.4 amt=588.9 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: last dt=31/12/2025 me=2 cobf=B L=10.15 fat=6.6 rate=57.1 amt=579.57 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: last dt=31/12/2025 me=1 cobf=B L=10.9 fat=6.4 rate=50.7 amt=552.63 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: last dt=31/07/2026 me=2 cobf=B L=3.5 fat=6.6 rate=57.1 amt=199.85 mltrno= milksrno=
+W/WindowOnBackDispatcher(12561): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(12561): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (12561): FCM Token: c7fMTHV2TSezFeVCrnYJPG:APA91bErJsp6CR4D0f2uPucJDyMaUzXMHMBg2P9NUfBjqcroLobYoxBhN9gYAkgPoYpVjag0CCaurLNnKvOM0vVs8lNtrkvznQi1euzpdaIA9UHpWT9n1hE
+I/flutter (12561): Successfully subscribed to 'announcements_1565' and 'announcements_global' topics.
+W/FLTFireMsgService(12561): Attempted to start a duplicate background isolate. Returning...
+I/flutter (12561): ApiService [bill_transactions]: CACHE-ONLY — skipping network (cached=47, maxDate=2026-08-21 00:00:00.000).
+W/WindowOnBackDispatcher(12561): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(12561): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (12561): ApiService [passbook]: NETWORK FULL — forceRefresh=true fullFetchOnly=true cached=769
+I/flutter (12561): PassbookAudit [incoming-full]: incomingDays=388 totalRows=769
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-01 (2 rows) -> me=1 cobf=B L=7.4 rate=54.8 amt=405.52 mltrno= | me=2 cobf=B L=8.15 rate=47.5 amt=387.13 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-02 (2 rows) -> me=1 cobf=B L=7.25 rate=47.5 amt=344.38 mltrno= | me=2 cobf=B L=7.5 rate=47.8 amt=358.5 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-05 (2 rows) -> me=1 cobf=B L=9.0 rate=46.6 amt=419.4 mltrno= | me=2 cobf=B L=7.85 rate=48.4 amt=379.94 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-09 (2 rows) -> me=2 cobf=B L=7.2 rate=48.4 amt=348.48 mltrno= | me=1 cobf=B L=7.45 rate=47.5 amt=353.88 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-10 (2 rows) -> me=1 cobf=B L=7.3 rate=47.5 amt=346.75 mltrno= | me=2 cobf=B L=8.1 rate=47.5 amt=384.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-11 (2 rows) -> me=1 cobf=B L=7.25 rate=55.1 amt=399.48 mltrno= | me=2 cobf=B L=7.6 rate=47.5 amt=361.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-12 (2 rows) -> me=1 cobf=B L=6.9 rate=54.8 amt=378.12 mltrno= | me=2 cobf=B L=8.25 rate=45.5 amt=375.38 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-13 (2 rows) -> me=2 cobf=B L=7.6 rate=54.8 amt=416.48 mltrno= | me=1 cobf=B L=8.2 rate=48.4 amt=396.88 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-14 (2 rows) -> me=2 cobf=B L=7.9 rate=54.8 amt=432.92 mltrno= | me=1 cobf=B L=7.0 rate=47.5 amt=332.5 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-21 (2 rows) -> me=2 cobf=B L=8.55 rate=47.2 amt=403.56 mltrno= | me=1 cobf=B L=6.85 rate=47.5 amt=325.38 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-22 (2 rows) -> me=2 cobf=B L=6.9 rate=47.5 amt=327.75 mltrno= | me=1 cobf=B L=7.45 rate=54.8 amt=408.26 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-23 (2 rows) -> me=1 cobf=B L=8.05 rate=54.8 amt=441.14 mltrno= | me=2 cobf=B L=7.3 rate=47.5 amt=346.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-24 (2 rows) -> me=1 cobf=B L=7.5 rate=48.1 amt=360.75 mltrno= | me=2 cobf=B L=7.4 rate=47.5 amt=351.5 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-25 (2 rows) -> me=1 cobf=B L=7.7 rate=47.8 amt=368.06 mltrno= | me=2 cobf=B L=7.5 rate=54.8 amt=411.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-26 (2 rows) -> me=2 cobf=B L=7.2 rate=47.5 amt=342.0 mltrno= | me=1 cobf=B L=7.5 rate=47.5 amt=356.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-27 (2 rows) -> me=1 cobf=B L=7.7 rate=55.4 amt=426.58 mltrno= | me=2 cobf=B L=7.55 rate=47.5 amt=358.63 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-28 (2 rows) -> me=2 cobf=B L=7.4 rate=47.5 amt=351.5 mltrno= | me=1 cobf=B L=7.95 rate=47.8 amt=380.01 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-29 (2 rows) -> me=2 cobf=B L=7.35 rate=47.5 amt=349.13 mltrno= | me=1 cobf=B L=7.35 rate=48.1 amt=353.54 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-30 (2 rows) -> me=2 cobf=B L=7.4 rate=44.5 amt=329.3 mltrno= | me=1 cobf=B L=7.05 rate=54.8 amt=386.34 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-01 (2 rows) -> me=1 cobf=B L=7.5 rate=54.8 amt=411.0 mltrno= | me=2 cobf=B L=6.95 rate=48.1 amt=334.3 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-02 (2 rows) -> me=2 cobf=B L=7.05 rate=47.5 amt=334.88 mltrno= | me=1 cobf=B L=7.3 rate=48.1 amt=351.13 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-03 (2 rows) -> me=1 cobf=B L=7.25 rate=47.5 amt=344.38 mltrno= | me=2 cobf=B L=7.2 rate=47.5 amt=342.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-08 (2 rows) -> me=1 cobf=B L=7.5 rate=55.4 amt=415.5 mltrno= | me=2 cobf=B L=7.15 rate=54.8 amt=391.82 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-09 (2 rows) -> me=2 cobf=B L=7.0 rate=47.8 amt=334.6 mltrno= | me=1 cobf=B L=7.7 rate=47.8 amt=368.06 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-10 (2 rows) -> me=2 cobf=B L=9.1 rate=48.4 amt=440.44 mltrno= | me=1 cobf=B L=6.5 rate=47.5 amt=308.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-11 (2 rows) -> me=2 cobf=B L=6.8 rate=47.8 amt=325.04 mltrno= | me=1 cobf=B L=7.6 rate=54.8 amt=416.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-21 (2 rows) -> me=2 cobf=B L=3.9 rate=47.5 amt=185.25 mltrno= | me=1 cobf=B L=7.65 rate=54.8 amt=419.22 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-22 (2 rows) -> me=1 cobf=B L=8.45 rate=58.1 amt=490.95 mltrno= | me=2 cobf=B L=6.4 rate=57.5 amt=368.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-29 (2 rows) -> me=2 cobf=B L=5.15 rate=54.8 amt=282.22 mltrno= | me=1 cobf=B L=9.25 rate=59.0 amt=545.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-30 (2 rows) -> me=1 cobf=B L=8.85 rate=59.6 amt=527.46 mltrno= | me=2 cobf=B L=4.95 rate=43.5 amt=215.33 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-01 (2 rows) -> me=1 cobf=B L=8.55 rate=59.3 amt=507.02 mltrno= | me=2 cobf=B L=4.6 rate=47.5 amt=218.5 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-02 (2 rows) -> me=2 cobf=B L=4.15 rate=46.0 amt=190.9 mltrno= | me=1 cobf=B L=8.55 rate=59.6 amt=509.58 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-03 (2 rows) -> me=2 cobf=B L=4.4 rate=47.8 amt=210.32 mltrno= | me=1 cobf=B L=8.4 rate=61.1 amt=513.24 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-11 (2 rows) -> me=2 cobf=B L=3.7 rate=47.5 amt=175.75 mltrno= | me=1 cobf=B L=8.25 rate=60.8 amt=501.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-13 (2 rows) -> me=2 cobf=B L=3.7 rate=46.0 amt=170.2 mltrno= | me=1 cobf=B L=7.8 rate=58.4 amt=455.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-14 (2 rows) -> me=1 cobf=B L=7.5 rate=59.0 amt=442.5 mltrno= | me=2 cobf=B L=3.35 rate=46.3 amt=155.11 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-15 (2 rows) -> me=1 cobf=B L=7.55 rate=58.1 amt=438.66 mltrno= | me=2 cobf=B L=3.7 rate=44.5 amt=164.65 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-16 (2 rows) -> me=1 cobf=B L=7.7 rate=58.1 amt=447.37 mltrno= | me=2 cobf=B L=3.85 rate=54.8 amt=210.98 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-17 (2 rows) -> me=2 cobf=B L=2.35 rate=55.1 amt=129.49 mltrno= | me=1 cobf=B L=6.85 rate=59.0 amt=404.15 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-18 (2 rows) -> me=2 cobf=B L=1.2 rate=60.2 amt=72.24 mltrno= | me=1 cobf=B L=3.65 rate=65.6 amt=239.44 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-19 (1 rows) -> me=1 cobf=B L=3.8 rate=64.4 amt=244.72 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-20 (1 rows) -> me=1 cobf=B L=4.5 rate=61.4 amt=276.3 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-08-01 (1 rows) -> me=1 cobf=B L=1.75 rate=47.8 amt=83.65 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-08-10 (1 rows) -> me=1 cobf=B L=2.5 rate=59.3 amt=148.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-11 (2 rows) -> me=2 cobf=B L=3.4 rate=48.8 amt=165.92 mltrno= | me=1 cobf=B L=4.55 rate=49.1 amt=223.41 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-12 (2 rows) -> me=2 cobf=B L=3.8 rate=55.8 amt=212.04 mltrno= | me=1 cobf=B L=4.5 rate=49.1 amt=220.95 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-13 (2 rows) -> me=2 cobf=B L=3.8 rate=55.8 amt=212.04 mltrno= | me=1 cobf=B L=4.55 rate=49.1 amt=223.41 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-14 (2 rows) -> me=2 cobf=B L=3.8 rate=55.8 amt=212.04 mltrno= | me=1 cobf=B L=4.8 rate=49.4 amt=237.12 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-15 (2 rows) -> me=1 cobf=B L=4.75 rate=55.8 amt=265.05 mltrno= | me=2 cobf=B L=3.9 rate=56.1 amt=218.79 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-16 (2 rows) -> me=1 cobf=B L=4.15 rate=56.4 amt=234.06 mltrno= | me=2 cobf=B L=3.15 rate=56.4 amt=177.66 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-17 (2 rows) -> me=1 cobf=B L=4.35 rate=55.8 amt=242.73 mltrno= | me=2 cobf=B L=3.6 rate=49.1 amt=176.76 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-18 (2 rows) -> me=2 cobf=B L=3.4 rate=49.1 amt=166.94 mltrno= | me=1 cobf=B L=4.55 rate=56.4 amt=256.62 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-19 (2 rows) -> me=2 cobf=B L=3.65 rate=49.1 amt=179.22 mltrno= | me=1 cobf=B L=4.7 rate=56.7 amt=266.49 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-20 (2 rows) -> me=2 cobf=B L=3.8 rate=56.1 amt=213.18 mltrno= | me=1 cobf=B L=4.8 rate=59.1 amt=283.68 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-21 (2 rows) -> me=1 cobf=B L=4.4 rate=55.8 amt=245.52 mltrno= | me=2 cobf=B L=3.75 rate=55.8 amt=209.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-22 (2 rows) -> me=1 cobf=B L=4.75 rate=55.8 amt=265.05 mltrno= | me=2 cobf=B L=3.8 rate=55.8 amt=212.04 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-23 (2 rows) -> me=2 cobf=B L=3.9 rate=55.8 amt=217.62 mltrno= | me=1 cobf=B L=4.5 rate=58.5 amt=263.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-24 (2 rows) -> me=2 cobf=B L=3.65 rate=57.0 amt=208.05 mltrno= | me=1 cobf=B L=4.6 rate=56.7 amt=260.82 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-25 (2 rows) -> me=2 cobf=B L=3.5 rate=57.0 amt=199.5 mltrno= | me=1 cobf=B L=4.5 rate=56.4 amt=253.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-26 (2 rows) -> me=1 cobf=B L=4.45 rate=58.8 amt=261.66 mltrno= | me=2 cobf=B L=3.7 rate=56.7 amt=209.79 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-27 (2 rows) -> me=1 cobf=B L=4.6 rate=56.7 amt=260.82 mltrno= | me=2 cobf=B L=3.55 rate=56.7 amt=201.29 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-28 (2 rows) -> me=1 cobf=B L=4.5 rate=56.7 amt=255.15 mltrno= | me=2 cobf=B L=3.6 rate=57.0 amt=205.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-29 (2 rows) -> me=2 cobf=B L=4.45 rate=56.4 amt=250.98 mltrno= | me=1 cobf=B L=4.55 rate=58.5 amt=266.18 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-30 (2 rows) -> me=2 cobf=B L=5.25 rate=56.4 amt=296.1 mltrno= | me=1 cobf=B L=6.05 rate=56.4 amt=341.22 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-01 (2 rows) -> me=2 cobf=B L=6.65 rate=62.1 amt=412.97 mltrno= | me=1 cobf=B L=6.25 rate=55.8 amt=348.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-02 (2 rows) -> me=2 cobf=B L=5.6 rate=56.4 amt=315.84 mltrno= | me=1 cobf=B L=6.95 rate=58.8 amt=408.66 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-03 (2 rows) -> me=1 cobf=B L=7.25 rate=59.1 amt=428.48 mltrno= | me=2 cobf=B L=6.05 rate=61.8 amt=373.89 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-04 (2 rows) -> me=1 cobf=B L=6.95 rate=58.5 amt=406.58 mltrno= | me=2 cobf=B L=5.8 rate=55.8 amt=323.64 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-05 (2 rows) -> me=1 cobf=B L=8.0 rate=56.4 amt=451.2 mltrno= | me=2 cobf=B L=5.8 rate=48.8 amt=283.04 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-06 (2 rows) -> me=1 cobf=B L=7.3 rate=55.8 amt=407.34 mltrno= | me=2 cobf=B L=6.0 rate=55.8 amt=334.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-07 (2 rows) -> me=2 cobf=B L=5.15 rate=55.8 amt=287.37 mltrno= | me=1 cobf=B L=7.75 rate=48.8 amt=378.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-08 (2 rows) -> me=1 cobf=B L=7.5 rate=55.8 amt=418.5 mltrno= | me=2 cobf=B L=5.5 rate=49.1 amt=270.05 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-09 (2 rows) -> me=2 cobf=B L=3.15 rate=48.5 amt=152.78 mltrno= | me=1 cobf=B L=8.0 rate=59.1 amt=472.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-10 (2 rows) -> me=1 cobf=B L=9.15 rate=55.8 amt=510.57 mltrno= | me=2 cobf=B L=5.6 rate=55.8 amt=312.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-11 (2 rows) -> me=1 cobf=B L=8.5 rate=49.4 amt=419.9 mltrno= | me=2 cobf=B L=5.2 rate=49.1 amt=255.32 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-12 (2 rows) -> me=2 cobf=B L=5.35 rate=48.5 amt=259.48 mltrno= | me=1 cobf=B L=8.65 rate=59.7 amt=516.41 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-13 (2 rows) -> me=1 cobf=B L=8.85 rate=59.4 amt=525.69 mltrno= | me=2 cobf=B L=5.5 rate=48.8 amt=268.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-14 (2 rows) -> me=1 cobf=B L=8.5 rate=56.1 amt=476.85 mltrno= | me=2 cobf=B L=5.2 rate=48.5 amt=252.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-15 (2 rows) -> me=2 cobf=B L=5.6 rate=55.8 amt=312.48 mltrno= | me=1 cobf=B L=9.65 rate=58.5 amt=564.53 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-16 (2 rows) -> me=2 cobf=B L=5.8 rate=49.1 amt=284.78 mltrno= | me=1 cobf=B L=8.8 rate=56.4 amt=496.32 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-17 (2 rows) -> me=1 cobf=B L=9.25 rate=55.8 amt=516.15 mltrno= | me=2 cobf=B L=2.65 rate=49.4 amt=130.91 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-18 (2 rows) -> me=2 cobf=B L=6.0 rate=59.1 amt=354.6 mltrno= | me=1 cobf=B L=8.5 rate=55.8 amt=474.3 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-19 (2 rows) -> me=2 cobf=B L=6.15 rate=55.8 amt=343.17 mltrno= | me=1 cobf=B L=6.25 rate=56.7 amt=354.38 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-20 (2 rows) -> me=1 cobf=B L=5.95 rate=56.7 amt=337.37 mltrno= | me=2 cobf=B L=6.0 rate=55.8 amt=334.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-21 (2 rows) -> me=1 cobf=B L=6.2 rate=56.4 amt=349.68 mltrno= | me=2 cobf=B L=6.6 rate=55.8 amt=368.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-22 (2 rows) -> me=1 cobf=B L=5.85 rate=55.8 amt=326.43 mltrno= | me=2 cobf=B L=6.15 rate=55.8 amt=343.17 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-23 (2 rows) -> me=1 cobf=B L=5.45 rate=58.5 amt=318.83 mltrno= | me=2 cobf=B L=5.6 rate=56.4 amt=315.84 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-24 (2 rows) -> me=2 cobf=B L=6.3 rate=56.1 amt=353.43 mltrno= | me=1 cobf=B L=5.6 rate=56.1 amt=314.16 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-25 (2 rows) -> me=2 cobf=B L=6.35 rate=60.0 amt=381.0 mltrno= | me=1 cobf=B L=5.85 rate=56.4 amt=329.94 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-26 (2 rows) -> me=1 cobf=B L=5.6 rate=55.8 amt=312.48 mltrno= | me=2 cobf=B L=6.3 rate=48.5 amt=305.55 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-27 (2 rows) -> me=2 cobf=B L=6.35 rate=55.8 amt=354.33 mltrno= | me=1 cobf=B L=5.6 rate=55.8 amt=312.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-28 (2 rows) -> me=1 cobf=B L=5.55 rate=56.1 amt=311.36 mltrno= | me=2 cobf=B L=6.7 rate=55.8 amt=373.86 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-29 (2 rows) -> me=1 cobf=B L=5.15 rate=55.8 amt=287.37 mltrno= | me=2 cobf=B L=6.95 rate=55.8 amt=387.81 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-30 (2 rows) -> me=2 cobf=B L=5.4 rate=49.1 amt=265.14 mltrno= | me=1 cobf=B L=5.6 rate=56.7 amt=317.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-01 (2 rows) -> me=1 cobf=B L=5.05 rate=49.8 amt=251.49 mltrno= | me=2 cobf=B L=6.1 rate=58.0 amt=353.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-02 (2 rows) -> me=2 cobf=B L=6.2 rate=56.8 amt=352.16 mltrno= | me=1 cobf=B L=4.75 rate=57.4 amt=272.65 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-03 (2 rows) -> me=2 cobf=B L=6.8 rate=57.4 amt=390.32 mltrno= | me=1 cobf=B L=4.5 rate=56.8 amt=255.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-04 (2 rows) -> me=2 cobf=B L=6.75 rate=56.8 amt=383.4 mltrno= | me=1 cobf=B L=3.8 rate=56.8 amt=215.84 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-05 (2 rows) -> me=1 cobf=B L=4.75 rate=57.4 amt=272.65 mltrno= | me=2 cobf=B L=5.3 rate=56.8 amt=301.04 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-06 (2 rows) -> me=1 cobf=B L=4.5 rate=57.1 amt=256.95 mltrno= | me=2 cobf=B L=5.75 rate=56.8 amt=326.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-07 (2 rows) -> me=2 cobf=B L=5.9 rate=49.8 amt=293.82 mltrno= | me=1 cobf=B L=4.65 rate=56.8 amt=264.12 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-08 (2 rows) -> me=1 cobf=B L=4.75 rate=57.1 amt=271.23 mltrno= | me=2 cobf=B L=5.7 rate=56.8 amt=323.76 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-09 (2 rows) -> me=1 cobf=B L=4.6 rate=57.4 amt=264.04 mltrno= | me=2 cobf=B L=5.8 rate=56.8 amt=329.44 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-10 (2 rows) -> me=1 cobf=B L=4.6 rate=57.1 amt=262.66 mltrno= | me=2 cobf=B L=6.4 rate=56.8 amt=363.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-11 (2 rows) -> me=1 cobf=B L=4.25 rate=57.4 amt=243.95 mltrno= | me=2 cobf=B L=6.4 rate=56.8 amt=363.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-12 (2 rows) -> me=1 cobf=B L=4.0 rate=56.8 amt=227.2 mltrno= | me=2 cobf=B L=6.45 rate=56.8 amt=366.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-13 (2 rows) -> me=2 cobf=B L=6.0 rate=56.8 amt=340.8 mltrno= | me=1 cobf=B L=3.8 rate=57.1 amt=216.98 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-14 (2 rows) -> me=2 cobf=B L=6.1 rate=57.1 amt=348.31 mltrno= | me=1 cobf=B L=4.75 rate=56.8 amt=269.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-15 (2 rows) -> me=1 cobf=B L=4.5 rate=56.8 amt=255.6 mltrno= | me=2 cobf=B L=6.1 rate=57.7 amt=351.97 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-16 (2 rows) -> me=1 cobf=B L=4.35 rate=56.8 amt=247.08 mltrno= | me=2 cobf=B L=6.2 rate=57.1 amt=354.02 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-17 (2 rows) -> me=2 cobf=B L=6.2 rate=57.7 amt=357.74 mltrno= | me=1 cobf=B L=4.65 rate=56.8 amt=264.12 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-18 (2 rows) -> me=2 cobf=B L=5.6 rate=58.0 amt=324.8 mltrno= | me=1 cobf=B L=3.35 rate=56.8 amt=190.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-19 (2 rows) -> me=1 cobf=B L=4.25 rate=57.7 amt=245.23 mltrno= | me=2 cobf=B L=5.85 rate=56.8 amt=332.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-20 (2 rows) -> me=1 cobf=B L=4.05 rate=49.5 amt=200.48 mltrno= | me=2 cobf=B L=5.8 rate=56.8 amt=329.44 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-21 (2 rows) -> me=2 cobf=B L=4.8 rate=56.8 amt=272.64 mltrno= | me=1 cobf=B L=3.95 rate=56.8 amt=224.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-22 (2 rows) -> me=2 cobf=B L=5.3 rate=56.8 amt=301.04 mltrno= | me=1 cobf=B L=3.6 rate=56.8 amt=204.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-23 (2 rows) -> me=1 cobf=B L=6.1 rate=56.8 amt=346.48 mltrno= | me=2 cobf=B L=7.05 rate=57.1 amt=402.56 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-24 (2 rows) -> me=1 cobf=B L=7.05 rate=56.8 amt=400.44 mltrno= | me=2 cobf=B L=7.65 rate=60.1 amt=459.77 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-25 (2 rows) -> me=2 cobf=B L=7.85 rate=60.4 amt=474.14 mltrno= | me=1 cobf=B L=6.1 rate=56.8 amt=346.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-26 (2 rows) -> me=1 cobf=B L=6.65 rate=56.8 amt=377.72 mltrno= | me=2 cobf=B L=7.45 rate=57.1 amt=425.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-27 (2 rows) -> me=1 cobf=B L=6.3 rate=56.8 amt=357.84 mltrno= | me=2 cobf=B L=8.75 rate=56.8 amt=497.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-28 (2 rows) -> me=1 cobf=B L=8.25 rate=56.8 amt=468.6 mltrno= | me=2 cobf=B L=8.55 rate=56.8 amt=485.64 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-29 (2 rows) -> me=2 cobf=B L=9.2 rate=56.8 amt=522.56 mltrno= | me=1 cobf=B L=8.55 rate=56.8 amt=485.64 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-30 (2 rows) -> me=2 cobf=B L=8.9 rate=56.8 amt=505.52 mltrno= | me=1 cobf=B L=8.95 rate=45.5 amt=407.23 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-01 (2 rows) -> me=1 cobf=B L=9.55 rate=49.5 amt=472.73 mltrno= | me=2 cobf=B L=8.35 rate=49.5 amt=413.33 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-02 (2 rows) -> me=1 cobf=B L=9.6 rate=49.5 amt=475.2 mltrno= | me=2 cobf=B L=8.75 rate=50.4 amt=441.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-03 (2 rows) -> me=1 cobf=B L=10.0 rate=49.5 amt=495.0 mltrno= | me=2 cobf=B L=10.05 rate=54.8 amt=550.74 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-04 (2 rows) -> me=1 cobf=B L=9.3 rate=46.6 amt=433.38 mltrno= | me=2 cobf=B L=8.85 rate=49.8 amt=440.73 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-05 (2 rows) -> me=1 cobf=B L=9.5 rate=47.5 amt=451.25 mltrno= | me=2 cobf=B L=8.85 rate=56.8 amt=502.68 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-06 (2 rows) -> me=2 cobf=B L=8.8 rate=47.8 amt=420.64 mltrno= | me=1 cobf=B L=9.6 rate=47.5 amt=456.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-07 (2 rows) -> me=1 cobf=B L=10.0 rate=54.8 amt=548.0 mltrno= | me=2 cobf=B L=9.35 rate=47.8 amt=446.93 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-08 (2 rows) -> me=1 cobf=B L=9.65 rate=49.5 amt=477.68 mltrno= | me=2 cobf=B L=6.4 rate=49.5 amt=316.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-09 (2 rows) -> me=2 cobf=B L=8.35 rate=54.8 amt=457.58 mltrno= | me=1 cobf=B L=12.45 rate=47.8 amt=595.11 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-10 (2 rows) -> me=1 cobf=B L=9.8 rate=48.1 amt=471.38 mltrno= | me=2 cobf=B L=8.17 rate=57.1 amt=466.51 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-11 (2 rows) -> me=1 cobf=B L=9.98 rate=50.1 amt=500.0 mltrno= | me=2 cobf=B L=9.5 rate=57.4 amt=545.3 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-12 (2 rows) -> me=1 cobf=B L=9.4 rate=57.1 amt=536.74 mltrno= | me=2 cobf=B L=8.75 rate=49.5 amt=433.13 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-13 (2 rows) -> me=2 cobf=B L=8.9 rate=57.4 amt=510.86 mltrno= | me=1 cobf=B L=11.0 rate=58.1 amt=639.1 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-14 (2 rows) -> me=1 cobf=B L=10.0 rate=56.8 amt=568.0 mltrno= | me=2 cobf=B L=8.35 rate=56.8 amt=474.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-15 (2 rows) -> me=2 cobf=B L=8.4 rate=55.4 amt=465.36 mltrno= | me=1 cobf=B L=10.1 rate=56.8 amt=573.68 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-16 (2 rows) -> me=2 cobf=B L=9.35 rate=49.8 amt=465.63 mltrno= | me=1 cobf=B L=11.05 rate=57.1 amt=630.96 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-17 (2 rows) -> me=1 cobf=B L=10.85 rate=50.4 amt=546.84 mltrno= | me=2 cobf=B L=9.95 rate=50.7 amt=504.47 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-18 (2 rows) -> me=2 cobf=B L=9.35 rate=54.8 amt=512.38 mltrno= | me=1 cobf=B L=10.7 rate=56.8 amt=607.76 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-19 (2 rows) -> me=1 cobf=B L=10.7 rate=50.7 amt=542.49 mltrno= | me=2 cobf=B L=9.8 rate=48.1 amt=471.38 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-20 (2 rows) -> me=1 cobf=B L=10.55 rate=50.4 amt=531.72 mltrno= | me=2 cobf=B L=9.6 rate=54.8 amt=526.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-21 (2 rows) -> me=2 cobf=B L=10.0 rate=55.1 amt=551.0 mltrno= | me=1 cobf=B L=10.45 rate=48.1 amt=502.64 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-22 (2 rows) -> me=2 cobf=B L=9.45 rate=56.8 amt=536.76 mltrno= | me=1 cobf=B L=10.5 rate=48.4 amt=508.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-23 (2 rows) -> me=1 cobf=B L=10.65 rate=58.0 amt=617.7 mltrno= | me=2 cobf=B L=9.65 rate=57.1 amt=551.02 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-24 (2 rows) -> me=2 cobf=B L=10.0 rate=33.5 amt=335.0 mltrno= | me=1 cobf=B L=10.95 rate=33.5 amt=366.82 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-25 (2 rows) -> me=2 cobf=B L=9.3 rate=56.8 amt=528.24 mltrno= | me=1 cobf=B L=10.85 rate=50.1 amt=543.59 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-26 (2 rows) -> me=1 cobf=B L=10.65 rate=56.8 amt=604.92 mltrno= | me=2 cobf=B L=9.65 rate=66.7 amt=643.66 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-27 (2 rows) -> me=2 cobf=B L=9.7 rate=55.1 amt=534.47 mltrno= | me=1 cobf=B L=11.0 rate=57.1 amt=628.1 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-28 (2 rows) -> me=1 cobf=B L=10.45 rate=57.1 amt=596.7 mltrno= | me=2 cobf=B L=9.05 rate=56.8 amt=514.04 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-29 (2 rows) -> me=2 cobf=B L=9.5 rate=57.7 amt=548.15 mltrno= | me=1 cobf=B L=11.15 rate=58.0 amt=646.7 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-30 (2 rows) -> me=1 cobf=B L=10.9 rate=56.8 amt=619.12 mltrno= | me=2 cobf=B L=9.7 rate=56.8 amt=550.96 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-31 (2 rows) -> me=1 cobf=B L=10.9 rate=50.7 amt=552.63 mltrno= | me=2 cobf=B L=10.15 rate=57.1 amt=579.57 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-01 (2 rows) -> me=2 cobf=B L=9.7 rate=56.8 amt=550.96 mltrno= | me=1 cobf=B L=10.75 rate=57.4 amt=617.05 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-02 (2 rows) -> me=2 cobf=B L=8.95 rate=57.1 amt=511.04 mltrno= | me=1 cobf=B L=10.55 rate=57.4 amt=605.57 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-03 (2 rows) -> me=1 cobf=B L=10.7 rate=57.1 amt=610.97 mltrno= | me=2 cobf=B L=9.15 rate=57.1 amt=522.46 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-04 (2 rows) -> me=1 cobf=B L=10.5 rate=58.0 amt=609.0 mltrno= | me=2 cobf=B L=9.25 rate=50.7 amt=468.98 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-05 (2 rows) -> me=2 cobf=B L=9.7 rate=56.8 amt=550.96 mltrno= | me=1 cobf=B L=10.95 rate=56.8 amt=621.96 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-06 (2 rows) -> me=2 cobf=B L=9.35 rate=56.8 amt=531.08 mltrno= | me=1 cobf=B L=10.95 rate=57.1 amt=625.24 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-07 (2 rows) -> me=2 cobf=B L=10.15 rate=60.1 amt=610.02 mltrno= | me=1 cobf=B L=10.95 rate=50.7 amt=555.16 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-08 (2 rows) -> me=1 cobf=B L=10.55 rate=58.0 amt=611.9 mltrno= | me=2 cobf=B L=9.35 rate=56.8 amt=531.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-09 (2 rows) -> me=1 cobf=B L=10.45 rate=56.8 amt=593.56 mltrno= | me=2 cobf=B L=9.35 rate=59.8 amt=559.13 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-10 (2 rows) -> me=1 cobf=B L=9.8 rate=50.7 amt=496.86 mltrno= | me=2 cobf=B L=7.15 rate=61.6 amt=440.44 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-11 (2 rows) -> me=2 cobf=B L=8.9 rate=57.7 amt=513.53 mltrno= | me=1 cobf=B L=10.5 rate=57.1 amt=599.55 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-12 (2 rows) -> me=1 cobf=B L=8.45 rate=60.4 amt=510.38 mltrno= | me=2 cobf=B L=10.45 rate=47.3 amt=494.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-13 (2 rows) -> me=1 cobf=B L=9.65 rate=60.4 amt=582.86 mltrno= | me=2 cobf=B L=7.85 rate=62.2 amt=488.27 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-14 (2 rows) -> me=1 cobf=B L=10.45 rate=49.5 amt=517.28 mltrno= | me=2 cobf=B L=10.75 rate=56.8 amt=610.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-15 (2 rows) -> me=2 cobf=B L=9.1 rate=57.4 amt=522.34 mltrno= | me=1 cobf=B L=9.8 rate=60.7 amt=594.86 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-16 (2 rows) -> me=1 cobf=B L=10.0 rate=57.1 amt=571.0 mltrno= | me=2 cobf=B L=9.1 rate=57.1 amt=519.61 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-17 (2 rows) -> me=2 cobf=B L=8.3 rate=57.1 amt=473.93 mltrno= | me=1 cobf=B L=10.05 rate=57.7 amt=579.89 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-18 (2 rows) -> me=1 cobf=B L=10.4 rate=57.1 amt=593.84 mltrno= | me=2 cobf=B L=8.9 rate=57.1 amt=508.19 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-19 (2 rows) -> me=1 cobf=B L=10.5 rate=56.8 amt=596.4 mltrno= | me=2 cobf=B L=9.5 rate=56.8 amt=539.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-20 (2 rows) -> me=1 cobf=B L=10.75 rate=50.7 amt=545.02 mltrno= | me=2 cobf=B L=9.1 rate=57.1 amt=519.61 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-21 (2 rows) -> me=2 cobf=B L=8.8 rate=56.8 amt=499.84 mltrno= | me=1 cobf=B L=10.15 rate=57.4 amt=582.61 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-22 (2 rows) -> me=2 cobf=B L=9.7 rate=59.8 amt=580.06 mltrno= | me=1 cobf=B L=10.7 rate=57.1 amt=610.97 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-23 (2 rows) -> me=1 cobf=B L=9.55 rate=56.8 amt=542.44 mltrno= | me=2 cobf=B L=8.55 rate=58.0 amt=495.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-24 (2 rows) -> me=2 cobf=B L=9.25 rate=57.1 amt=528.18 mltrno= | me=1 cobf=B L=9.75 rate=57.4 amt=559.65 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-25 (2 rows) -> me=1 cobf=B L=5.6 rate=58.0 amt=324.8 mltrno= | me=2 cobf=B L=9.75 rate=59.5 amt=580.12 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-26 (2 rows) -> me=2 cobf=B L=9.1 rate=57.1 amt=519.61 mltrno= | me=1 cobf=B L=10.35 rate=59.8 amt=618.93 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-27 (2 rows) -> me=2 cobf=B L=9.2 rate=57.7 amt=530.84 mltrno= | me=1 cobf=B L=10.05 rate=57.7 amt=579.89 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-28 (2 rows) -> me=2 cobf=B L=8.95 rate=57.4 amt=513.73 mltrno= | me=1 cobf=B L=9.7 rate=59.5 amt=577.15 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-29 (2 rows) -> me=1 cobf=B L=10.5 rate=56.8 amt=596.4 mltrno= | me=2 cobf=B L=8.95 rate=56.8 amt=508.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-30 (2 rows) -> me=1 cobf=B L=10.1 rate=57.4 amt=579.74 mltrno= | me=2 cobf=B L=9.1 rate=57.1 amt=519.61 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-31 (2 rows) -> me=2 cobf=B L=9.9 rate=57.4 amt=568.26 mltrno= | me=1 cobf=B L=10.05 rate=58.0 amt=582.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-01 (2 rows) -> me=1 cobf=B L=9.75 rate=60.4 amt=588.9 mltrno= | me=2 cobf=B L=9.15 rate=59.8 amt=547.17 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-02 (2 rows) -> me=2 cobf=B L=9.4 rate=57.1 amt=536.74 mltrno= | me=1 cobf=B L=9.7 rate=59.5 amt=577.15 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-03 (2 rows) -> me=2 cobf=B L=9.35 rate=57.1 amt=533.88 mltrno= | me=1 cobf=B L=9.45 rate=57.4 amt=542.43 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-04 (2 rows) -> me=1 cobf=B L=9.6 rate=59.8 amt=574.08 mltrno= | me=2 cobf=B L=9.2 rate=57.1 amt=525.32 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-05 (2 rows) -> me=1 cobf=B L=9.7 rate=59.8 amt=580.06 mltrno= | me=2 cobf=B L=9.25 rate=57.7 amt=533.72 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-06 (2 rows) -> me=1 cobf=B L=10.45 rate=59.8 amt=624.91 mltrno= | me=2 cobf=B L=8.7 rate=57.4 amt=499.38 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-07 (2 rows) -> me=1 cobf=B L=10.35 rate=57.1 amt=590.98 mltrno= | me=2 cobf=B L=9.0 rate=60.1 amt=540.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-08 (2 rows) -> me=1 cobf=B L=9.2 rate=57.4 amt=528.08 mltrno= | me=2 cobf=B L=9.4 rate=57.1 amt=536.74 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-09 (2 rows) -> me=1 cobf=B L=10.6 rate=59.5 amt=630.7 mltrno= | me=2 cobf=B L=9.05 rate=60.1 amt=543.91 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-10 (2 rows) -> me=2 cobf=B L=8.65 rate=50.7 amt=438.56 mltrno= | me=1 cobf=B L=10.25 rate=57.4 amt=588.35 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-11 (2 rows) -> me=2 cobf=B L=8.95 rate=57.4 amt=513.73 mltrno= | me=1 cobf=B L=9.2 rate=58.0 amt=533.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-12 (2 rows) -> me=2 cobf=B L=9.0 rate=50.4 amt=453.6 mltrno= | me=1 cobf=B L=9.2 rate=58.0 amt=533.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-13 (2 rows) -> me=2 cobf=B L=8.3 rate=56.8 amt=471.44 mltrno= | me=1 cobf=B L=9.05 rate=60.1 amt=543.91 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-14 (2 rows) -> me=2 cobf=B L=8.25 rate=60.7 amt=500.78 mltrno= | me=1 cobf=B L=9.45 rate=57.1 amt=539.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-15 (2 rows) -> me=1 cobf=B L=8.45 rate=59.8 amt=505.31 mltrno= | me=2 cobf=B L=8.1 rate=56.8 amt=460.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-16 (2 rows) -> me=2 cobf=B L=8.1 rate=57.4 amt=464.94 mltrno= | me=1 cobf=B L=8.85 rate=58.0 amt=513.3 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-17 (2 rows) -> me=1 cobf=B L=8.85 rate=57.1 amt=505.34 mltrno= | me=2 cobf=B L=7.4 rate=56.8 amt=420.32 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-18 (2 rows) -> me=1 cobf=B L=8.6 rate=59.8 amt=514.28 mltrno= | me=2 cobf=B L=7.6 rate=57.7 amt=438.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-19 (2 rows) -> me=1 cobf=B L=8.5 rate=58.0 amt=493.0 mltrno= | me=2 cobf=B L=7.5 rate=58.0 amt=435.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-20 (2 rows) -> me=2 cobf=B L=7.7 rate=58.0 amt=446.6 mltrno= | me=1 cobf=B L=8.65 rate=60.7 amt=525.06 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-21 (2 rows) -> me=1 cobf=B L=8.55 rate=60.4 amt=516.42 mltrno= | me=2 cobf=B L=7.95 rate=56.8 amt=451.56 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-22 (2 rows) -> me=2 cobf=B L=7.95 rate=56.8 amt=451.56 mltrno= | me=1 cobf=B L=8.05 rate=60.1 amt=483.81 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-23 (2 rows) -> me=1 cobf=B L=8.45 rate=61.0 amt=515.45 mltrno= | me=2 cobf=B L=7.65 rate=56.8 amt=434.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-24 (2 rows) -> me=1 cobf=B L=7.75 rate=57.1 amt=442.52 mltrno= | me=2 cobf=B L=7.8 rate=50.4 amt=393.12 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-25 (2 rows) -> me=2 cobf=B L=7.25 rate=56.8 amt=411.8 mltrno= | me=1 cobf=B L=8.55 rate=57.4 amt=490.77 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-26 (2 rows) -> me=2 cobf=B L=7.5 rate=57.1 amt=428.25 mltrno= | me=1 cobf=B L=8.4 rate=59.8 amt=502.32 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-27 (2 rows) -> me=1 cobf=B L=8.2 rate=58.0 amt=475.6 mltrno= | me=2 cobf=B L=7.45 rate=56.8 amt=423.16 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-28 (2 rows) -> me=2 cobf=B L=8.25 rate=57.1 amt=471.08 mltrno= | me=1 cobf=B L=8.1 rate=61.0 amt=494.1 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-01 (2 rows) -> me=2 cobf=B L=7.9 rate=56.8 amt=448.72 mltrno= | me=1 cobf=B L=7.9 rate=61.7 amt=487.43 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-02 (2 rows) -> me=1 cobf=B L=7.25 rate=59.8 amt=433.55 mltrno= | me=2 cobf=B L=8.0 rate=56.8 amt=454.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-03 (2 rows) -> me=2 cobf=B L=8.15 rate=57.8 amt=471.07 mltrno= | me=1 cobf=B L=8.0 rate=62.3 amt=498.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-04 (2 rows) -> me=2 cobf=B L=8.45 rate=58.4 amt=493.48 mltrno= | me=1 cobf=B L=7.6 rate=58.1 amt=441.56 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-05 (2 rows) -> me=1 cobf=B L=7.65 rate=57.8 amt=442.17 mltrno= | me=2 cobf=B L=7.85 rate=51.7 amt=405.85 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-06 (2 rows) -> me=2 cobf=B L=8.85 rate=51.4 amt=454.89 mltrno= | me=1 cobf=B L=7.1 rate=61.4 amt=435.94 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-07 (2 rows) -> me=1 cobf=B L=8.05 rate=59.0 amt=474.95 mltrno= | me=2 cobf=B L=8.35 rate=58.1 amt=485.14 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-08 (2 rows) -> me=2 cobf=B L=8.0 rate=50.5 amt=404.0 mltrno= | me=1 cobf=B L=7.95 rate=58.4 amt=464.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-09 (2 rows) -> me=1 cobf=B L=8.3 rate=57.8 amt=479.74 mltrno= | me=2 cobf=B L=8.2 rate=51.4 amt=421.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-10 (2 rows) -> me=2 cobf=B L=7.5 rate=51.7 amt=387.75 mltrno= | me=1 cobf=B L=8.85 rate=57.8 amt=511.53 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-11 (2 rows) -> me=1 cobf=B L=8.65 rate=57.8 amt=499.97 mltrno= | me=2 cobf=B L=7.2 rate=49.5 amt=356.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-12 (2 rows) -> me=1 cobf=B L=8.75 rate=60.1 amt=525.88 mltrno= | me=2 cobf=B L=7.05 rate=47.6 amt=335.58 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-13 (2 rows) -> me=1 cobf=B L=8.95 rate=57.1 amt=511.04 mltrno= | me=2 cobf=B L=7.35 rate=56.8 amt=417.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-14 (2 rows) -> me=2 cobf=B L=8.1 rate=50.1 amt=405.81 mltrno= | me=1 cobf=B L=8.3 rate=61.1 amt=507.13 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-15 (2 rows) -> me=1 cobf=B L=8.25 rate=56.8 amt=468.6 mltrno= | me=2 cobf=B L=8.4 rate=50.4 amt=423.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-16 (2 rows) -> me=2 cobf=B L=7.75 rate=49.5 amt=383.62 mltrno= | me=1 cobf=B L=6.05 rate=57.4 amt=347.27 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-17 (2 rows) -> me=1 cobf=B L=8.95 rate=58.0 amt=519.1 mltrno= | me=2 cobf=B L=7.3 rate=56.8 amt=414.64 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-18 (2 rows) -> me=1 cobf=B L=8.95 rate=57.1 amt=511.04 mltrno= | me=2 cobf=B L=7.5 rate=50.1 amt=375.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-19 (2 rows) -> me=2 cobf=B L=7.1 rate=59.5 amt=422.45 mltrno= | me=1 cobf=B L=8.45 rate=56.8 amt=479.96 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-20 (2 rows) -> me=1 cobf=B L=9.05 rate=50.7 amt=458.84 mltrno= | me=2 cobf=B L=7.4 rate=50.7 amt=375.18 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-21 (2 rows) -> me=2 cobf=B L=7.5 rate=56.8 amt=426.0 mltrno= | me=1 cobf=B L=9.8 rate=57.4 amt=562.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-22 (2 rows) -> me=2 cobf=B L=7.7 rate=57.8 amt=445.06 mltrno= | me=1 cobf=B L=9.3 rate=58.1 amt=540.33 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-23 (2 rows) -> me=1 cobf=B L=8.55 rate=59.0 amt=504.45 mltrno= | me=2 cobf=B L=7.05 rate=58.1 amt=409.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-24 (2 rows) -> me=1 cobf=B L=8.0 rate=58.7 amt=469.6 mltrno= | me=2 cobf=B L=6.6 rate=57.8 amt=381.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-25 (2 rows) -> me=1 cobf=B L=7.4 rate=60.8 amt=449.92 mltrno= | me=2 cobf=B L=7.3 rate=51.4 amt=375.22 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-26 (2 rows) -> me=2 cobf=B L=6.9 rate=57.8 amt=398.82 mltrno= | me=1 cobf=B L=8.3 rate=60.5 amt=502.15 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-27 (2 rows) -> me=2 cobf=B L=7.3 rate=57.8 amt=421.94 mltrno= | me=1 cobf=B L=8.6 rate=57.8 amt=497.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-28 (2 rows) -> me=1 cobf=B L=9.25 rate=58.1 amt=537.43 mltrno= | me=2 cobf=B L=7.25 rate=58.1 amt=421.23 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-29 (2 rows) -> me=1 cobf=B L=8.95 rate=57.8 amt=517.31 mltrno= | me=2 cobf=B L=7.45 rate=56.8 amt=423.16 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-30 (2 rows) -> me=2 cobf=B L=7.65 rate=50.7 amt=387.86 mltrno= | me=1 cobf=B L=3.0 rate=50.4 amt=151.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-31 (2 rows) -> me=2 cobf=B L=7.2 rate=57.1 amt=411.12 mltrno= | me=1 cobf=B L=8.85 rate=61.1 amt=540.74 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-01 (2 rows) -> me=1 cobf=B L=8.65 rate=60.1 amt=519.86 mltrno= | me=2 cobf=B L=8.0 rate=50.8 amt=406.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-02 (2 rows) -> me=1 cobf=B L=10.65 rate=60.7 amt=646.46 mltrno= | me=2 cobf=B L=9.25 rate=60.8 amt=562.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-03 (2 rows) -> me=2 cobf=B L=10.8 rate=51.4 amt=555.12 mltrno= | me=1 cobf=B L=11.3 rate=57.8 amt=653.14 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-04 (2 rows) -> me=2 cobf=B L=10.0 rate=50.1 amt=501.0 mltrno= | me=1 cobf=B L=11.95 rate=58.7 amt=701.47 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-05 (2 rows) -> me=1 cobf=B L=11.95 rate=57.4 amt=685.93 mltrno= | me=2 cobf=B L=7.15 rate=50.5 amt=361.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-06 (2 rows) -> me=2 cobf=B L=10.15 rate=58.4 amt=592.76 mltrno= | me=1 cobf=B L=14.1 rate=57.8 amt=814.98 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-07 (2 rows) -> me=2 cobf=B L=10.1 rate=58.1 amt=586.81 mltrno= | me=1 cobf=B L=11.5 rate=59.5 amt=684.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-08 (2 rows) -> me=2 cobf=B L=9.9 rate=56.8 amt=562.32 mltrno= | me=1 cobf=B L=11.2 rate=59.8 amt=669.76 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-09 (2 rows) -> me=2 cobf=B L=7.15 rate=60.5 amt=432.58 mltrno= | me=1 cobf=B L=10.75 rate=57.4 amt=617.05 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-10 (2 rows) -> me=1 cobf=B L=10.75 rate=57.8 amt=621.35 mltrno= | me=2 cobf=B L=11.2 rate=56.8 amt=636.16 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-11 (2 rows) -> me=1 cobf=B L=10.6 rate=57.1 amt=605.26 mltrno= | me=2 cobf=B L=7.15 rate=50.4 amt=360.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-12 (2 rows) -> me=2 cobf=B L=10.5 rate=56.8 amt=596.4 mltrno= | me=1 cobf=B L=11.15 rate=58.1 amt=647.82 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-13 (2 rows) -> me=2 cobf=B L=10.6 rate=49.5 amt=524.7 mltrno= | me=1 cobf=B L=1.25 rate=51.4 amt=64.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-14 (2 rows) -> me=2 cobf=B L=10.95 rate=49.5 amt=542.02 mltrno= | me=1 cobf=B L=11.25 rate=49.5 amt=556.88 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-15 (2 rows) -> me=2 cobf=B L=9.75 rate=57.8 amt=563.55 mltrno= | me=1 cobf=B L=12.65 rate=56.8 amt=718.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-16 (2 rows) -> me=2 cobf=B L=10.5 rate=57.8 amt=606.9 mltrno= | me=1 cobf=B L=5.85 rate=57.8 amt=338.13 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-17 (2 rows) -> me=1 cobf=B L=11.2 rate=57.8 amt=647.36 mltrno= | me=2 cobf=B L=10.1 rate=58.1 amt=586.81 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-18 (2 rows) -> me=1 cobf=B L=10.05 rate=51.4 amt=516.57 mltrno= | me=2 cobf=B L=11.75 rate=50.5 amt=593.38 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-19 (2 rows) -> me=1 cobf=B L=12.45 rate=57.8 amt=719.61 mltrno= | me=2 cobf=B L=10.9 rate=51.1 amt=556.99 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-20 (2 rows) -> me=1 cobf=B L=11.7 rate=58.1 amt=679.77 mltrno= | me=2 cobf=B L=11.05 rate=50.5 amt=558.03 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-21 (2 rows) -> me=1 cobf=B L=12.3 rate=58.1 amt=714.63 mltrno= | me=2 cobf=B L=10.95 rate=51.4 amt=562.83 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-22 (2 rows) -> me=1 cobf=B L=12.45 rate=58.7 amt=730.82 mltrno= | me=2 cobf=B L=10.95 rate=50.5 amt=552.97 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-23 (2 rows) -> me=2 cobf=B L=11.3 rate=50.5 amt=570.65 mltrno= | me=1 cobf=B L=12.55 rate=58.1 amt=729.16 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-24 (2 rows) -> me=2 cobf=B L=11.9 rate=51.4 amt=611.66 mltrno= | me=1 cobf=B L=13.15 rate=61.4 amt=807.41 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-25 (2 rows) -> me=2 cobf=B L=11.0 rate=50.8 amt=558.8 mltrno= | me=1 cobf=B L=13.35 rate=59.0 amt=787.65 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-26 (2 rows) -> me=1 cobf=B L=13.25 rate=57.8 amt=765.85 mltrno= | me=2 cobf=B L=10.85 rate=50.5 amt=547.92 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-27 (2 rows) -> me=2 cobf=B L=9.1 rate=50.5 amt=459.55 mltrno= | me=1 cobf=B L=13.7 rate=57.8 amt=791.86 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-28 (2 rows) -> me=2 cobf=B L=12.8 rate=50.5 amt=646.4 mltrno= | me=1 cobf=B L=14.35 rate=51.7 amt=741.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-29 (2 rows) -> me=1 cobf=B L=12.45 rate=58.4 amt=727.08 mltrno= | me=2 cobf=B L=11.6 rate=57.8 amt=670.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-30 (2 rows) -> me=2 cobf=B L=8.95 rate=51.4 amt=460.03 mltrno= | me=1 cobf=B L=12.95 rate=58.4 amt=756.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-01 (2 rows) -> me=2 cobf=B L=10.9 rate=51.7 amt=563.53 mltrno= | me=1 cobf=B L=14.25 rate=60.5 amt=862.12 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-02 (2 rows) -> me=1 cobf=B L=12.2 rate=61.4 amt=749.08 mltrno= | me=2 cobf=B L=8.55 rate=57.8 amt=494.19 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-03 (2 rows) -> me=2 cobf=B L=7.85 rate=51.1 amt=401.14 mltrno= | me=1 cobf=B L=14.1 rate=57.8 amt=814.98 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-04 (2 rows) -> me=1 cobf=B L=14.05 rate=63.5 amt=892.18 mltrno= | me=2 cobf=B L=10.65 rate=62.0 amt=660.3 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-05 (2 rows) -> me=1 cobf=B L=11.7 rate=63.5 amt=742.95 mltrno= | me=2 cobf=B L=10.45 rate=57.8 amt=604.01 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-06 (2 rows) -> me=1 cobf=B L=11.8 rate=61.4 amt=724.52 mltrno= | me=2 cobf=B L=10.25 rate=58.1 amt=595.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-07 (2 rows) -> me=2 cobf=B L=9.6 rate=58.7 amt=563.52 mltrno= | me=1 cobf=B L=11.65 rate=58.4 amt=680.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-08 (2 rows) -> me=2 cobf=B L=10.0 rate=57.8 amt=578.0 mltrno= | me=1 cobf=B L=11.9 rate=58.1 amt=691.39 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-09 (2 rows) -> me=1 cobf=B L=12.2 rate=62.3 amt=760.06 mltrno= | me=2 cobf=B L=10.3 rate=58.1 amt=598.43 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-10 (2 rows) -> me=1 cobf=B L=12.25 rate=63.8 amt=781.55 mltrno= | me=2 cobf=B L=10.9 rate=51.4 amt=560.26 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-11 (2 rows) -> me=2 cobf=B L=9.45 rate=57.8 amt=546.21 mltrno= | me=1 cobf=B L=11.15 rate=62.3 amt=694.64 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-12 (2 rows) -> me=1 cobf=B L=11.6 rate=62.0 amt=719.2 mltrno= | me=2 cobf=B L=10.3 rate=58.1 amt=598.43 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-13 (2 rows) -> me=2 cobf=B L=10.35 rate=57.8 amt=598.23 mltrno= | me=1 cobf=B L=11.65 rate=62.9 amt=732.78 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-14 (2 rows) -> me=1 cobf=B L=11.75 rate=61.4 amt=721.45 mltrno= | me=2 cobf=B L=10.15 rate=57.8 amt=586.67 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-15 (2 rows) -> me=1 cobf=B L=13.0 rate=60.5 amt=786.5 mltrno= | me=2 cobf=B L=9.55 rate=57.8 amt=551.99 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-16 (2 rows) -> me=2 cobf=B L=7.85 rate=58.1 amt=456.09 mltrno= | me=1 cobf=B L=12.45 rate=58.4 amt=727.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-17 (2 rows) -> me=2 cobf=B L=9.45 rate=57.8 amt=546.21 mltrno= | me=1 cobf=B L=12.6 rate=62.3 amt=784.98 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-18 (2 rows) -> me=1 cobf=B L=11.9 rate=58.1 amt=691.39 mltrno= | me=2 cobf=B L=7.95 rate=58.1 amt=461.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-19 (2 rows) -> me=1 cobf=B L=14.45 rate=57.8 amt=835.21 mltrno= | me=2 cobf=B L=11.0 rate=61.1 amt=672.1 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-20 (2 rows) -> me=1 cobf=B L=13.0 rate=62.9 amt=817.7 mltrno= | me=2 cobf=B L=10.2 rate=58.4 amt=595.68 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-21 (2 rows) -> me=1 cobf=B L=12.0 rate=61.4 amt=736.8 mltrno= | me=2 cobf=B L=9.95 rate=57.8 amt=575.11 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-22 (2 rows) -> me=2 cobf=B L=8.65 rate=58.1 amt=502.57 mltrno= | me=1 cobf=B L=12.25 rate=62.6 amt=766.85 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-23 (2 rows) -> me=2 cobf=B L=11.1 rate=57.8 amt=641.58 mltrno= | me=1 cobf=B L=13.4 rate=58.7 amt=786.58 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-24 (2 rows) -> me=2 cobf=B L=10.05 rate=58.4 amt=586.92 mltrno= | me=1 cobf=B L=12.4 rate=61.4 amt=761.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-25 (2 rows) -> me=1 cobf=B L=11.3 rate=58.4 amt=659.92 mltrno= | me=2 cobf=B L=10.7 rate=58.1 amt=621.67 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-26 (2 rows) -> me=2 cobf=B L=10.15 rate=57.8 amt=586.67 mltrno= | me=1 cobf=B L=11.25 rate=63.5 amt=714.38 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-27 (2 rows) -> me=1 cobf=B L=10.55 rate=57.8 amt=609.79 mltrno= | me=2 cobf=B L=10.85 rate=51.4 amt=557.69 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-28 (2 rows) -> me=1 cobf=B L=10.85 rate=57.8 amt=627.13 mltrno= | me=2 cobf=B L=11.0 rate=51.7 amt=568.7 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-29 (2 rows) -> me=2 cobf=B L=10.65 rate=58.1 amt=618.76 mltrno= | me=1 cobf=B L=11.0 rate=58.1 amt=639.1 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-30 (2 rows) -> me=2 cobf=B L=10.95 rate=51.4 amt=562.83 mltrno= | me=1 cobf=B L=11.1 rate=57.8 amt=641.58 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-31 (2 rows) -> me=1 cobf=B L=11.2 rate=59.0 amt=660.8 mltrno= | me=2 cobf=B L=10.25 rate=59.0 amt=604.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-01 (2 rows) -> me=1 cobf=B L=10.95 rate=57.8 amt=632.91 mltrno= | me=2 cobf=B L=10.3 rate=57.8 amt=595.34 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-02 (2 rows) -> me=1 cobf=B L=11.7 rate=61.4 amt=718.38 mltrno= | me=2 cobf=B L=9.9 rate=58.1 amt=575.19 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-03 (2 rows) -> me=2 cobf=B L=10.1 rate=58.1 amt=586.81 mltrno= | me=1 cobf=B L=11.75 rate=62.6 amt=735.55 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-04 (2 rows) -> me=2 cobf=B L=10.5 rate=57.8 amt=606.9 mltrno= | me=1 cobf=B L=11.45 rate=62.9 amt=720.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-05 (2 rows) -> me=2 cobf=B L=9.2 rate=58.4 amt=537.28 mltrno= | me=1 cobf=B L=12.3 rate=62.3 amt=766.29 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-06 (2 rows) -> me=1 cobf=B L=11.05 rate=63.2 amt=698.36 mltrno= | me=2 cobf=B L=8.95 rate=59.0 amt=528.05 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-07 (2 rows) -> me=2 cobf=B L=7.3 rate=59.0 amt=430.7 mltrno= | me=1 cobf=B L=10.6 rate=64.1 amt=679.46 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-08 (2 rows) -> me=2 cobf=B L=8.2 rate=61.1 amt=501.02 mltrno= | me=1 cobf=B L=11.9 rate=65.6 amt=780.64 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-09 (2 rows) -> me=2 cobf=B L=9.05 rate=59.0 amt=533.95 mltrno= | me=1 cobf=B L=11.6 rate=63.5 amt=736.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-10 (2 rows) -> me=2 cobf=B L=7.65 rate=57.8 amt=442.17 mltrno= | me=1 cobf=B L=10.45 rate=60.5 amt=632.22 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-11 (2 rows) -> me=2 cobf=B L=6.6 rate=57.8 amt=381.48 mltrno= | me=1 cobf=B L=12.55 rate=58.1 amt=729.16 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-12 (2 rows) -> me=1 cobf=B L=12.5 rate=63.5 amt=793.75 mltrno= | me=2 cobf=B L=6.45 rate=58.1 amt=374.74 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-13 (2 rows) -> me=1 cobf=B L=12.25 rate=64.1 amt=785.23 mltrno= | me=2 cobf=B L=6.3 rate=60.5 amt=381.15 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-14 (2 rows) -> me=2 cobf=B L=6.75 rate=60.8 amt=410.4 mltrno= | me=1 cobf=B L=11.8 rate=62.6 amt=738.68 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-15 (2 rows) -> me=2 cobf=B L=6.5 rate=59.0 amt=383.5 mltrno= | me=1 cobf=B L=12.75 rate=60.5 amt=771.38 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-16 (2 rows) -> me=1 cobf=B L=11.4 rate=62.0 amt=706.8 mltrno= | me=2 cobf=B L=6.25 rate=58.4 amt=365.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-17 (2 rows) -> me=2 cobf=B L=6.9 rate=61.7 amt=425.73 mltrno= | me=1 cobf=B L=10.6 rate=62.0 amt=657.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-18 (2 rows) -> me=1 cobf=B L=10.45 rate=57.8 amt=604.01 mltrno= | me=2 cobf=B L=6.6 rate=57.8 amt=381.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-19 (2 rows) -> me=2 cobf=B L=6.85 rate=58.1 amt=397.98 mltrno= | me=1 cobf=B L=11.1 rate=61.4 amt=681.54 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-20 (2 rows) -> me=2 cobf=B L=6.4 rate=58.4 amt=373.76 mltrno= | me=1 cobf=B L=10.55 rate=62.3 amt=657.27 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-21 (2 rows) -> me=2 cobf=B L=6.2 rate=58.4 amt=362.08 mltrno= | me=1 cobf=B L=9.9 rate=57.8 amt=572.22 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-22 (2 rows) -> me=2 cobf=B L=6.05 rate=60.5 amt=366.02 mltrno= | me=1 cobf=B L=10.8 rate=63.5 amt=685.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-23 (2 rows) -> me=2 cobf=B L=5.55 rate=58.7 amt=325.79 mltrno= | me=1 cobf=B L=10.15 rate=64.1 amt=650.62 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-24 (2 rows) -> me=1 cobf=B L=9.9 rate=62.0 amt=613.8 mltrno= | me=2 cobf=B L=5.8 rate=60.1 amt=348.58 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-25 (2 rows) -> me=2 cobf=B L=5.85 rate=56.8 amt=332.28 mltrno= | me=1 cobf=B L=9.45 rate=56.8 amt=536.76 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-26 (2 rows) -> me=1 cobf=B L=9.7 rate=57.1 amt=553.87 mltrno= | me=2 cobf=B L=6.2 rate=56.8 amt=352.16 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-27 (2 rows) -> me=2 cobf=B L=6.15 rate=60.4 amt=371.46 mltrno= | me=1 cobf=B L=8.7 rate=56.8 amt=494.16 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-28 (2 rows) -> me=1 cobf=B L=8.7 rate=60.7 amt=528.09 mltrno= | me=2 cobf=B L=6.0 rate=61.9 amt=371.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-29 (2 rows) -> me=1 cobf=B L=8.45 rate=61.6 amt=520.52 mltrno= | me=2 cobf=B L=6.05 rate=61.6 amt=372.68 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-30 (2 rows) -> me=2 cobf=B L=7.1 rate=62.2 amt=441.62 mltrno= | me=1 cobf=B L=7.8 rate=60.7 amt=473.46 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-01 (2 rows) -> me=1 cobf=B L=7.1 rate=57.7 amt=409.67 mltrno= | me=2 cobf=B L=7.05 rate=61.6 amt=434.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-02 (2 rows) -> me=1 cobf=B L=8.3 rate=61.0 amt=506.3 mltrno= | me=2 cobf=B L=6.2 rate=61.3 amt=380.06 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-03 (2 rows) -> me=1 cobf=B L=8.5 rate=60.4 amt=513.4 mltrno= | me=2 cobf=B L=6.25 rate=63.4 amt=396.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-04 (2 rows) -> me=2 cobf=B L=6.05 rate=64.6 amt=390.83 mltrno= | me=1 cobf=B L=7.45 rate=62.5 amt=465.62 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-05 (2 rows) -> me=1 cobf=B L=7.9 rate=62.5 amt=493.75 mltrno= | me=2 cobf=B L=5.6 rate=61.3 amt=343.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-06 (2 rows) -> me=1 cobf=B L=8.05 rate=61.6 amt=495.88 mltrno= | me=2 cobf=B L=5.75 rate=61.0 amt=350.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-07 (2 rows) -> me=1 cobf=B L=7.9 rate=61.3 amt=484.27 mltrno= | me=2 cobf=B L=6.25 rate=62.5 amt=390.62 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-08 (2 rows) -> me=2 cobf=B L=5.4 rate=57.1 amt=308.34 mltrno= | me=1 cobf=B L=7.95 rate=61.0 amt=484.95 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-09 (2 rows) -> me=1 cobf=B L=8.0 rate=61.3 amt=490.4 mltrno= | me=2 cobf=B L=5.4 rate=64.0 amt=345.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-10 (2 rows) -> me=2 cobf=B L=6.0 rate=61.9 amt=371.4 mltrno= | me=1 cobf=B L=7.2 rate=61.3 amt=441.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-11 (2 rows) -> me=2 cobf=B L=5.25 rate=60.4 amt=317.1 mltrno= | me=1 cobf=B L=7.4 rate=60.7 amt=449.18 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-12 (2 rows) -> me=2 cobf=B L=5.1 rate=60.4 amt=308.04 mltrno= | me=1 cobf=B L=6.7 rate=57.4 amt=384.58 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-13 (2 rows) -> me=2 cobf=B L=5.4 rate=61.0 amt=329.4 mltrno= | me=1 cobf=B L=7.05 rate=58.0 amt=408.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-14 (2 rows) -> me=2 cobf=B L=5.6 rate=61.0 amt=341.6 mltrno= | me=1 cobf=B L=6.8 rate=59.5 amt=404.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-15 (2 rows) -> me=2 cobf=B L=5.15 rate=58.0 amt=298.7 mltrno= | me=1 cobf=B L=6.3 rate=59.8 amt=376.74 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-16 (2 rows) -> me=2 cobf=B L=5.2 rate=56.8 amt=295.36 mltrno= | me=1 cobf=B L=6.55 rate=57.7 amt=377.94 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-17 (2 rows) -> me=2 cobf=B L=5.75 rate=59.5 amt=342.12 mltrno= | me=1 cobf=B L=6.7 rate=57.7 amt=386.59 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-18 (2 rows) -> me=1 cobf=B L=7.0 rate=59.5 amt=416.5 mltrno= | me=2 cobf=B L=5.5 rate=61.0 amt=335.5 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-19 (2 rows) -> me=2 cobf=B L=5.7 rate=57.4 amt=327.18 mltrno= | me=1 cobf=B L=6.3 rate=57.1 amt=359.73 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-20 (2 rows) -> me=1 cobf=B L=7.0 rate=58.0 amt=406.0 mltrno= | me=2 cobf=B L=5.55 rate=56.8 amt=315.24 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-21 (2 rows) -> me=2 cobf=B L=5.5 rate=58.0 amt=319.0 mltrno= | me=1 cobf=B L=6.75 rate=59.5 amt=401.62 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-22 (2 rows) -> me=2 cobf=B L=5.15 rate=60.4 amt=311.06 mltrno= | me=1 cobf=B L=6.5 rate=60.4 amt=392.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-23 (2 rows) -> me=2 cobf=B L=4.2 rate=57.1 amt=239.82 mltrno= | me=1 cobf=B L=6.55 rate=59.5 amt=389.72 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-24 (2 rows) -> me=1 cobf=B L=5.0 rate=56.8 amt=284.0 mltrno= | me=2 cobf=B L=4.25 rate=57.1 amt=242.68 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-25 (2 rows) -> me=1 cobf=B L=4.25 rate=59.5 amt=252.88 mltrno= | me=2 cobf=B L=3.85 rate=61.0 amt=234.85 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-26 (2 rows) -> me=2 cobf=B L=3.65 rate=61.0 amt=222.65 mltrno= | me=1 cobf=B L=4.75 rate=56.8 amt=269.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-27 (2 rows) -> me=2 cobf=B L=3.55 rate=61.0 amt=216.55 mltrno= | me=1 cobf=B L=4.25 rate=57.1 amt=242.68 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-28 (2 rows) -> me=1 cobf=B L=4.6 rate=59.5 amt=273.7 mltrno= | me=2 cobf=B L=3.5 rate=60.7 amt=212.45 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-29 (2 rows) -> me=1 cobf=B L=4.45 rate=56.8 amt=252.76 mltrno= | me=2 cobf=B L=3.65 rate=57.4 amt=209.51 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-30 (2 rows) -> me=2 cobf=B L=3.8 rate=59.5 amt=226.1 mltrno= | me=1 cobf=B L=4.75 rate=50.7 amt=240.82 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-31 (2 rows) -> me=2 cobf=B L=3.5 rate=57.1 amt=199.85 mltrno= | me=1 cobf=B L=4.55 rate=57.7 amt=262.54 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-01 (2 rows) -> me=1 cobf=B L=4.9 rate=56.8 amt=278.32 mltrno= | me=2 cobf=B L=3.4 rate=57.7 amt=196.18 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-02 (2 rows) -> me=1 cobf=B L=4.55 rate=57.1 amt=259.8 mltrno= | me=2 cobf=B L=3.7 rate=57.1 amt=211.27 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-03 (1 rows) -> me=1 cobf=B L=4.4 rate=50.1 amt=220.44 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-04 (2 rows) -> me=2 cobf=B L=3.2 rate=64.6 amt=206.72 mltrno= | me=1 cobf=B L=7.1 rate=56.8 amt=403.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-05 (2 rows) -> me=2 cobf=B L=3.15 rate=56.8 amt=178.92 mltrno= | me=1 cobf=B L=4.0 rate=56.8 amt=227.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-06 (1 rows) -> me=1 cobf=B L=4.0 rate=50.4 amt=201.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-07 (2 rows) -> me=1 cobf=B L=7.0 rate=56.8 amt=397.6 mltrno= | me=2 cobf=B L=3.65 rate=63.7 amt=232.5 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-08 (2 rows) -> me=1 cobf=B L=4.2 rate=57.4 amt=241.08 mltrno= | me=2 cobf=B L=3.3 rate=59.5 amt=196.35 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-09 (2 rows) -> me=1 cobf=B L=3.95 rate=56.8 amt=224.36 mltrno= | me=2 cobf=B L=3.9 rate=56.8 amt=221.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-10 (2 rows) -> me=1 cobf=B L=4.3 rate=56.8 amt=244.24 mltrno= | me=2 cobf=B L=3.7 rate=57.1 amt=211.27 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-11 (2 rows) -> me=1 cobf=B L=4.3 rate=59.3 amt=254.99 mltrno= | me=2 cobf=B L=3.85 rate=59.3 amt=228.31 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-12 (2 rows) -> me=2 cobf=B L=3.5 rate=59.3 amt=207.55 mltrno= | me=1 cobf=B L=4.6 rate=56.8 amt=261.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-13 (2 rows) -> me=1 cobf=B L=4.5 rate=59.6 amt=268.2 mltrno= | me=2 cobf=B L=3.5 rate=62.9 amt=220.15 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-14 (2 rows) -> me=2 cobf=B L=3.6 rate=62.9 amt=226.44 mltrno= | me=1 cobf=B L=4.15 rate=59.6 amt=247.34 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-15 (2 rows) -> me=2 cobf=B L=3.3 rate=62.0 amt=204.6 mltrno= | me=1 cobf=B L=4.05 rate=62.0 amt=251.1 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-16 (2 rows) -> me=1 cobf=B L=4.0 rate=56.8 amt=227.2 mltrno= | me=2 cobf=B L=3.5 rate=59.3 amt=207.55 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-17 (2 rows) -> me=2 cobf=B L=3.5 rate=60.1 amt=210.35 mltrno= | me=1 cobf=B L=4.4 rate=57.4 amt=252.56 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-18 (2 rows) -> me=1 cobf=B L=4.35 rate=56.8 amt=247.08 mltrno= | me=2 cobf=B L=3.45 rate=56.8 amt=195.96 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-19 (2 rows) -> me=1 cobf=B L=4.3 rate=59.6 amt=256.28 mltrno= | me=2 cobf=B L=3.45 rate=59.5 amt=205.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-20 (2 rows) -> me=1 cobf=B L=4.3 rate=60.5 amt=260.15 mltrno= | me=2 cobf=B L=4.0 rate=59.3 amt=237.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-21 (1 rows) -> me=1 cobf=B L=4.3 rate=57.1 amt=245.53 mltrno=
+I/flutter (12561): ApiService [passbook]: FULL sync — incoming=769 cached=769 total=769 url=https://api.winsoftsc.com/api/passbook/list?socitycode=1565&memcode=386
+I/flutter (12561): PassbookAudit [after-full]: totalRows=769
+I/flutter (12561): PassbookAudit [after-full]: first dt=01/01/2026 me=1 cobf=B L=10.75 fat=6.7 rate=57.4 amt=617.05 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [after-full]: first dt=01/01/2026 me=2 cobf=B L=9.7 fat=6.5 rate=56.8 amt=550.96 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [after-full]: first dt=01/02/2026 me=1 cobf=B L=9.75 fat=7.3 rate=60.4 amt=588.9 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [after-full]: last dt=31/12/2025 me=2 cobf=B L=10.15 fat=6.6 rate=57.1 amt=579.57 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [after-full]: last dt=31/12/2025 me=1 cobf=B L=10.9 fat=6.4 rate=50.7 amt=552.63 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [after-full]: last dt=31/07/2026 me=2 cobf=B L=3.5 fat=6.6 rate=57.1 amt=199.85 mltrno= milksrno=
+I/flutter (12561): ApiService [deductions]: NETWORK FULL — forceRefresh=true fullFetchOnly=true cached=92
+I/flutter (12561): ApiService [deductions]: FULL sync — incoming=92 cached=92 total=92 url=https://api.winsoftsc.com/api/Dedentry/ded?soccode=1565&membcode=386
+I/flutter (12561): BillAudit [generate]: billNo=14 2026-08-11..2026-08-20 passbookRows=20
+I/flutter (12561): BillAudit [generate]: 2026-08-11 (2 raw rows) -> me=1 cobf=B L=4.3 rate=59.3 amt=254.99 | me=2 cobf=B L=3.85 rate=59.3 amt=228.31
+I/flutter (12561): BillAudit [generate]: 2026-08-12 (2 raw rows) -> me=2 cobf=B L=3.5 rate=59.3 amt=207.55 | me=1 cobf=B L=4.6 rate=56.8 amt=261.28
+I/flutter (12561): BillAudit [generate]: 2026-08-13 (2 raw rows) -> me=1 cobf=B L=4.5 rate=59.6 amt=268.2 | me=2 cobf=B L=3.5 rate=62.9 amt=220.15
+I/flutter (12561): BillAudit [generate]: 2026-08-14 (2 raw rows) -> me=2 cobf=B L=3.6 rate=62.9 amt=226.44 | me=1 cobf=B L=4.15 rate=59.6 amt=247.34
+I/flutter (12561): BillAudit [generate]: 2026-08-15 (2 raw rows) -> me=2 cobf=B L=3.3 rate=62.0 amt=204.6 | me=1 cobf=B L=4.05 rate=62.0 amt=251.1
+I/flutter (12561): BillAudit [generate]: 2026-08-16 (2 raw rows) -> me=1 cobf=B L=4.0 rate=56.8 amt=227.2 | me=2 cobf=B L=3.5 rate=59.3 amt=207.55
+I/flutter (12561): BillAudit [generate]: 2026-08-17 (2 raw rows) -> me=2 cobf=B L=3.5 rate=60.1 amt=210.35 | me=1 cobf=B L=4.4 rate=57.4 amt=252.56
+I/flutter (12561): BillAudit [generate]: 2026-08-18 (2 raw rows) -> me=1 cobf=B L=4.35 rate=56.8 amt=247.08 | me=2 cobf=B L=3.45 rate=56.8 amt=195.96
+I/flutter (12561): BillAudit [generate]: 2026-08-19 (2 raw rows) -> me=1 cobf=B L=4.3 rate=59.6 amt=256.28 | me=2 cobf=B L=3.45 rate=59.5 amt=205.28
+I/flutter (12561): BillAudit [generate]: 2026-08-20 (2 raw rows) -> me=1 cobf=B L=4.3 rate=60.5 amt=260.15 | me=2 cobf=B L=4.0 rate=59.3 amt=237.2
+I/flutter (12561): ApiService [glms]: Full refresh — fetching from network.
+I/flutter (12561): ApiService [ledger-cache]: load key=ledger_all_1565_386 source=disk rows=248 jsonBytes=23811
+I/flutter (12561): ApiService [ledger]: fetch start key=ledger_all_1565_386 cachedRows=248 forceRefresh=true forceDeltaFetch=false
+I/flutter (12561): ApiService [passbook]: NETWORK FULL — forceRefresh=true fullFetchOnly=true cached=769
+I/flutter (12561): ApiService [deductions]: NETWORK FULL — forceRefresh=true fullFetchOnly=true cached=92
+I/flutter (12561): ApiService [bill_transactions]: NETWORK FULL — forceRefresh=true fullFetchOnly=true cached=47
+I/flutter (12561): ApiService [ledger]: NETWORK FULL — forceRefresh=true fullFetchOnly=true cached=248
+I/flutter (12561): PassbookAudit [incoming-full]: incomingDays=388 totalRows=769
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-01 (2 rows) -> me=1 cobf=B L=7.4 rate=54.8 amt=405.52 mltrno= | me=2 cobf=B L=8.15 rate=47.5 amt=387.13 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-02 (2 rows) -> me=1 cobf=B L=7.25 rate=47.5 amt=344.38 mltrno= | me=2 cobf=B L=7.5 rate=47.8 amt=358.5 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-05 (2 rows) -> me=2 cobf=B L=7.85 rate=48.4 amt=379.94 mltrno= | me=1 cobf=B L=9.0 rate=46.6 amt=419.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-09 (2 rows) -> me=1 cobf=B L=7.45 rate=47.5 amt=353.88 mltrno= | me=2 cobf=B L=7.2 rate=48.4 amt=348.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-10 (2 rows) -> me=2 cobf=B L=8.1 rate=47.5 amt=384.75 mltrno= | me=1 cobf=B L=7.3 rate=47.5 amt=346.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-11 (2 rows) -> me=2 cobf=B L=7.6 rate=47.5 amt=361.0 mltrno= | me=1 cobf=B L=7.25 rate=55.1 amt=399.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-12 (2 rows) -> me=2 cobf=B L=8.25 rate=45.5 amt=375.38 mltrno= | me=1 cobf=B L=6.9 rate=54.8 amt=378.12 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-13 (2 rows) -> me=2 cobf=B L=7.6 rate=54.8 amt=416.48 mltrno= | me=1 cobf=B L=8.2 rate=48.4 amt=396.88 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-14 (2 rows) -> me=2 cobf=B L=7.9 rate=54.8 amt=432.92 mltrno= | me=1 cobf=B L=7.0 rate=47.5 amt=332.5 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-21 (2 rows) -> me=2 cobf=B L=8.55 rate=47.2 amt=403.56 mltrno= | me=1 cobf=B L=6.85 rate=47.5 amt=325.38 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-22 (2 rows) -> me=2 cobf=B L=6.9 rate=47.5 amt=327.75 mltrno= | me=1 cobf=B L=7.45 rate=54.8 amt=408.26 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-23 (2 rows) -> me=1 cobf=B L=8.05 rate=54.8 amt=441.14 mltrno= | me=2 cobf=B L=7.3 rate=47.5 amt=346.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-24 (2 rows) -> me=2 cobf=B L=7.4 rate=47.5 amt=351.5 mltrno= | me=1 cobf=B L=7.5 rate=48.1 amt=360.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-25 (2 rows) -> me=1 cobf=B L=7.7 rate=47.8 amt=368.06 mltrno= | me=2 cobf=B L=7.5 rate=54.8 amt=411.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-26 (2 rows) -> me=2 cobf=B L=7.2 rate=47.5 amt=342.0 mltrno= | me=1 cobf=B L=7.5 rate=47.5 amt=356.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-27 (2 rows) -> me=2 cobf=B L=7.55 rate=47.5 amt=358.63 mltrno= | me=1 cobf=B L=7.7 rate=55.4 amt=426.58 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-28 (2 rows) -> me=1 cobf=B L=7.95 rate=47.8 amt=380.01 mltrno= | me=2 cobf=B L=7.4 rate=47.5 amt=351.5 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-29 (2 rows) -> me=1 cobf=B L=7.35 rate=48.1 amt=353.54 mltrno= | me=2 cobf=B L=7.35 rate=47.5 amt=349.13 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-04-30 (2 rows) -> me=2 cobf=B L=7.4 rate=44.5 amt=329.3 mltrno= | me=1 cobf=B L=7.05 rate=54.8 amt=386.34 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-01 (2 rows) -> me=2 cobf=B L=6.95 rate=48.1 amt=334.3 mltrno= | me=1 cobf=B L=7.5 rate=54.8 amt=411.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-02 (2 rows) -> me=1 cobf=B L=7.3 rate=48.1 amt=351.13 mltrno= | me=2 cobf=B L=7.05 rate=47.5 amt=334.88 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-03 (2 rows) -> me=1 cobf=B L=7.25 rate=47.5 amt=344.38 mltrno= | me=2 cobf=B L=7.2 rate=47.5 amt=342.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-08 (2 rows) -> me=2 cobf=B L=7.15 rate=54.8 amt=391.82 mltrno= | me=1 cobf=B L=7.5 rate=55.4 amt=415.5 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-09 (2 rows) -> me=2 cobf=B L=7.0 rate=47.8 amt=334.6 mltrno= | me=1 cobf=B L=7.7 rate=47.8 amt=368.06 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-10 (2 rows) -> me=1 cobf=B L=6.5 rate=47.5 amt=308.75 mltrno= | me=2 cobf=B L=9.1 rate=48.4 amt=440.44 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-11 (2 rows) -> me=2 cobf=B L=6.8 rate=47.8 amt=325.04 mltrno= | me=1 cobf=B L=7.6 rate=54.8 amt=416.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-21 (2 rows) -> me=1 cobf=B L=7.65 rate=54.8 amt=419.22 mltrno= | me=2 cobf=B L=3.9 rate=47.5 amt=185.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-22 (2 rows) -> me=2 cobf=B L=6.4 rate=57.5 amt=368.0 mltrno= | me=1 cobf=B L=8.45 rate=58.1 amt=490.95 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-29 (2 rows) -> me=2 cobf=B L=5.15 rate=54.8 amt=282.22 mltrno= | me=1 cobf=B L=9.25 rate=59.0 amt=545.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-05-30 (2 rows) -> me=2 cobf=B L=4.95 rate=43.5 amt=215.33 mltrno= | me=1 cobf=B L=8.85 rate=59.6 amt=527.46 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-01 (2 rows) -> me=1 cobf=B L=8.55 rate=59.3 amt=507.02 mltrno= | me=2 cobf=B L=4.6 rate=47.5 amt=218.5 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-02 (2 rows) -> me=1 cobf=B L=8.55 rate=59.6 amt=509.58 mltrno= | me=2 cobf=B L=4.15 rate=46.0 amt=190.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-03 (2 rows) -> me=1 cobf=B L=8.4 rate=61.1 amt=513.24 mltrno= | me=2 cobf=B L=4.4 rate=47.8 amt=210.32 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-11 (2 rows) -> me=1 cobf=B L=8.25 rate=60.8 amt=501.6 mltrno= | me=2 cobf=B L=3.7 rate=47.5 amt=175.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-13 (2 rows) -> me=2 cobf=B L=3.7 rate=46.0 amt=170.2 mltrno= | me=1 cobf=B L=7.8 rate=58.4 amt=455.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-14 (2 rows) -> me=1 cobf=B L=7.5 rate=59.0 amt=442.5 mltrno= | me=2 cobf=B L=3.35 rate=46.3 amt=155.11 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-15 (2 rows) -> me=1 cobf=B L=7.55 rate=58.1 amt=438.66 mltrno= | me=2 cobf=B L=3.7 rate=44.5 amt=164.65 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-16 (2 rows) -> me=2 cobf=B L=3.85 rate=54.8 amt=210.98 mltrno= | me=1 cobf=B L=7.7 rate=58.1 amt=447.37 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-17 (2 rows) -> me=1 cobf=B L=6.85 rate=59.0 amt=404.15 mltrno= | me=2 cobf=B L=2.35 rate=55.1 amt=129.49 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-18 (2 rows) -> me=1 cobf=B L=3.65 rate=65.6 amt=239.44 mltrno= | me=2 cobf=B L=1.2 rate=60.2 amt=72.24 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-19 (1 rows) -> me=1 cobf=B L=3.8 rate=64.4 amt=244.72 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-06-20 (1 rows) -> me=1 cobf=B L=4.5 rate=61.4 amt=276.3 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-08-01 (1 rows) -> me=1 cobf=B L=1.75 rate=47.8 amt=83.65 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-08-10 (1 rows) -> me=1 cobf=B L=2.5 rate=59.3 amt=148.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-11 (2 rows) -> me=1 cobf=B L=4.55 rate=49.1 amt=223.41 mltrno= | me=2 cobf=B L=3.4 rate=48.8 amt=165.92 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-12 (2 rows) -> me=2 cobf=B L=3.8 rate=55.8 amt=212.04 mltrno= | me=1 cobf=B L=4.5 rate=49.1 amt=220.95 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-13 (2 rows) -> me=1 cobf=B L=4.55 rate=49.1 amt=223.41 mltrno= | me=2 cobf=B L=3.8 rate=55.8 amt=212.04 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-14 (2 rows) -> me=2 cobf=B L=3.8 rate=55.8 amt=212.04 mltrno= | me=1 cobf=B L=4.8 rate=49.4 amt=237.12 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-15 (2 rows) -> me=1 cobf=B L=4.75 rate=55.8 amt=265.05 mltrno= | me=2 cobf=B L=3.9 rate=56.1 amt=218.79 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-16 (2 rows) -> me=1 cobf=B L=4.15 rate=56.4 amt=234.06 mltrno= | me=2 cobf=B L=3.15 rate=56.4 amt=177.66 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-17 (2 rows) -> me=1 cobf=B L=4.35 rate=55.8 amt=242.73 mltrno= | me=2 cobf=B L=3.6 rate=49.1 amt=176.76 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-18 (2 rows) -> me=2 cobf=B L=3.4 rate=49.1 amt=166.94 mltrno= | me=1 cobf=B L=4.55 rate=56.4 amt=256.62 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-19 (2 rows) -> me=2 cobf=B L=3.65 rate=49.1 amt=179.22 mltrno= | me=1 cobf=B L=4.7 rate=56.7 amt=266.49 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-20 (2 rows) -> me=1 cobf=B L=4.8 rate=59.1 amt=283.68 mltrno= | me=2 cobf=B L=3.8 rate=56.1 amt=213.18 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-21 (2 rows) -> me=2 cobf=B L=3.75 rate=55.8 amt=209.25 mltrno= | me=1 cobf=B L=4.4 rate=55.8 amt=245.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-22 (2 rows) -> me=1 cobf=B L=4.75 rate=55.8 amt=265.05 mltrno= | me=2 cobf=B L=3.8 rate=55.8 amt=212.04 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-23 (2 rows) -> me=2 cobf=B L=3.9 rate=55.8 amt=217.62 mltrno= | me=1 cobf=B L=4.5 rate=58.5 amt=263.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-24 (2 rows) -> me=2 cobf=B L=3.65 rate=57.0 amt=208.05 mltrno= | me=1 cobf=B L=4.6 rate=56.7 amt=260.82 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-25 (2 rows) -> me=2 cobf=B L=3.5 rate=57.0 amt=199.5 mltrno= | me=1 cobf=B L=4.5 rate=56.4 amt=253.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-26 (2 rows) -> me=1 cobf=B L=4.45 rate=58.8 amt=261.66 mltrno= | me=2 cobf=B L=3.7 rate=56.7 amt=209.79 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-27 (2 rows) -> me=2 cobf=B L=3.55 rate=56.7 amt=201.29 mltrno= | me=1 cobf=B L=4.6 rate=56.7 amt=260.82 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-28 (2 rows) -> me=1 cobf=B L=4.5 rate=56.7 amt=255.15 mltrno= | me=2 cobf=B L=3.6 rate=57.0 amt=205.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-29 (2 rows) -> me=1 cobf=B L=4.55 rate=58.5 amt=266.18 mltrno= | me=2 cobf=B L=4.45 rate=56.4 amt=250.98 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-09-30 (2 rows) -> me=2 cobf=B L=5.25 rate=56.4 amt=296.1 mltrno= | me=1 cobf=B L=6.05 rate=56.4 amt=341.22 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-01 (2 rows) -> me=1 cobf=B L=6.25 rate=55.8 amt=348.75 mltrno= | me=2 cobf=B L=6.65 rate=62.1 amt=412.97 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-02 (2 rows) -> me=1 cobf=B L=6.95 rate=58.8 amt=408.66 mltrno= | me=2 cobf=B L=5.6 rate=56.4 amt=315.84 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-03 (2 rows) -> me=2 cobf=B L=6.05 rate=61.8 amt=373.89 mltrno= | me=1 cobf=B L=7.25 rate=59.1 amt=428.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-04 (2 rows) -> me=1 cobf=B L=6.95 rate=58.5 amt=406.58 mltrno= | me=2 cobf=B L=5.8 rate=55.8 amt=323.64 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-05 (2 rows) -> me=1 cobf=B L=8.0 rate=56.4 amt=451.2 mltrno= | me=2 cobf=B L=5.8 rate=48.8 amt=283.04 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-06 (2 rows) -> me=2 cobf=B L=6.0 rate=55.8 amt=334.8 mltrno= | me=1 cobf=B L=7.3 rate=55.8 amt=407.34 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-07 (2 rows) -> me=2 cobf=B L=5.15 rate=55.8 amt=287.37 mltrno= | me=1 cobf=B L=7.75 rate=48.8 amt=378.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-08 (2 rows) -> me=1 cobf=B L=7.5 rate=55.8 amt=418.5 mltrno= | me=2 cobf=B L=5.5 rate=49.1 amt=270.05 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-09 (2 rows) -> me=1 cobf=B L=8.0 rate=59.1 amt=472.8 mltrno= | me=2 cobf=B L=3.15 rate=48.5 amt=152.78 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-10 (2 rows) -> me=1 cobf=B L=9.15 rate=55.8 amt=510.57 mltrno= | me=2 cobf=B L=5.6 rate=55.8 amt=312.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-11 (2 rows) -> me=1 cobf=B L=8.5 rate=49.4 amt=419.9 mltrno= | me=2 cobf=B L=5.2 rate=49.1 amt=255.32 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-12 (2 rows) -> me=1 cobf=B L=8.65 rate=59.7 amt=516.41 mltrno= | me=2 cobf=B L=5.35 rate=48.5 amt=259.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-13 (2 rows) -> me=1 cobf=B L=8.85 rate=59.4 amt=525.69 mltrno= | me=2 cobf=B L=5.5 rate=48.8 amt=268.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-14 (2 rows) -> me=2 cobf=B L=5.2 rate=48.5 amt=252.2 mltrno= | me=1 cobf=B L=8.5 rate=56.1 amt=476.85 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-15 (2 rows) -> me=2 cobf=B L=5.6 rate=55.8 amt=312.48 mltrno= | me=1 cobf=B L=9.65 rate=58.5 amt=564.53 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-16 (2 rows) -> me=1 cobf=B L=8.8 rate=56.4 amt=496.32 mltrno= | me=2 cobf=B L=5.8 rate=49.1 amt=284.78 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-17 (2 rows) -> me=2 cobf=B L=2.65 rate=49.4 amt=130.91 mltrno= | me=1 cobf=B L=9.25 rate=55.8 amt=516.15 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-18 (2 rows) -> me=2 cobf=B L=6.0 rate=59.1 amt=354.6 mltrno= | me=1 cobf=B L=8.5 rate=55.8 amt=474.3 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-19 (2 rows) -> me=1 cobf=B L=6.25 rate=56.7 amt=354.38 mltrno= | me=2 cobf=B L=6.15 rate=55.8 amt=343.17 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-20 (2 rows) -> me=1 cobf=B L=5.95 rate=56.7 amt=337.37 mltrno= | me=2 cobf=B L=6.0 rate=55.8 amt=334.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-21 (2 rows) -> me=2 cobf=B L=6.6 rate=55.8 amt=368.28 mltrno= | me=1 cobf=B L=6.2 rate=56.4 amt=349.68 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-22 (2 rows) -> me=2 cobf=B L=6.15 rate=55.8 amt=343.17 mltrno= | me=1 cobf=B L=5.85 rate=55.8 amt=326.43 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-23 (2 rows) -> me=1 cobf=B L=5.45 rate=58.5 amt=318.83 mltrno= | me=2 cobf=B L=5.6 rate=56.4 amt=315.84 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-24 (2 rows) -> me=2 cobf=B L=6.3 rate=56.1 amt=353.43 mltrno= | me=1 cobf=B L=5.6 rate=56.1 amt=314.16 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-25 (2 rows) -> me=1 cobf=B L=5.85 rate=56.4 amt=329.94 mltrno= | me=2 cobf=B L=6.35 rate=60.0 amt=381.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-26 (2 rows) -> me=2 cobf=B L=6.3 rate=48.5 amt=305.55 mltrno= | me=1 cobf=B L=5.6 rate=55.8 amt=312.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-27 (2 rows) -> me=1 cobf=B L=5.6 rate=55.8 amt=312.48 mltrno= | me=2 cobf=B L=6.35 rate=55.8 amt=354.33 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-28 (2 rows) -> me=1 cobf=B L=5.55 rate=56.1 amt=311.36 mltrno= | me=2 cobf=B L=6.7 rate=55.8 amt=373.86 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-29 (2 rows) -> me=1 cobf=B L=5.15 rate=55.8 amt=287.37 mltrno= | me=2 cobf=B L=6.95 rate=55.8 amt=387.81 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-10-30 (2 rows) -> me=2 cobf=B L=5.4 rate=49.1 amt=265.14 mltrno= | me=1 cobf=B L=5.6 rate=56.7 amt=317.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-01 (2 rows) -> me=1 cobf=B L=5.05 rate=49.8 amt=251.49 mltrno= | me=2 cobf=B L=6.1 rate=58.0 amt=353.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-02 (2 rows) -> me=2 cobf=B L=6.2 rate=56.8 amt=352.16 mltrno= | me=1 cobf=B L=4.75 rate=57.4 amt=272.65 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-03 (2 rows) -> me=2 cobf=B L=6.8 rate=57.4 amt=390.32 mltrno= | me=1 cobf=B L=4.5 rate=56.8 amt=255.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-04 (2 rows) -> me=2 cobf=B L=6.75 rate=56.8 amt=383.4 mltrno= | me=1 cobf=B L=3.8 rate=56.8 amt=215.84 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-05 (2 rows) -> me=1 cobf=B L=4.75 rate=57.4 amt=272.65 mltrno= | me=2 cobf=B L=5.3 rate=56.8 amt=301.04 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-06 (2 rows) -> me=1 cobf=B L=4.5 rate=57.1 amt=256.95 mltrno= | me=2 cobf=B L=5.75 rate=56.8 amt=326.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-07 (2 rows) -> me=2 cobf=B L=5.9 rate=49.8 amt=293.82 mltrno= | me=1 cobf=B L=4.65 rate=56.8 amt=264.12 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-08 (2 rows) -> me=1 cobf=B L=4.75 rate=57.1 amt=271.23 mltrno= | me=2 cobf=B L=5.7 rate=56.8 amt=323.76 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-09 (2 rows) -> me=2 cobf=B L=5.8 rate=56.8 amt=329.44 mltrno= | me=1 cobf=B L=4.6 rate=57.4 amt=264.04 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-10 (2 rows) -> me=1 cobf=B L=4.6 rate=57.1 amt=262.66 mltrno= | me=2 cobf=B L=6.4 rate=56.8 amt=363.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-11 (2 rows) -> me=2 cobf=B L=6.4 rate=56.8 amt=363.52 mltrno= | me=1 cobf=B L=4.25 rate=57.4 amt=243.95 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-12 (2 rows) -> me=1 cobf=B L=4.0 rate=56.8 amt=227.2 mltrno= | me=2 cobf=B L=6.45 rate=56.8 amt=366.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-13 (2 rows) -> me=2 cobf=B L=6.0 rate=56.8 amt=340.8 mltrno= | me=1 cobf=B L=3.8 rate=57.1 amt=216.98 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-14 (2 rows) -> me=1 cobf=B L=4.75 rate=56.8 amt=269.8 mltrno= | me=2 cobf=B L=6.1 rate=57.1 amt=348.31 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-15 (2 rows) -> me=2 cobf=B L=6.1 rate=57.7 amt=351.97 mltrno= | me=1 cobf=B L=4.5 rate=56.8 amt=255.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-16 (2 rows) -> me=1 cobf=B L=4.35 rate=56.8 amt=247.08 mltrno= | me=2 cobf=B L=6.2 rate=57.1 amt=354.02 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-17 (2 rows) -> me=2 cobf=B L=6.2 rate=57.7 amt=357.74 mltrno= | me=1 cobf=B L=4.65 rate=56.8 amt=264.12 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-18 (2 rows) -> me=2 cobf=B L=5.6 rate=58.0 amt=324.8 mltrno= | me=1 cobf=B L=3.35 rate=56.8 amt=190.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-19 (2 rows) -> me=2 cobf=B L=5.85 rate=56.8 amt=332.28 mltrno= | me=1 cobf=B L=4.25 rate=57.7 amt=245.23 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-20 (2 rows) -> me=1 cobf=B L=4.05 rate=49.5 amt=200.48 mltrno= | me=2 cobf=B L=5.8 rate=56.8 amt=329.44 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-21 (2 rows) -> me=1 cobf=B L=3.95 rate=56.8 amt=224.36 mltrno= | me=2 cobf=B L=4.8 rate=56.8 amt=272.64 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-22 (2 rows) -> me=2 cobf=B L=5.3 rate=56.8 amt=301.04 mltrno= | me=1 cobf=B L=3.6 rate=56.8 amt=204.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-23 (2 rows) -> me=1 cobf=B L=6.1 rate=56.8 amt=346.48 mltrno= | me=2 cobf=B L=7.05 rate=57.1 amt=402.56 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-24 (2 rows) -> me=1 cobf=B L=7.05 rate=56.8 amt=400.44 mltrno= | me=2 cobf=B L=7.65 rate=60.1 amt=459.77 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-25 (2 rows) -> me=1 cobf=B L=6.1 rate=56.8 amt=346.48 mltrno= | me=2 cobf=B L=7.85 rate=60.4 amt=474.14 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-26 (2 rows) -> me=1 cobf=B L=6.65 rate=56.8 amt=377.72 mltrno= | me=2 cobf=B L=7.45 rate=57.1 amt=425.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-27 (2 rows) -> me=1 cobf=B L=6.3 rate=56.8 amt=357.84 mltrno= | me=2 cobf=B L=8.75 rate=56.8 amt=497.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-28 (2 rows) -> me=2 cobf=B L=8.55 rate=56.8 amt=485.64 mltrno= | me=1 cobf=B L=8.25 rate=56.8 amt=468.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-29 (2 rows) -> me=2 cobf=B L=9.2 rate=56.8 amt=522.56 mltrno= | me=1 cobf=B L=8.55 rate=56.8 amt=485.64 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-11-30 (2 rows) -> me=1 cobf=B L=8.95 rate=45.5 amt=407.23 mltrno= | me=2 cobf=B L=8.9 rate=56.8 amt=505.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-01 (2 rows) -> me=1 cobf=B L=9.55 rate=49.5 amt=472.73 mltrno= | me=2 cobf=B L=8.35 rate=49.5 amt=413.33 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-02 (2 rows) -> me=2 cobf=B L=8.75 rate=50.4 amt=441.0 mltrno= | me=1 cobf=B L=9.6 rate=49.5 amt=475.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-03 (2 rows) -> me=2 cobf=B L=10.05 rate=54.8 amt=550.74 mltrno= | me=1 cobf=B L=10.0 rate=49.5 amt=495.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-04 (2 rows) -> me=1 cobf=B L=9.3 rate=47.6 amt=442.68 mltrno= | me=2 cobf=B L=8.85 rate=47.8 amt=423.03 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-05 (2 rows) -> me=2 cobf=B L=8.85 rate=56.8 amt=502.68 mltrno= | me=1 cobf=B L=9.5 rate=47.5 amt=451.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-06 (2 rows) -> me=2 cobf=B L=8.8 rate=47.8 amt=420.64 mltrno= | me=1 cobf=B L=9.6 rate=47.5 amt=456.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-07 (2 rows) -> me=1 cobf=B L=10.0 rate=54.8 amt=548.0 mltrno= | me=2 cobf=B L=9.35 rate=47.8 amt=446.93 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-08 (2 rows) -> me=2 cobf=B L=6.4 rate=47.5 amt=304.0 mltrno= | me=1 cobf=B L=9.65 rate=47.5 amt=458.38 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-09 (2 rows) -> me=2 cobf=B L=8.35 rate=54.8 amt=457.58 mltrno= | me=1 cobf=B L=12.45 rate=47.8 amt=595.11 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-10 (2 rows) -> me=2 cobf=B L=8.17 rate=55.1 amt=450.17 mltrno= | me=1 cobf=B L=9.8 rate=50.1 amt=490.98 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-11 (2 rows) -> me=2 cobf=B L=9.5 rate=57.4 amt=545.3 mltrno= | me=1 cobf=B L=9.98 rate=50.1 amt=500.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-12 (2 rows) -> me=2 cobf=B L=8.75 rate=49.5 amt=433.13 mltrno= | me=1 cobf=B L=9.4 rate=57.1 amt=536.74 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-13 (2 rows) -> me=2 cobf=B L=8.9 rate=55.4 amt=493.06 mltrno= | me=1 cobf=B L=11.0 rate=58.1 amt=639.1 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-14 (2 rows) -> me=1 cobf=B L=10.0 rate=56.8 amt=568.0 mltrno= | me=2 cobf=B L=8.35 rate=54.8 amt=457.58 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-15 (2 rows) -> me=1 cobf=B L=10.1 rate=56.8 amt=573.68 mltrno= | me=2 cobf=B L=8.4 rate=55.4 amt=465.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-16 (2 rows) -> me=1 cobf=B L=11.05 rate=57.1 amt=630.96 mltrno= | me=2 cobf=B L=9.35 rate=47.8 amt=446.93 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-17 (2 rows) -> me=2 cobf=B L=9.95 rate=50.7 amt=504.47 mltrno= | me=1 cobf=B L=10.85 rate=48.4 amt=525.14 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-18 (2 rows) -> me=1 cobf=B L=10.7 rate=54.8 amt=586.36 mltrno= | me=2 cobf=B L=9.35 rate=56.8 amt=531.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-19 (2 rows) -> me=1 cobf=B L=10.7 rate=50.7 amt=542.49 mltrno= | me=2 cobf=B L=9.8 rate=50.1 amt=490.98 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-20 (2 rows) -> me=1 cobf=B L=10.55 rate=48.4 amt=510.62 mltrno= | me=2 cobf=B L=9.6 rate=54.8 amt=526.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-21 (2 rows) -> me=2 cobf=B L=10.0 rate=57.1 amt=571.0 mltrno= | me=1 cobf=B L=10.45 rate=48.1 amt=502.64 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-22 (2 rows) -> me=2 cobf=B L=9.45 rate=56.8 amt=536.76 mltrno= | me=1 cobf=B L=10.5 rate=50.4 amt=529.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-23 (2 rows) -> me=2 cobf=B L=9.65 rate=57.1 amt=551.02 mltrno= | me=1 cobf=B L=10.65 rate=56.0 amt=596.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-24 (2 rows) -> me=1 cobf=B L=10.95 rate=56.8 amt=621.96 mltrno= | me=2 cobf=B L=10.0 rate=33.5 amt=335.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-25 (2 rows) -> me=2 cobf=B L=9.3 rate=56.8 amt=528.24 mltrno= | me=1 cobf=B L=10.85 rate=50.1 amt=543.59 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-26 (2 rows) -> me=1 cobf=B L=10.65 rate=56.8 amt=604.92 mltrno= | me=2 cobf=B L=9.65 rate=66.7 amt=643.66 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-27 (2 rows) -> me=1 cobf=B L=11.0 rate=55.1 amt=606.1 mltrno= | me=2 cobf=B L=9.7 rate=55.1 amt=534.47 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-28 (2 rows) -> me=2 cobf=B L=9.05 rate=54.8 amt=495.94 mltrno= | me=1 cobf=B L=10.45 rate=55.1 amt=575.79 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-29 (2 rows) -> me=1 cobf=B L=11.15 rate=58.0 amt=646.7 mltrno= | me=2 cobf=B L=9.5 rate=57.7 amt=548.15 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-30 (2 rows) -> me=1 cobf=B L=10.9 rate=56.8 amt=619.12 mltrno= | me=2 cobf=B L=9.7 rate=56.8 amt=550.96 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2025-12-31 (2 rows) -> me=2 cobf=B L=10.15 rate=57.1 amt=579.57 mltrno= | me=1 cobf=B L=10.9 rate=50.7 amt=552.63 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-01 (2 rows) -> me=2 cobf=B L=9.7 rate=56.8 amt=550.96 mltrno= | me=1 cobf=B L=10.75 rate=57.4 amt=617.05 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-02 (2 rows) -> me=1 cobf=B L=10.55 rate=57.4 amt=605.57 mltrno= | me=2 cobf=B L=8.95 rate=57.1 amt=511.04 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-03 (2 rows) -> me=2 cobf=B L=9.15 rate=57.1 amt=522.46 mltrno= | me=1 cobf=B L=10.7 rate=57.1 amt=610.97 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-04 (2 rows) -> me=2 cobf=B L=9.25 rate=50.7 amt=468.98 mltrno= | me=1 cobf=B L=10.5 rate=58.0 amt=609.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-05 (2 rows) -> me=2 cobf=B L=9.7 rate=56.8 amt=550.96 mltrno= | me=1 cobf=B L=10.95 rate=56.8 amt=621.96 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-06 (2 rows) -> me=2 cobf=B L=9.35 rate=56.8 amt=531.08 mltrno= | me=1 cobf=B L=10.95 rate=57.1 amt=625.24 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-07 (2 rows) -> me=1 cobf=B L=10.95 rate=50.7 amt=555.16 mltrno= | me=2 cobf=B L=10.15 rate=60.1 amt=610.02 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-08 (2 rows) -> me=1 cobf=B L=10.55 rate=58.0 amt=611.9 mltrno= | me=2 cobf=B L=9.35 rate=56.8 amt=531.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-09 (2 rows) -> me=2 cobf=B L=9.35 rate=59.8 amt=559.13 mltrno= | me=1 cobf=B L=10.45 rate=56.8 amt=593.56 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-10 (2 rows) -> me=1 cobf=B L=9.8 rate=50.7 amt=496.86 mltrno= | me=2 cobf=B L=7.15 rate=61.6 amt=440.44 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-11 (2 rows) -> me=1 cobf=B L=10.5 rate=57.1 amt=599.55 mltrno= | me=2 cobf=B L=8.9 rate=57.7 amt=513.53 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-12 (2 rows) -> me=1 cobf=B L=8.45 rate=60.4 amt=510.38 mltrno= | me=2 cobf=B L=10.45 rate=47.3 amt=494.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-13 (2 rows) -> me=1 cobf=B L=9.65 rate=60.4 amt=582.86 mltrno= | me=2 cobf=B L=7.85 rate=62.2 amt=488.27 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-14 (2 rows) -> me=2 cobf=B L=10.75 rate=56.8 amt=610.6 mltrno= | me=1 cobf=B L=10.45 rate=49.5 amt=517.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-15 (2 rows) -> me=1 cobf=B L=9.8 rate=60.7 amt=594.86 mltrno= | me=2 cobf=B L=9.1 rate=57.4 amt=522.34 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-16 (2 rows) -> me=1 cobf=B L=10.0 rate=57.1 amt=571.0 mltrno= | me=2 cobf=B L=9.1 rate=57.1 amt=519.61 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-17 (2 rows) -> me=1 cobf=B L=10.05 rate=57.7 amt=579.89 mltrno= | me=2 cobf=B L=8.3 rate=57.1 amt=473.93 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-18 (2 rows) -> me=2 cobf=B L=8.9 rate=57.1 amt=508.19 mltrno= | me=1 cobf=B L=10.4 rate=57.1 amt=593.84 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-19 (2 rows) -> me=1 cobf=B L=10.5 rate=56.8 amt=596.4 mltrno= | me=2 cobf=B L=9.5 rate=56.8 amt=539.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-20 (2 rows) -> me=2 cobf=B L=9.1 rate=57.1 amt=519.61 mltrno= | me=1 cobf=B L=10.75 rate=50.7 amt=545.02 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-21 (2 rows) -> me=2 cobf=B L=8.8 rate=56.8 amt=499.84 mltrno= | me=1 cobf=B L=10.15 rate=57.4 amt=582.61 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-22 (2 rows) -> me=1 cobf=B L=10.7 rate=57.1 amt=610.97 mltrno= | me=2 cobf=B L=9.7 rate=59.8 amt=580.06 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-23 (2 rows) -> me=1 cobf=B L=9.55 rate=56.8 amt=542.44 mltrno= | me=2 cobf=B L=8.55 rate=58.0 amt=495.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-24 (2 rows) -> me=1 cobf=B L=9.75 rate=57.4 amt=559.65 mltrno= | me=2 cobf=B L=9.25 rate=57.1 amt=528.18 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-25 (2 rows) -> me=2 cobf=B L=9.75 rate=59.5 amt=580.12 mltrno= | me=1 cobf=B L=5.6 rate=58.0 amt=324.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-26 (2 rows) -> me=2 cobf=B L=9.1 rate=57.1 amt=519.61 mltrno= | me=1 cobf=B L=10.35 rate=59.8 amt=618.93 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-27 (2 rows) -> me=1 cobf=B L=10.05 rate=57.7 amt=579.89 mltrno= | me=2 cobf=B L=9.2 rate=57.7 amt=530.84 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-28 (2 rows) -> me=2 cobf=B L=8.95 rate=57.4 amt=513.73 mltrno= | me=1 cobf=B L=9.7 rate=59.5 amt=577.15 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-29 (2 rows) -> me=2 cobf=B L=8.95 rate=56.8 amt=508.36 mltrno= | me=1 cobf=B L=10.5 rate=56.8 amt=596.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-30 (2 rows) -> me=1 cobf=B L=10.1 rate=57.4 amt=579.74 mltrno= | me=2 cobf=B L=9.1 rate=57.1 amt=519.61 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-01-31 (2 rows) -> me=2 cobf=B L=9.9 rate=57.4 amt=568.26 mltrno= | me=1 cobf=B L=10.05 rate=58.0 amt=582.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-01 (2 rows) -> me=2 cobf=B L=9.15 rate=59.8 amt=547.17 mltrno= | me=1 cobf=B L=9.75 rate=60.4 amt=588.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-02 (2 rows) -> me=2 cobf=B L=9.4 rate=57.1 amt=536.74 mltrno= | me=1 cobf=B L=9.7 rate=59.5 amt=577.15 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-03 (2 rows) -> me=1 cobf=B L=9.45 rate=57.4 amt=542.43 mltrno= | me=2 cobf=B L=9.35 rate=57.1 amt=533.88 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-04 (2 rows) -> me=2 cobf=B L=9.2 rate=57.1 amt=525.32 mltrno= | me=1 cobf=B L=9.6 rate=59.8 amt=574.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-05 (2 rows) -> me=1 cobf=B L=9.7 rate=59.8 amt=580.06 mltrno= | me=2 cobf=B L=9.25 rate=57.7 amt=533.72 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-06 (2 rows) -> me=2 cobf=B L=8.7 rate=57.4 amt=499.38 mltrno= | me=1 cobf=B L=10.45 rate=59.8 amt=624.91 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-07 (2 rows) -> me=1 cobf=B L=10.35 rate=57.1 amt=590.98 mltrno= | me=2 cobf=B L=9.0 rate=60.1 amt=540.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-08 (2 rows) -> me=2 cobf=B L=9.4 rate=57.1 amt=536.74 mltrno= | me=1 cobf=B L=9.2 rate=57.4 amt=528.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-09 (2 rows) -> me=1 cobf=B L=10.6 rate=59.5 amt=630.7 mltrno= | me=2 cobf=B L=9.05 rate=60.1 amt=543.91 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-10 (2 rows) -> me=1 cobf=B L=10.25 rate=57.4 amt=588.35 mltrno= | me=2 cobf=B L=8.65 rate=50.7 amt=438.56 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-11 (2 rows) -> me=2 cobf=B L=8.95 rate=57.4 amt=513.73 mltrno= | me=1 cobf=B L=9.2 rate=58.0 amt=533.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-12 (2 rows) -> me=2 cobf=B L=9.0 rate=50.4 amt=453.6 mltrno= | me=1 cobf=B L=9.2 rate=58.0 amt=533.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-13 (2 rows) -> me=2 cobf=B L=8.3 rate=56.8 amt=471.44 mltrno= | me=1 cobf=B L=9.05 rate=60.1 amt=543.91 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-14 (2 rows) -> me=1 cobf=B L=9.45 rate=57.1 amt=539.6 mltrno= | me=2 cobf=B L=8.25 rate=60.7 amt=500.78 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-15 (2 rows) -> me=1 cobf=B L=8.45 rate=59.8 amt=505.31 mltrno= | me=2 cobf=B L=8.1 rate=56.8 amt=460.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-16 (2 rows) -> me=1 cobf=B L=8.85 rate=58.0 amt=513.3 mltrno= | me=2 cobf=B L=8.1 rate=57.4 amt=464.94 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-17 (2 rows) -> me=1 cobf=B L=8.85 rate=57.1 amt=505.34 mltrno= | me=2 cobf=B L=7.4 rate=56.8 amt=420.32 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-18 (2 rows) -> me=1 cobf=B L=8.6 rate=59.8 amt=514.28 mltrno= | me=2 cobf=B L=7.6 rate=57.7 amt=438.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-19 (2 rows) -> me=1 cobf=B L=8.5 rate=58.0 amt=493.0 mltrno= | me=2 cobf=B L=7.5 rate=58.0 amt=435.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-20 (2 rows) -> me=1 cobf=B L=8.65 rate=60.7 amt=525.06 mltrno= | me=2 cobf=B L=7.7 rate=58.0 amt=446.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-21 (2 rows) -> me=2 cobf=B L=7.95 rate=56.8 amt=451.56 mltrno= | me=1 cobf=B L=8.55 rate=60.4 amt=516.42 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-22 (2 rows) -> me=2 cobf=B L=7.95 rate=56.8 amt=451.56 mltrno= | me=1 cobf=B L=8.05 rate=60.1 amt=483.81 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-23 (2 rows) -> me=1 cobf=B L=8.45 rate=61.0 amt=515.45 mltrno= | me=2 cobf=B L=7.65 rate=56.8 amt=434.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-24 (2 rows) -> me=1 cobf=B L=7.75 rate=57.1 amt=442.52 mltrno= | me=2 cobf=B L=7.8 rate=50.4 amt=393.12 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-25 (2 rows) -> me=2 cobf=B L=7.25 rate=56.8 amt=411.8 mltrno= | me=1 cobf=B L=8.55 rate=57.4 amt=490.77 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-26 (2 rows) -> me=1 cobf=B L=8.4 rate=59.8 amt=502.32 mltrno= | me=2 cobf=B L=7.5 rate=57.1 amt=428.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-27 (2 rows) -> me=1 cobf=B L=8.2 rate=58.0 amt=475.6 mltrno= | me=2 cobf=B L=7.45 rate=56.8 amt=423.16 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-02-28 (2 rows) -> me=1 cobf=B L=8.1 rate=61.0 amt=494.1 mltrno= | me=2 cobf=B L=8.25 rate=57.1 amt=471.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-01 (2 rows) -> me=2 cobf=B L=7.9 rate=56.8 amt=448.72 mltrno= | me=1 cobf=B L=7.9 rate=61.7 amt=487.43 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-02 (2 rows) -> me=2 cobf=B L=8.0 rate=56.8 amt=454.4 mltrno= | me=1 cobf=B L=7.25 rate=59.8 amt=433.55 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-03 (2 rows) -> me=2 cobf=B L=8.15 rate=57.8 amt=471.07 mltrno= | me=1 cobf=B L=8.0 rate=62.3 amt=498.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-04 (2 rows) -> me=2 cobf=B L=8.45 rate=58.4 amt=493.48 mltrno= | me=1 cobf=B L=7.6 rate=58.1 amt=441.56 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-05 (2 rows) -> me=1 cobf=B L=7.65 rate=57.8 amt=442.17 mltrno= | me=2 cobf=B L=7.85 rate=51.7 amt=405.85 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-06 (2 rows) -> me=1 cobf=B L=7.1 rate=61.4 amt=435.94 mltrno= | me=2 cobf=B L=8.85 rate=51.4 amt=454.89 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-07 (2 rows) -> me=2 cobf=B L=8.35 rate=58.1 amt=485.14 mltrno= | me=1 cobf=B L=8.05 rate=59.0 amt=474.95 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-08 (2 rows) -> me=1 cobf=B L=7.95 rate=58.4 amt=464.28 mltrno= | me=2 cobf=B L=8.0 rate=50.5 amt=404.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-09 (2 rows) -> me=1 cobf=B L=8.3 rate=57.8 amt=479.74 mltrno= | me=2 cobf=B L=8.2 rate=51.4 amt=421.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-10 (2 rows) -> me=2 cobf=B L=7.5 rate=51.7 amt=387.75 mltrno= | me=1 cobf=B L=8.85 rate=57.8 amt=511.53 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-11 (2 rows) -> me=1 cobf=B L=8.65 rate=57.8 amt=499.97 mltrno= | me=2 cobf=B L=7.2 rate=50.5 amt=363.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-12 (2 rows) -> me=2 cobf=B L=7.05 rate=48.6 amt=342.63 mltrno= | me=1 cobf=B L=8.75 rate=60.1 amt=525.88 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-13 (2 rows) -> me=2 cobf=B L=7.35 rate=56.8 amt=417.48 mltrno= | me=1 cobf=B L=8.95 rate=57.1 amt=511.04 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-14 (2 rows) -> me=1 cobf=B L=8.3 rate=60.1 amt=498.83 mltrno= | me=2 cobf=B L=8.1 rate=50.1 amt=405.81 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-15 (2 rows) -> me=1 cobf=B L=8.25 rate=57.8 amt=476.85 mltrno= | me=2 cobf=B L=8.4 rate=50.4 amt=423.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-16 (2 rows) -> me=1 cobf=B L=6.05 rate=57.4 amt=347.27 mltrno= | me=2 cobf=B L=7.75 rate=50.5 amt=391.38 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-17 (2 rows) -> me=1 cobf=B L=8.95 rate=58.0 amt=519.1 mltrno= | me=2 cobf=B L=7.3 rate=56.8 amt=414.64 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-18 (2 rows) -> me=1 cobf=B L=8.95 rate=57.1 amt=511.04 mltrno= | me=2 cobf=B L=7.5 rate=50.1 amt=375.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-19 (2 rows) -> me=2 cobf=B L=7.1 rate=59.5 amt=422.45 mltrno= | me=1 cobf=B L=8.45 rate=56.8 amt=479.96 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-20 (2 rows) -> me=1 cobf=B L=9.05 rate=50.7 amt=458.84 mltrno= | me=2 cobf=B L=7.4 rate=50.7 amt=375.18 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-21 (2 rows) -> me=2 cobf=B L=7.5 rate=56.8 amt=426.0 mltrno= | me=1 cobf=B L=9.8 rate=57.4 amt=562.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-22 (2 rows) -> me=1 cobf=B L=9.3 rate=57.1 amt=531.03 mltrno= | me=2 cobf=B L=7.7 rate=56.8 amt=437.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-23 (2 rows) -> me=2 cobf=B L=7.05 rate=58.1 amt=409.6 mltrno= | me=1 cobf=B L=8.55 rate=59.0 amt=504.45 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-24 (2 rows) -> me=2 cobf=B L=6.6 rate=57.8 amt=381.48 mltrno= | me=1 cobf=B L=8.0 rate=58.7 amt=469.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-25 (2 rows) -> me=1 cobf=B L=7.4 rate=60.8 amt=449.92 mltrno= | me=2 cobf=B L=7.3 rate=51.4 amt=375.22 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-26 (2 rows) -> me=1 cobf=B L=8.3 rate=60.5 amt=502.15 mltrno= | me=2 cobf=B L=6.9 rate=57.8 amt=398.82 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-27 (2 rows) -> me=1 cobf=B L=8.6 rate=57.8 amt=497.08 mltrno= | me=2 cobf=B L=7.3 rate=57.8 amt=421.94 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-28 (2 rows) -> me=2 cobf=B L=7.25 rate=57.1 amt=413.98 mltrno= | me=1 cobf=B L=9.25 rate=58.1 amt=537.43 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-29 (2 rows) -> me=2 cobf=B L=7.45 rate=57.8 amt=430.61 mltrno= | me=1 cobf=B L=8.95 rate=57.8 amt=517.31 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-30 (2 rows) -> me=1 cobf=B L=3.0 rate=51.4 amt=154.2 mltrno= | me=2 cobf=B L=7.65 rate=50.7 amt=387.86 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-03-31 (2 rows) -> me=2 cobf=B L=7.2 rate=57.1 amt=411.12 mltrno= | me=1 cobf=B L=8.85 rate=60.1 amt=531.88 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-01 (2 rows) -> me=1 cobf=B L=8.65 rate=61.1 amt=528.52 mltrno= | me=2 cobf=B L=8.0 rate=49.8 amt=398.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-02 (2 rows) -> me=1 cobf=B L=10.65 rate=61.7 amt=657.11 mltrno= | me=2 cobf=B L=9.25 rate=60.8 amt=562.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-03 (2 rows) -> me=2 cobf=B L=10.8 rate=51.4 amt=555.12 mltrno= | me=1 cobf=B L=11.3 rate=57.8 amt=653.14 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-04 (2 rows) -> me=1 cobf=B L=11.95 rate=57.7 amt=689.52 mltrno= | me=2 cobf=B L=10.0 rate=51.1 amt=511.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-05 (2 rows) -> me=2 cobf=B L=7.15 rate=50.5 amt=361.08 mltrno= | me=1 cobf=B L=11.95 rate=58.4 amt=697.88 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-06 (2 rows) -> me=2 cobf=B L=10.15 rate=58.4 amt=592.76 mltrno= | me=1 cobf=B L=14.1 rate=56.8 amt=800.88 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-07 (2 rows) -> me=2 cobf=B L=10.1 rate=58.1 amt=586.81 mltrno= | me=1 cobf=B L=11.5 rate=60.5 amt=695.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-08 (2 rows) -> me=2 cobf=B L=9.9 rate=57.8 amt=572.22 mltrno= | me=1 cobf=B L=11.2 rate=59.8 amt=669.76 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-09 (2 rows) -> me=1 cobf=B L=10.75 rate=58.4 amt=627.8 mltrno= | me=2 cobf=B L=7.15 rate=60.5 amt=432.58 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-10 (2 rows) -> me=2 cobf=B L=11.2 rate=57.8 amt=647.36 mltrno= | me=1 cobf=B L=10.75 rate=57.8 amt=621.35 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-11 (2 rows) -> me=2 cobf=B L=7.15 rate=50.4 amt=360.36 mltrno= | me=1 cobf=B L=10.6 rate=58.1 amt=615.86 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-12 (2 rows) -> me=1 cobf=B L=11.15 rate=57.1 amt=636.67 mltrno= | me=2 cobf=B L=10.5 rate=56.8 amt=596.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-13 (2 rows) -> me=2 cobf=B L=10.6 rate=50.5 amt=535.3 mltrno= | me=1 cobf=B L=1.25 rate=51.4 amt=64.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-14 (2 rows) -> me=1 cobf=B L=11.25 rate=50.5 amt=568.13 mltrno= | me=2 cobf=B L=10.95 rate=50.5 amt=552.98 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-15 (2 rows) -> me=1 cobf=B L=12.65 rate=57.8 amt=731.17 mltrno= | me=2 cobf=B L=9.75 rate=57.8 amt=563.55 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-16 (2 rows) -> me=1 cobf=B L=5.85 rate=57.8 amt=338.13 mltrno= | me=2 cobf=B L=10.5 rate=57.8 amt=606.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-17 (2 rows) -> me=2 cobf=B L=10.1 rate=58.1 amt=586.81 mltrno= | me=1 cobf=B L=11.2 rate=57.8 amt=647.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-18 (2 rows) -> me=1 cobf=B L=10.05 rate=51.4 amt=516.57 mltrno= | me=2 cobf=B L=11.75 rate=50.5 amt=593.38 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-19 (2 rows) -> me=1 cobf=B L=12.45 rate=57.8 amt=719.61 mltrno= | me=2 cobf=B L=10.9 rate=51.1 amt=556.99 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-20 (2 rows) -> me=2 cobf=B L=11.05 rate=50.5 amt=558.03 mltrno= | me=1 cobf=B L=11.7 rate=58.1 amt=679.77 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-21 (2 rows) -> me=1 cobf=B L=12.3 rate=58.1 amt=714.63 mltrno= | me=2 cobf=B L=10.95 rate=51.4 amt=562.83 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-22 (2 rows) -> me=1 cobf=B L=12.45 rate=58.7 amt=730.82 mltrno= | me=2 cobf=B L=10.95 rate=50.5 amt=552.97 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-23 (2 rows) -> me=1 cobf=B L=12.55 rate=58.1 amt=729.16 mltrno= | me=2 cobf=B L=11.3 rate=50.5 amt=570.65 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-24 (2 rows) -> me=1 cobf=B L=13.15 rate=61.4 amt=807.41 mltrno= | me=2 cobf=B L=11.9 rate=51.4 amt=611.66 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-25 (2 rows) -> me=2 cobf=B L=11.0 rate=50.8 amt=558.8 mltrno= | me=1 cobf=B L=13.35 rate=59.0 amt=787.65 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-26 (2 rows) -> me=1 cobf=B L=13.25 rate=57.8 amt=765.85 mltrno= | me=2 cobf=B L=10.85 rate=50.5 amt=547.92 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-27 (2 rows) -> me=2 cobf=B L=9.1 rate=50.5 amt=459.55 mltrno= | me=1 cobf=B L=13.7 rate=57.8 amt=791.86 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-28 (2 rows) -> me=2 cobf=B L=12.8 rate=50.5 amt=646.4 mltrno= | me=1 cobf=B L=14.35 rate=51.7 amt=741.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-29 (2 rows) -> me=1 cobf=B L=12.45 rate=58.4 amt=727.08 mltrno= | me=2 cobf=B L=11.6 rate=57.8 amt=670.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-04-30 (2 rows) -> me=2 cobf=B L=8.95 rate=51.4 amt=460.03 mltrno= | me=1 cobf=B L=12.95 rate=58.4 amt=756.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-01 (2 rows) -> me=1 cobf=B L=14.25 rate=60.5 amt=862.12 mltrno= | me=2 cobf=B L=10.9 rate=51.7 amt=563.53 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-02 (2 rows) -> me=2 cobf=B L=8.55 rate=57.8 amt=494.19 mltrno= | me=1 cobf=B L=12.2 rate=61.4 amt=749.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-03 (2 rows) -> me=2 cobf=B L=7.85 rate=51.1 amt=401.14 mltrno= | me=1 cobf=B L=14.1 rate=57.8 amt=814.98 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-04 (2 rows) -> me=1 cobf=B L=14.05 rate=63.5 amt=892.18 mltrno= | me=2 cobf=B L=10.65 rate=62.0 amt=660.3 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-05 (2 rows) -> me=2 cobf=B L=10.45 rate=57.8 amt=604.01 mltrno= | me=1 cobf=B L=11.7 rate=63.5 amt=742.95 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-06 (2 rows) -> me=1 cobf=B L=11.8 rate=61.4 amt=724.52 mltrno= | me=2 cobf=B L=10.25 rate=58.1 amt=595.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-07 (2 rows) -> me=1 cobf=B L=11.65 rate=58.4 amt=680.36 mltrno= | me=2 cobf=B L=9.6 rate=58.7 amt=563.52 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-08 (2 rows) -> me=1 cobf=B L=11.9 rate=58.1 amt=691.39 mltrno= | me=2 cobf=B L=10.0 rate=57.8 amt=578.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-09 (2 rows) -> me=1 cobf=B L=12.2 rate=62.3 amt=760.06 mltrno= | me=2 cobf=B L=10.3 rate=58.1 amt=598.43 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-10 (2 rows) -> me=2 cobf=B L=10.9 rate=51.4 amt=560.26 mltrno= | me=1 cobf=B L=12.25 rate=63.8 amt=781.55 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-11 (2 rows) -> me=2 cobf=B L=9.45 rate=57.8 amt=546.21 mltrno= | me=1 cobf=B L=11.15 rate=62.3 amt=694.65 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-12 (2 rows) -> me=2 cobf=B L=10.3 rate=58.1 amt=598.43 mltrno= | me=1 cobf=B L=11.6 rate=62.0 amt=719.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-13 (2 rows) -> me=1 cobf=B L=11.65 rate=62.9 amt=732.78 mltrno= | me=2 cobf=B L=10.35 rate=57.8 amt=598.23 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-14 (2 rows) -> me=2 cobf=B L=10.15 rate=57.8 amt=586.67 mltrno= | me=1 cobf=B L=11.75 rate=61.4 amt=721.45 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-15 (2 rows) -> me=2 cobf=B L=9.55 rate=57.8 amt=551.99 mltrno= | me=1 cobf=B L=13.0 rate=60.5 amt=786.5 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-16 (2 rows) -> me=2 cobf=B L=7.85 rate=58.1 amt=456.09 mltrno= | me=1 cobf=B L=12.45 rate=58.4 amt=727.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-17 (2 rows) -> me=2 cobf=B L=9.45 rate=57.8 amt=546.21 mltrno= | me=1 cobf=B L=12.6 rate=62.3 amt=784.98 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-18 (2 rows) -> me=1 cobf=B L=11.9 rate=58.1 amt=691.39 mltrno= | me=2 cobf=B L=7.95 rate=58.1 amt=461.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-19 (2 rows) -> me=1 cobf=B L=14.45 rate=57.8 amt=835.21 mltrno= | me=2 cobf=B L=11.0 rate=61.1 amt=672.1 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-20 (2 rows) -> me=1 cobf=B L=13.0 rate=62.9 amt=817.7 mltrno= | me=2 cobf=B L=10.2 rate=58.4 amt=595.68 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-21 (2 rows) -> me=2 cobf=B L=9.95 rate=57.8 amt=575.11 mltrno= | me=1 cobf=B L=12.0 rate=61.4 amt=736.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-22 (2 rows) -> me=1 cobf=B L=12.25 rate=62.6 amt=766.85 mltrno= | me=2 cobf=B L=8.65 rate=58.1 amt=502.57 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-23 (2 rows) -> me=2 cobf=B L=11.1 rate=57.8 amt=641.58 mltrno= | me=1 cobf=B L=13.4 rate=58.7 amt=786.58 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-24 (2 rows) -> me=2 cobf=B L=10.05 rate=58.4 amt=586.92 mltrno= | me=1 cobf=B L=12.4 rate=61.4 amt=761.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-25 (2 rows) -> me=1 cobf=B L=11.3 rate=58.4 amt=659.92 mltrno= | me=2 cobf=B L=10.7 rate=58.1 amt=621.67 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-26 (2 rows) -> me=2 cobf=B L=10.15 rate=57.8 amt=586.67 mltrno= | me=1 cobf=B L=11.25 rate=63.5 amt=714.38 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-27 (2 rows) -> me=2 cobf=B L=10.85 rate=51.4 amt=557.69 mltrno= | me=1 cobf=B L=10.55 rate=57.8 amt=609.79 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-28 (2 rows) -> me=1 cobf=B L=10.85 rate=57.8 amt=627.13 mltrno= | me=2 cobf=B L=11.0 rate=51.7 amt=568.7 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-29 (2 rows) -> me=2 cobf=B L=10.65 rate=58.1 amt=618.76 mltrno= | me=1 cobf=B L=11.0 rate=58.1 amt=639.1 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-30 (2 rows) -> me=1 cobf=B L=11.1 rate=57.8 amt=641.58 mltrno= | me=2 cobf=B L=10.95 rate=51.4 amt=562.83 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-05-31 (2 rows) -> me=1 cobf=B L=11.2 rate=59.0 amt=660.8 mltrno= | me=2 cobf=B L=10.25 rate=59.0 amt=604.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-01 (2 rows) -> me=2 cobf=B L=10.3 rate=57.8 amt=595.34 mltrno= | me=1 cobf=B L=10.95 rate=57.8 amt=632.91 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-02 (2 rows) -> me=1 cobf=B L=11.7 rate=61.4 amt=718.38 mltrno= | me=2 cobf=B L=9.9 rate=58.1 amt=575.19 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-03 (2 rows) -> me=1 cobf=B L=11.75 rate=62.6 amt=735.55 mltrno= | me=2 cobf=B L=10.1 rate=58.1 amt=586.81 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-04 (2 rows) -> me=2 cobf=B L=10.5 rate=57.8 amt=606.9 mltrno= | me=1 cobf=B L=11.45 rate=62.9 amt=720.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-05 (2 rows) -> me=2 cobf=B L=9.2 rate=58.4 amt=537.28 mltrno= | me=1 cobf=B L=12.3 rate=62.3 amt=766.29 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-06 (2 rows) -> me=2 cobf=B L=8.95 rate=59.0 amt=528.05 mltrno= | me=1 cobf=B L=11.05 rate=63.2 amt=698.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-07 (2 rows) -> me=1 cobf=B L=10.6 rate=64.1 amt=679.46 mltrno= | me=2 cobf=B L=7.3 rate=59.0 amt=430.7 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-08 (2 rows) -> me=2 cobf=B L=8.2 rate=61.1 amt=501.02 mltrno= | me=1 cobf=B L=11.9 rate=65.6 amt=780.64 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-09 (2 rows) -> me=1 cobf=B L=11.6 rate=63.5 amt=736.6 mltrno= | me=2 cobf=B L=9.05 rate=59.0 amt=533.95 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-10 (2 rows) -> me=1 cobf=B L=10.45 rate=60.5 amt=632.22 mltrno= | me=2 cobf=B L=7.65 rate=57.8 amt=442.17 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-11 (2 rows) -> me=2 cobf=B L=6.6 rate=57.8 amt=381.48 mltrno= | me=1 cobf=B L=12.55 rate=58.1 amt=729.16 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-12 (2 rows) -> me=2 cobf=B L=6.45 rate=58.1 amt=374.75 mltrno= | me=1 cobf=B L=12.5 rate=63.5 amt=793.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-13 (2 rows) -> me=2 cobf=B L=6.3 rate=60.5 amt=381.15 mltrno= | me=1 cobf=B L=12.25 rate=64.1 amt=785.23 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-14 (2 rows) -> me=2 cobf=B L=6.75 rate=60.8 amt=410.4 mltrno= | me=1 cobf=B L=11.8 rate=62.6 amt=738.68 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-15 (2 rows) -> me=1 cobf=B L=12.75 rate=60.5 amt=771.38 mltrno= | me=2 cobf=B L=6.5 rate=59.0 amt=383.5 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-16 (2 rows) -> me=1 cobf=B L=11.4 rate=62.0 amt=706.8 mltrno= | me=2 cobf=B L=6.25 rate=58.4 amt=365.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-17 (2 rows) -> me=1 cobf=B L=10.6 rate=62.0 amt=657.2 mltrno= | me=2 cobf=B L=6.9 rate=61.7 amt=425.73 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-18 (2 rows) -> me=1 cobf=B L=10.45 rate=57.8 amt=604.01 mltrno= | me=2 cobf=B L=6.6 rate=57.8 amt=381.48 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-19 (2 rows) -> me=1 cobf=B L=11.1 rate=61.4 amt=681.54 mltrno= | me=2 cobf=B L=6.85 rate=58.1 amt=397.98 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-20 (2 rows) -> me=1 cobf=B L=10.55 rate=62.3 amt=657.26 mltrno= | me=2 cobf=B L=6.4 rate=58.4 amt=373.76 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-21 (2 rows) -> me=2 cobf=B L=6.2 rate=58.4 amt=362.08 mltrno= | me=1 cobf=B L=9.9 rate=57.8 amt=572.22 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-22 (2 rows) -> me=1 cobf=B L=10.8 rate=63.5 amt=685.8 mltrno= | me=2 cobf=B L=6.05 rate=60.5 amt=366.02 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-23 (2 rows) -> me=1 cobf=B L=10.15 rate=64.1 amt=650.62 mltrno= | me=2 cobf=B L=5.55 rate=58.7 amt=325.79 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-24 (2 rows) -> me=2 cobf=B L=5.8 rate=60.1 amt=348.58 mltrno= | me=1 cobf=B L=9.9 rate=62.0 amt=613.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-25 (2 rows) -> me=2 cobf=B L=5.85 rate=56.8 amt=332.28 mltrno= | me=1 cobf=B L=9.45 rate=56.8 amt=536.76 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-26 (2 rows) -> me=1 cobf=B L=9.7 rate=57.1 amt=553.87 mltrno= | me=2 cobf=B L=6.2 rate=56.8 amt=352.16 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-27 (2 rows) -> me=2 cobf=B L=6.15 rate=60.4 amt=371.46 mltrno= | me=1 cobf=B L=8.7 rate=56.8 amt=494.16 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-28 (2 rows) -> me=1 cobf=B L=8.7 rate=60.7 amt=528.09 mltrno= | me=2 cobf=B L=6.0 rate=61.9 amt=371.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-29 (2 rows) -> me=1 cobf=B L=8.45 rate=61.6 amt=520.52 mltrno= | me=2 cobf=B L=6.05 rate=61.6 amt=372.68 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-06-30 (2 rows) -> me=2 cobf=B L=7.1 rate=62.2 amt=441.62 mltrno= | me=1 cobf=B L=7.8 rate=60.7 amt=473.46 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-01 (2 rows) -> me=2 cobf=B L=7.05 rate=61.6 amt=434.28 mltrno= | me=1 cobf=B L=7.1 rate=57.7 amt=409.67 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-02 (2 rows) -> me=1 cobf=B L=8.3 rate=61.0 amt=506.3 mltrno= | me=2 cobf=B L=6.2 rate=61.3 amt=380.06 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-03 (2 rows) -> me=1 cobf=B L=8.5 rate=60.4 amt=513.4 mltrno= | me=2 cobf=B L=6.25 rate=63.4 amt=396.25 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-04 (2 rows) -> me=2 cobf=B L=6.05 rate=64.6 amt=390.83 mltrno= | me=1 cobf=B L=7.45 rate=62.5 amt=465.62 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-05 (2 rows) -> me=1 cobf=B L=7.9 rate=62.5 amt=493.75 mltrno= | me=2 cobf=B L=5.6 rate=61.3 amt=343.28 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-06 (2 rows) -> me=1 cobf=B L=8.05 rate=61.6 amt=495.88 mltrno= | me=2 cobf=B L=5.75 rate=61.0 amt=350.75 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-07 (2 rows) -> me=2 cobf=B L=6.25 rate=62.5 amt=390.62 mltrno= | me=1 cobf=B L=7.9 rate=61.3 amt=484.27 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-08 (2 rows) -> me=1 cobf=B L=7.95 rate=61.0 amt=484.95 mltrno= | me=2 cobf=B L=5.4 rate=57.1 amt=308.34 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-09 (2 rows) -> me=2 cobf=B L=5.4 rate=64.0 amt=345.6 mltrno= | me=1 cobf=B L=8.0 rate=61.3 amt=490.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-10 (2 rows) -> me=2 cobf=B L=6.0 rate=61.9 amt=371.4 mltrno= | me=1 cobf=B L=7.2 rate=61.3 amt=441.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-11 (2 rows) -> me=2 cobf=B L=5.25 rate=60.4 amt=317.1 mltrno= | me=1 cobf=B L=7.4 rate=60.7 amt=449.18 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-12 (2 rows) -> me=2 cobf=B L=5.1 rate=60.4 amt=308.04 mltrno= | me=1 cobf=B L=6.7 rate=57.4 amt=384.58 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-13 (2 rows) -> me=2 cobf=B L=5.4 rate=61.0 amt=329.4 mltrno= | me=1 cobf=B L=7.05 rate=58.0 amt=408.9 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-14 (2 rows) -> me=1 cobf=B L=6.8 rate=59.5 amt=404.6 mltrno= | me=2 cobf=B L=5.6 rate=61.0 amt=341.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-15 (2 rows) -> me=1 cobf=B L=6.3 rate=59.8 amt=376.74 mltrno= | me=2 cobf=B L=5.15 rate=58.0 amt=298.7 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-16 (2 rows) -> me=1 cobf=B L=6.55 rate=57.7 amt=377.94 mltrno= | me=2 cobf=B L=5.2 rate=56.8 amt=295.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-17 (2 rows) -> me=2 cobf=B L=5.75 rate=59.5 amt=342.12 mltrno= | me=1 cobf=B L=6.7 rate=57.7 amt=386.59 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-18 (2 rows) -> me=2 cobf=B L=5.5 rate=61.0 amt=335.5 mltrno= | me=1 cobf=B L=7.0 rate=59.5 amt=416.5 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-19 (2 rows) -> me=1 cobf=B L=6.3 rate=57.1 amt=359.73 mltrno= | me=2 cobf=B L=5.7 rate=57.4 amt=327.18 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-20 (2 rows) -> me=2 cobf=B L=5.55 rate=56.8 amt=315.24 mltrno= | me=1 cobf=B L=7.0 rate=58.0 amt=406.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-21 (2 rows) -> me=2 cobf=B L=5.5 rate=58.0 amt=319.0 mltrno= | me=1 cobf=B L=6.75 rate=59.5 amt=401.62 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-22 (2 rows) -> me=1 cobf=B L=6.5 rate=60.4 amt=392.6 mltrno= | me=2 cobf=B L=5.15 rate=60.4 amt=311.06 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-23 (2 rows) -> me=2 cobf=B L=4.2 rate=57.1 amt=239.82 mltrno= | me=1 cobf=B L=6.55 rate=59.5 amt=389.72 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-24 (2 rows) -> me=2 cobf=B L=4.25 rate=57.1 amt=242.68 mltrno= | me=1 cobf=B L=5.0 rate=56.8 amt=284.0 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-25 (2 rows) -> me=1 cobf=B L=4.25 rate=59.5 amt=252.88 mltrno= | me=2 cobf=B L=3.85 rate=61.0 amt=234.85 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-26 (2 rows) -> me=2 cobf=B L=3.65 rate=61.0 amt=222.65 mltrno= | me=1 cobf=B L=4.75 rate=56.8 amt=269.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-27 (2 rows) -> me=2 cobf=B L=3.55 rate=61.0 amt=216.55 mltrno= | me=1 cobf=B L=4.25 rate=57.1 amt=242.68 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-28 (2 rows) -> me=1 cobf=B L=4.6 rate=59.5 amt=273.7 mltrno= | me=2 cobf=B L=3.5 rate=60.7 amt=212.45 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-29 (2 rows) -> me=2 cobf=B L=3.65 rate=57.4 amt=209.51 mltrno= | me=1 cobf=B L=4.45 rate=56.8 amt=252.76 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-30 (2 rows) -> me=2 cobf=B L=3.8 rate=59.5 amt=226.1 mltrno= | me=1 cobf=B L=4.75 rate=50.7 amt=240.82 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-07-31 (2 rows) -> me=1 cobf=B L=4.55 rate=57.7 amt=262.54 mltrno= | me=2 cobf=B L=3.5 rate=57.1 amt=199.85 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-01 (2 rows) -> me=1 cobf=B L=4.9 rate=56.8 amt=278.32 mltrno= | me=2 cobf=B L=3.4 rate=57.7 amt=196.18 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-02 (2 rows) -> me=1 cobf=B L=4.55 rate=57.1 amt=259.8 mltrno= | me=2 cobf=B L=3.7 rate=57.1 amt=211.27 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-03 (1 rows) -> me=1 cobf=B L=4.4 rate=50.1 amt=220.44 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-04 (2 rows) -> me=1 cobf=B L=7.1 rate=56.8 amt=403.28 mltrno= | me=2 cobf=B L=3.2 rate=64.6 amt=206.72 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-05 (2 rows) -> me=2 cobf=B L=3.15 rate=56.8 amt=178.92 mltrno= | me=1 cobf=B L=4.0 rate=56.8 amt=227.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-06 (1 rows) -> me=1 cobf=B L=4.0 rate=50.4 amt=201.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-07 (2 rows) -> me=2 cobf=B L=3.65 rate=63.7 amt=232.5 mltrno= | me=1 cobf=B L=7.0 rate=56.8 amt=397.6 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-08 (2 rows) -> me=2 cobf=B L=3.3 rate=59.5 amt=196.35 mltrno= | me=1 cobf=B L=4.2 rate=57.4 amt=241.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-09 (2 rows) -> me=2 cobf=B L=3.9 rate=56.8 amt=221.52 mltrno= | me=1 cobf=B L=3.95 rate=56.8 amt=224.36 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-10 (2 rows) -> me=1 cobf=B L=4.3 rate=56.8 amt=244.24 mltrno= | me=2 cobf=B L=3.7 rate=57.1 amt=211.27 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-11 (2 rows) -> me=2 cobf=B L=3.85 rate=59.3 amt=228.31 mltrno= | me=1 cobf=B L=4.3 rate=59.3 amt=254.99 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-12 (2 rows) -> me=1 cobf=B L=4.6 rate=56.8 amt=261.28 mltrno= | me=2 cobf=B L=3.5 rate=56.8 amt=198.8 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-13 (2 rows) -> me=1 cobf=B L=4.5 rate=57.1 amt=256.95 mltrno= | me=2 cobf=B L=3.5 rate=60.4 amt=211.4 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-14 (2 rows) -> me=2 cobf=B L=3.6 rate=62.9 amt=226.44 mltrno= | me=1 cobf=B L=4.15 rate=57.1 amt=236.97 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-15 (2 rows) -> me=1 cobf=B L=4.05 rate=59.5 amt=240.98 mltrno= | me=2 cobf=B L=3.3 rate=59.5 amt=196.35 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-16 (2 rows) -> me=2 cobf=B L=3.5 rate=59.3 amt=207.55 mltrno= | me=1 cobf=B L=4.0 rate=59.3 amt=237.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-17 (2 rows) -> me=1 cobf=B L=4.4 rate=59.9 amt=263.56 mltrno= | me=2 cobf=B L=3.5 rate=62.6 amt=219.1 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-18 (2 rows) -> me=2 cobf=B L=3.45 rate=59.3 amt=204.59 mltrno= | me=1 cobf=B L=4.35 rate=56.8 amt=247.08 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-19 (2 rows) -> me=2 cobf=B L=3.45 rate=59.5 amt=205.28 mltrno= | me=1 cobf=B L=4.3 rate=57.1 amt=245.53 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-20 (2 rows) -> me=1 cobf=B L=4.3 rate=60.5 amt=260.15 mltrno= | me=2 cobf=B L=4.0 rate=59.3 amt=237.2 mltrno=
+I/flutter (12561): PassbookAudit [incoming-full]: 2026-08-21 (1 rows) -> me=1 cobf=B L=4.3 rate=57.1 amt=245.53 mltrno=
+I/flutter (12561): ApiService [glms]: Full sync — 3 accounts.
+I/flutter (12561): ApiService [bill_transactions]: FULL sync — incoming=47 cached=47 total=47 url=https://api.winsoftsc.com/api/Billtrans/allbilltrans?soccode=1565&MembCode=386
+I/flutter (12561): ApiService [deductions]: FULL sync — incoming=92 cached=92 total=92 url=https://api.winsoftsc.com/api/Dedentry/ded?soccode=1565&membcode=386
+I/flutter (12561): ApiService [passbook]: FULL sync — incoming=769 cached=769 total=769 url=https://api.winsoftsc.com/api/passbook/list?socitycode=1565&memcode=386
+I/flutter (12561): PassbookAudit [after-full]: totalRows=769
+I/flutter (12561): PassbookAudit [after-full]: first dt=01/01/2026 me=1 cobf=B L=10.75 fat=6.7 rate=57.4 amt=617.05 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [after-full]: first dt=01/01/2026 me=2 cobf=B L=9.7 fat=6.5 rate=56.8 amt=550.96 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [after-full]: first dt=01/02/2026 me=1 cobf=B L=9.75 fat=7.3 rate=60.4 amt=588.9 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [after-full]: last dt=31/12/2025 me=2 cobf=B L=10.15 fat=6.6 rate=57.1 amt=579.57 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [after-full]: last dt=31/12/2025 me=1 cobf=B L=10.9 fat=6.4 rate=50.7 amt=552.63 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [after-full]: last dt=31/07/2026 me=2 cobf=B L=3.5 fat=6.6 rate=57.1 amt=199.85 mltrno= milksrno=
+I/flutter (12561): ApiService [ledger-cache]: after_save key=ledger_all_1565_386 memoryRows=248 diskRows=248 diskMatch=true jsonBytes=23811 setStringOk=true
+I/flutter (12561): ApiService [ledger]: FULL sync — incoming=248 cached=248 total=248 url=https://api.winsoftsc.com/api/Acctrn/ledger?sbaccno=386&socitycode=1565
+I/flutter (12561): ApiService [passbook]: CACHE-ONLY — skipping network (cached=769, maxDate=2026-08-21 00:00:00.000).
+I/flutter (12561): PassbookAudit [cache-only]: totalRows=769
+I/flutter (12561): PassbookAudit [cache-only]: first dt=01/01/2026 me=1 cobf=B L=10.75 fat=6.7 rate=57.4 amt=617.05 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: first dt=01/01/2026 me=2 cobf=B L=9.7 fat=6.5 rate=56.8 amt=550.96 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: first dt=01/02/2026 me=1 cobf=B L=9.75 fat=7.3 rate=60.4 amt=588.9 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: last dt=31/12/2025 me=2 cobf=B L=10.15 fat=6.6 rate=57.1 amt=579.57 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: last dt=31/12/2025 me=1 cobf=B L=10.9 fat=6.4 rate=50.7 amt=552.63 mltrno= milksrno=
+I/flutter (12561): PassbookAudit [cache-only]: last dt=31/07/2026 me=2 cobf=B L=3.5 fat=6.6 rate=57.1 amt=199.85 mltrno= milksrno=
+I/flutter (12561): ApiService [bill_transactions]: CACHE-ONLY — skipping network (cached=47, maxDate=2026-08-21 00:00:00.000).
+W/WindowOnBackDispatcher(12561): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher(12561): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+I/flutter (12561): ApiService [passbook]: NETWORK FULL — forceRefresh=true fullFetchOnly=true cached=769
+I/flutter (12561): ApiService [passbook]: Full fetch returned EMPTY — cache NOT updated (still 769 rows). key=passbook_1565_386 forceRefresh=true
+I/flutter (12561): ApiService [passbook]: FULL-FETCH-FALLBACK — empty API body, returning cached=769 rows.
+I/flutter (12561): ApiService [deductions]: NETWORK FULL — forceRefresh=true fullFetchOnly=true cached=92
+I/flutter (12561): ApiService [deductions]: Full fetch returned EMPTY — cache NOT updated (still 92 rows). key=deductions_1565_386 forceRefresh=true
+I/flutter (12561): ApiService [deductions]: FULL-FETCH-FALLBACK — empty API body, returning cached=92 rows.
+I/flutter (12561): BillAudit [generate]: billNo=14 2026-08-11..2026-08-20 passbookRows=20
+I/flutter (12561): BillAudit [generate]: 2026-08-11 (2 raw rows) -> me=2 cobf=B L=3.85 rate=59.3 amt=228.31 | me=1 cobf=B L=4.3 rate=59.3 amt=254.99
+I/flutter (12561): BillAudit [generate]: 2026-08-12 (2 raw rows) -> me=1 cobf=B L=4.6 rate=56.8 amt=261.28 | me=2 cobf=B L=3.5 rate=56.8 amt=198.8
+I/flutter (12561): BillAudit [generate]: 2026-08-13 (2 raw rows) -> me=1 cobf=B L=4.5 rate=57.1 amt=256.95 | me=2 cobf=B L=3.5 rate=60.4 amt=211.4
+I/flutter (12561): BillAudit [generate]: 2026-08-14 (2 raw rows) -> me=2 cobf=B L=3.6 rate=62.9 amt=226.44 | me=1 cobf=B L=4.15 rate=57.1 amt=236.97
+I/flutter (12561): BillAudit [generate]: 2026-08-15 (2 raw rows) -> me=1 cobf=B L=4.05 rate=59.5 amt=240.98 | me=2 cobf=B L=3.3 rate=59.5 amt=196.35
+I/flutter (12561): BillAudit [generate]: 2026-08-16 (2 raw rows) -> me=2 cobf=B L=3.5 rate=59.3 amt=207.55 | me=1 cobf=B L=4.0 rate=59.3 amt=237.2
+I/flutter (12561): BillAudit [generate]: 2026-08-17 (2 raw rows) -> me=1 cobf=B L=4.4 rate=59.9 amt=263.56 | me=2 cobf=B L=3.5 rate=62.6 amt=219.1
+I/flutter (12561): BillAudit [generate]: 2026-08-18 (2 raw rows) -> me=2 cobf=B L=3.45 rate=59.3 amt=204.59 | me=1 cobf=B L=4.35 rate=56.8 amt=247.08
+I/flutter (12561): BillAudit [generate]: 2026-08-19 (2 raw rows) -> me=2 cobf=B L=3.45 rate=59.5 amt=205.28 | me=1 cobf=B L=4.3 rate=57.1 amt=245.53
+I/flutter (12561): BillAudit [generate]: 2026-08-20 (2 raw rows) -> me=1 cobf=B L=4.3 rate=60.5 amt=260.15 | me=2 cobf=B L=4.0 rate=59.3 amt=237.2

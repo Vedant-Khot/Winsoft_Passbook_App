@@ -1,0 +1,96 @@
+
+****************************Milk Passbook ****************************
+Passbook Code Path : C:\WINSOFT\MAUI\.net8\Passbook
+
+
+
+*******Registration of Dairy for passbook*******
+
+1.Open PassbookAdmin.exe > click new button > Enter Details of Customer 
+
+soc_code       : Unique code given to that society (first 4 digites of Licence No in KeyGen)
+Soc_Name     : Name Of Society
+lancode          : 1 = English, 2 = Marathi, 3 = Kannada, 4 = marathi font and English numbers
+status              : 1 = On (InUse), 2 = Off(Not InUse)
+BillType          : 1 = Passbook Only, 2 = Passbook and Bill, 3 = Passbook ,bill and Bill Summery
+ExpireDate     : App Will Stop Updating After ExpireDate is Over
+Password       : Password to login in Milk Transfer exe.
+ReportType    : 1 = Cow/Buffalo separate bill, 2 = Cow/Buffalo Combine Bill
+Dairy Type      : 1 = Small Dairy, 2 = DockSystem
+ActiveDate      : Allow to Transfer Data after ActiveDate date
+SystemDdate : Registration Date of society
+Appstring       : contains value (1,2,3,4,5)
+			1 = Passbook
+			2 = Dairy Admin apk
+			3 = Collection Apk
+			4 = Ledger 
+			5 = Milk Sale
+2.Click register to Register
+
+
+**********TO Conform Registration *******
+
+Go To Linux Postgresql > Milk1 Database> Open Society Table and Check Society Record
+
+
+
+
+
+
+************************************Start Milk Passbook Apk *****************************************************
+
+1. Milk Transfer Login : 
+	User Name : Enter Dairy Code
+	Password   : Enter Password from socity table (Default : 123)
+	API              : http://103.102.144.180:2002/api/User/login
+	--note : Check Username and password from society table 
+
+2.Update Member master
+
+	Open MilkTransfer.exe > Click on Member button > it shows success message
+	API 	: http://103.102.144.180:2002/api/Member
+	--Check members in Member Table of that society
+
+-----------------------------------------Transfer MilkCollection to server----------------------------------------
+
+	Select From and To Date in milk transfer set time and milktype and click to submit button
+	API	: http://103.102.144.180:2002/api/Milktrn
+	--open MilkTrn Table to check data transfer or not
+
+3. Passbook App Login (mobile) : 
+	User Name : Enter Dairy Code
+	Password  : Enter Mobile No From Member Table 
+	API              : http://103.102.144.180:2002/api/passbook/meminfo
+	
+4.passbook 
+	API 	:http://103.102.144.180:2002/api/passbook/list?memcode= &socitycode= 
+	-- Get Passbook data from milktrn of logged in member's member code and society code
+
+----------------------------------------------Bill Upload --------------------------------------------------
+
+	Select Bill Period from milk transfer exe and click submit
+	API for Deduction	: http://103.102.144.180:2002/api/Dedentry     --Check to dedentry table
+	API for Bill	: http://103.102.144.180:2002/api/Billtrans	--Check to billtrans table
+	
+5.Bill Details
+	Click on  three dash at top right corner and select bill 
+	it show data from milktrn , deductionentry, milkbill
+	API for deduction data 	: http://103.102.144.180:2002/api/Dedentry/ded?soccode= &membcode=
+	API for Bill Data		:http://103.102.144.180:2002/api/Billtrans/allbilltrans?soccode= &MembCode= 
+	
+
+---------------------------------------------------Ledger Upload ---------------------------------------------
+
+
+	Click on Account tab, select from and to date 
+	API For Glms	: http://103.102.144.180:2002/api/Glms
+	API For acctrn	: http://103.102.144.180:2002/api/Acctrn
+
+6. Ledger Report
+	Click on  three dash at top right corner and select ledger
+	it show data from  glms (Account Name) ,  acctrn(Data)
+	API For glms	: http://103.102.144.180:2002/api/Glms/list?socitycode= 
+	API for acctrn	: http://103.102.144.180:2002/api/Acctrn/ledger?sbaccno= &socitycode= 
+
+
+
