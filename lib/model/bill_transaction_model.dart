@@ -36,7 +36,7 @@ class BillTransactionModel {
   // --- NEW, MORE ROBUST fromJson FACTORY ---
   factory BillTransactionModel.fromJson(Map<String, dynamic> json) {
     /// A flexible date parser that tries multiple formats.
-    DateTime? _parseDateFlexible(String? dateString) {
+    DateTime? parseDateFlexible(String? dateString) {
       if (dateString == null || dateString.isEmpty) {
         return null;
       }
@@ -73,9 +73,9 @@ class BillTransactionModel {
       billno: json['billno'],
 
       // Use our new flexible helper for all date fields
-      fromdate: _parseDateFlexible(json['fromdate']),
-      todate: _parseDateFlexible(json['todate']),
-      billdate: _parseDateFlexible(json['billdate']),
+      fromdate: parseDateFlexible(json['fromdate']),
+      todate: parseDateFlexible(json['todate']),
+      billdate: parseDateFlexible(json['billdate']),
 
       cobf: json['cobf'],
       liters: (json['liters'] as num?)?.toDouble() ?? 0.0,

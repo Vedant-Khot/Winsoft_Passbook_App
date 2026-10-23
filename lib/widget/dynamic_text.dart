@@ -10,8 +10,17 @@ class DynamicText extends StatelessWidget {
   final TextOverflow? overflow;
   final TextAlign? textAlign;
 
-  // Static regex — instantiated once for the entire app lifetime (not per rebuild)
-  static final _numericRegex = RegExp(r'^[0-9.]+$');
+  // Fast check: digits, dot, hyphen, slash, colon, space
+  static bool _isDigitsAndDots(String s) {
+    if (s.isEmpty) return false;
+    for (int i = 0; i < s.length; i++) {
+      final code = s.codeUnitAt(i);
+      if ((code < 48 || code > 57) && code != 46 && code != 45 && code != 47 && code != 58 && code != 32) {
+        return false;
+      }
+    }
+    return true;
+  }
 
   // Detects characters commonly produced by Marathi Shivaji font typing
   static final _shivajiPatternRegex = RegExp(r'[%^~³´µ¤§¢±²¸¹º»¼½¾¿\u00C0-\u00FF]');
@@ -31,12 +40,8 @@ class DynamicText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String? fontFamily;
-    double fontSizeMultiplier = 1.0;
-    TextStyle customFontStyle = const TextStyle();
-
     // Fast path: English text with no Shivaji characters needs no custom font
-    if (langCode == 1 && !_shivajiPatternRegex.hasMatch(text)) {
+    if (langCode == 1 && (text.isEmpty || !_shivajiPatternRegex.hasMatch(text))) {
       return Text(
         text,
         style: style,
@@ -46,53 +51,41 @@ class DynamicText extends StatelessWidget {
       );
     }
 
+    String? fontFamily;
+    double fontSizeMultiplier = 1.0;
+    FontWeight? fontWeight;
+
     switch (langCode) {
       case 2: // Marathi
       case 4: // Marathi + English Numbers
-        // can we check if it is number or text? If number, use Shree font else shivaji
-        final input = text.trim();
-
-        // Regex: only digits and dots allowed
-        final isNumericOrDate = _numericRegex.hasMatch(input);
-
-        if (forceKiran || isNumericOrDate) {
+        final isNumericOrDate = forceKiran || _isDigitsAndDots(text.trim());
+        if (isNumericOrDate) {
           fontFamily = 'Kiran';
           fontSizeMultiplier = 1.45;
-          customFontStyle = const TextStyle(fontWeight: FontWeight.bold);
+          fontWeight = FontWeight.bold;
         } else {
           fontFamily = 'Shivaji';
           fontSizeMultiplier = 1.3;
-          customFontStyle = const TextStyle(fontWeight: FontWeight.bold);
+          fontWeight = FontWeight.bold;
         }
-
-        // fontFamily = 'Shree';
-        // Increase the size a bit more and make it bold by default.
-        // fontSizeMultiplier = 1.45;
-        // customFontStyle = const TextStyle(fontWeight: FontWeight.bold);
         break;
       case 3: // Kannada
         fontFamily = 'Baraha';
         fontSizeMultiplier = 1.15;
-        // You could make Baraha bold too if needed:
-        // customFontStyle = const TextStyle(fontWeight: FontWeight.bold);
         break;
       default: // langCode 1 (English)
         fontFamily = null;
         break;
     }
 
-    // --- END OF NEW LOGIC ---
-
     final baseStyle = style ?? DefaultTextStyle.of(context).style;
     final finalFontSize = (baseStyle.fontSize ?? 14.0) * fontSizeMultiplier;
 
-    // Create the final text style.
-    // 1. Start with the base style.
-    // 2. Merge our custom font style (which adds boldness for Shivaji).
-    // 3. Apply the final font family and adjusted font size.
-    final finalStyle = baseStyle
-        .merge(customFontStyle)
-        .copyWith(fontFamily: fontFamily, fontSize: finalFontSize);
+    final finalStyle = baseStyle.copyWith(
+      fontFamily: fontFamily,
+      fontSize: finalFontSize,
+      fontWeight: fontWeight ?? baseStyle.fontWeight,
+    );
 
     return Text(
       text,

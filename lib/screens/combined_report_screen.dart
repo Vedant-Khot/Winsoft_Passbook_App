@@ -313,12 +313,12 @@ class _CombinedReportScreenState extends State<CombinedReportScreen> {
       final allPassbookEntries = await ApiService().fetchPassbook(
         widget.socCode,
         widget.memCode,
-        forceRefresh: true,
+        forceRefresh: false,
       );
       final allDeductions = await ApiService().fetchDeductions(
         widget.socCode,
         widget.memCode,
-        forceRefresh: true,
+        forceRefresh: false,
       );
 
       if (!mounted || generation != _reportGeneration) {
@@ -973,6 +973,7 @@ class _CombinedReportScreenState extends State<CombinedReportScreen> {
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: ClipRRect(
+                    clipBehavior: Clip.hardEdge,
                     borderRadius: BorderRadius.circular(11),
                     child: SingleChildScrollView(
                       scrollDirection: Axis.horizontal,

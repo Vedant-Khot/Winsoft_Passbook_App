@@ -235,97 +235,74 @@ class _MilkSlipScreenState extends State<MilkSlipScreen> {
             ),
           ),
 
-          // Card Body: Data Table
-          Center(
-            child: LayoutBuilder(
-              builder: (context, constraints) {
-                return SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: ConstrainedBox(
-                    constraints: BoxConstraints(minWidth: constraints.maxWidth),
-                    child: DataTable(
-                      columnSpacing: (constraints.maxWidth / 6) * 0.15,
-
-                      headingRowHeight: 40.0,
-                      dataRowMinHeight: 40.0,
-                      dataRowMaxHeight: 40.0,
-
-                      headingTextStyle: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                      dataTextStyle: TextStyle(fontSize: 16),
-
-                      columns: const [
-                        DataColumn(label: Text('C/B')),
-                        DataColumn(label: Text('Liters'), numeric: true),
-                        DataColumn(label: Text('Fat'), numeric: true),
-                        DataColumn(label: Text('SNF'), numeric: true),
-                        DataColumn(label: Text('Rate'), numeric: true),
-                        DataColumn(label: Text('Total Amt'), numeric: true),
-                      ],
-
-                      rows: [
-                        ...session.records.map((record) {
-                          return DataRow(
-                            cells: [
-                              DataCell(
-                                Text(
-                                  _getAnimalType(record.cobf, widget.langCode),
-                                ),
-                              ),
-                              DataCell(Text(record.liters.toStringAsFixed(2))),
-                              DataCell(Text(record.fat.toStringAsFixed(1))),
-                              DataCell(Text(record.degree.toStringAsFixed(1))),
-                              DataCell(Text(record.rate.toStringAsFixed(2))),
-                              DataCell(
-                                Text('${record.amount.toStringAsFixed(2)}'),
-                              ),
-                            ],
-                          );
-                        }),
-
-                        DataRow(
-                          color: WidgetStateProperty.resolveWith<Color?>((
-                            Set<WidgetState> states,
-                          ) {
-                            return Theme.of(context).highlightColor;
-                          }),
-                          cells: [
-                            const DataCell(
-                              Text(
-                                'Total',
-                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                              ),
-                            ),
-
-                            DataCell(
-                              Text(
-                                session.totalLiters.toStringAsFixed(2),
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
-                                ),
-                              ),
-                            ),
-
-                            const DataCell(Text('-')),
-                            const DataCell(Text('-')),
-                            const DataCell(Text('-')),
-
-                            DataCell(
-                              Text(
-                                '${session.totalAmount.toStringAsFixed(2)}',
-                                style: const TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16,
-                                ),
-                              ),
-                            ),
+          // Card Body: Lightweight Session Table
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: SizedBox(
+                width: 360,
+                child: Column(
+                  children: [
+                    // Header Row
+                    Container(
+                      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 4.0),
+                      decoration: BoxDecoration(
+                        border: Border(
+                          bottom: BorderSide(
+                            color: Theme.of(context).dividerColor.withValues(alpha: 0.3),
+                            width: 1.0,
+                          ),
+                        ),
+                      ),
+                      child: const Row(
+                        children: [
+                          SizedBox(width: 45, child: Text('C/B', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14))),
+                          Expanded(child: Align(alignment: Alignment.centerRight, child: Text('Liters', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)))),
+                          Expanded(child: Align(alignment: Alignment.centerRight, child: Text('Fat', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)))),
+                          Expanded(child: Align(alignment: Alignment.centerRight, child: Text('SNF', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)))),
+                          Expanded(child: Align(alignment: Alignment.centerRight, child: Text('Rate', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)))),
+                          SizedBox(width: 75, child: Align(alignment: Alignment.centerRight, child: Text('Total Amt', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)))),
+                        ],
+                      ),
+                    ),
+                    // Record Rows
+                    ...session.records.map((record) {
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 4.0),
+                        child: Row(
+                          children: [
+                            SizedBox(width: 45, child: Text(_getAnimalType(record.cobf, widget.langCode), style: const TextStyle(fontSize: 14))),
+                            Expanded(child: Align(alignment: Alignment.centerRight, child: Text(record.liters.toStringAsFixed(2), style: const TextStyle(fontSize: 14)))),
+                            Expanded(child: Align(alignment: Alignment.centerRight, child: Text(record.fat.toStringAsFixed(1), style: const TextStyle(fontSize: 14)))),
+                            Expanded(child: Align(alignment: Alignment.centerRight, child: Text(record.degree.toStringAsFixed(1), style: const TextStyle(fontSize: 14)))),
+                            Expanded(child: Align(alignment: Alignment.centerRight, child: Text(record.rate.toStringAsFixed(2), style: const TextStyle(fontSize: 14)))),
+                            SizedBox(width: 75, child: Align(alignment: Alignment.centerRight, child: Text(record.amount.toStringAsFixed(2), style: const TextStyle(fontSize: 14)))),
                           ],
                         ),
-                      ],
+                      );
+                    }),
+                    // Total Row
+                    Container(
+                      padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 4.0),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).highlightColor,
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      child: Row(
+                        children: [
+                          const SizedBox(width: 45, child: Text('Total', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14))),
+                          Expanded(child: Align(alignment: Alignment.centerRight, child: Text(session.totalLiters.toStringAsFixed(2), style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14)))),
+                          const Expanded(child: Align(alignment: Alignment.centerRight, child: Text('-', style: TextStyle(fontSize: 14)))),
+                          const Expanded(child: Align(alignment: Alignment.centerRight, child: Text('-', style: TextStyle(fontSize: 14)))),
+                          const Expanded(child: Align(alignment: Alignment.centerRight, child: Text('-', style: TextStyle(fontSize: 14)))),
+                          SizedBox(width: 75, child: Align(alignment: Alignment.centerRight, child: Text(session.totalAmount.toStringAsFixed(2), style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14)))),
+                        ],
+                      ),
                     ),
-                  ),
-                );
-              },
+                  ],
+                ),
+              ),
             ),
           ),
         ],

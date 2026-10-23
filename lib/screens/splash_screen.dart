@@ -89,85 +89,56 @@ class _SplashScreenState extends State<SplashScreen>
       final MemInfoModel? savedUser = apiService.currentUser;
 
       if (savedUser != null && savedUser.mobNo != null) {
-        _updateStatus('Verifying credentials...');
-        debugPrint("Splash: Refreshing login session...");
+        languageService.changeLocaleFromLangCode(savedUser.langCode);
 
-        final LoginResponse result = await ApiService.login(
-          savedUser.socCode.toString(),
-          savedUser.mobNo!,
-          selectedMembCode: savedUser.membCode,
-        );
-        final MemInfoModel? freshUserInfo = result.data;
-        if (freshUserInfo != null) {
-          debugPrint("Splash: Fresh login successful.");
-
-          languageService.changeLocaleFromLangCode(freshUserInfo.langCode);
-
-          _updateStatus('Syncing data...');
-          try {
-            await apiService.syncMemberData(
-              socCode: freshUserInfo.socCode,
-              memCode: freshUserInfo.membCode,
-              accNo: freshUserInfo.accno,
-              appString: freshUserInfo.appString,
-            );
-            debugPrint('Splash: Delta sync complete.');
-          } catch (e) {
-            debugPrint('Splash: Delta sync failed ($e) — continuing with cache.');
-          }
-
-          if (!mounted) return;
-          Navigator.of(context).pushReplacement(
-            MaterialPageRoute(
-              builder: (_) => MainScreen(
-                userInfo: freshUserInfo,
-                registerNotifications: () => CustomFirebaseApi().initNotifications(
-                  freshUserInfo.authtoken ?? '',
-                  freshUserInfo.socCode,
-                  freshUserInfo.membCode,
-                ),
-              ),
-            ),
-          );
-        } else if (result.isNetworkError) {
-          // Network error — proceed offline with last saved profile.
-          debugPrint("Splash: Network error during login. Proceeding offline.");
-
-          _updateStatus('Offline Mode...');
-          languageService.changeLocaleFromLangCode(savedUser.langCode);
-
-          if (!mounted) return;
-          Navigator.of(context).pushReplacement(
-            MaterialPageRoute(
-              builder: (_) => MainScreen(
-                userInfo: savedUser,
-                initialNotice: offlineModeMessage(),
-              ),
-            ),
-          );
-        } else {
-          _updateStatus('Session expired');
-          debugPrint("Splash: Login failed. Navigating to LoginScreen.");
-
-          await apiService.logout();
-
-          if (!mounted) return;
-          Navigator.of(context).pushReplacement(
-            MaterialPageRoute(
-              builder: (_) => LoginScreen(initialMessage: sessionExpiredMessage()),
-            ),
-          );
-        }
-      } else {
-        // No saved user
-        _updateStatus('Please login');
-        debugPrint("Splash: No saved user. Navigating to LoginScreen.");
-
+        // Immediate offline-first navigation using cached session (<800ms)
         if (!mounted) return;
         Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (_) => const LoginScreen()),
+          MaterialPageRoute(
+            builder: (_) => MainScreen(
+              userInfo: savedUser,
+              registerNotifications: () => CustomFirebaseApi().initNotifications(
+                savedUser.authtoken ?? '',
+                savedUser.socCode,
+                savedUser.membCode,
+              ),
+            ),
+          ),
         );
+
+        // Background session verification and delta sync (Stale-While-Revalidate pattern)
+        unawaited(() async {
+          try {
+            debugPrint("Splash: Background session refresh and delta sync started.");
+            final LoginResponse result = await ApiService.login(
+              savedUser.socCode.toString(),
+              savedUser.mobNo!,
+              selectedMembCode: savedUser.membCode,
+            );
+            final freshUserInfo = result.data;
+            if (freshUserInfo != null) {
+              await apiService.syncMemberData(
+                socCode: freshUserInfo.socCode,
+                memCode: freshUserInfo.membCode,
+                accNo: freshUserInfo.accno,
+                appString: freshUserInfo.appString,
+              );
+              debugPrint("Splash: Background sync complete.");
+            }
+          } catch (e) {
+            debugPrint("Splash: Background sync non-critical failure ($e) — continuing with cache.");
+          }
+        }());
+        return;
       }
+
+      // No saved user — navigate to LoginScreen
+      if (!mounted) return;
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => const LoginScreen(),
+        ),
+      );
     } catch (e) {
       debugPrint("Splash: Error during initialization: $e");
       _initError = mapUnexpectedError(e);

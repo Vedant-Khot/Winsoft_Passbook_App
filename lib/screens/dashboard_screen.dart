@@ -90,42 +90,102 @@ class DashboardScreenState extends State<DashboardScreen> {
   }
 
   void _recomputeDerivedStats() {
-    _cachedTotalLiters =
-        _filteredEntries.fold<double>(0.0, (sum, e) => sum + e.liters);
-    _cachedTotalEarnings =
-        _filteredEntries.fold<double>(0.0, (sum, e) => sum + e.amount);
+    double totalLiters = 0.0;
+    double totalEarnings = 0.0;
+    double weightedFat = 0.0;
 
-    if (_filteredEntries.isEmpty || _cachedTotalLiters == 0.0) {
-      _cachedAvgFat = 0.0;
-      _cachedAvgRate = 0.0;
-    } else {
-      _cachedAvgFat = _filteredEntries.fold<double>(
-            0.0,
-            (sum, e) => sum + (e.fat * e.liters),
-          ) /
-          _cachedTotalLiters!;
-      _cachedAvgRate = _cachedTotalEarnings! / _cachedTotalLiters!;
+    double mLiters = 0.0;
+    double mEarnings = 0.0;
+    double mWeightedFat = 0.0;
+
+    double eLiters = 0.0;
+    double eEarnings = 0.0;
+    double eWeightedFat = 0.0;
+
+    double cLiters = 0.0;
+    double cEarnings = 0.0;
+
+    double bLiters = 0.0;
+    double bEarnings = 0.0;
+
+    for (final e in _filteredEntries) {
+      final l = e.liters;
+      final amt = e.amount;
+      final fat = e.fat;
+      totalLiters += l;
+      totalEarnings += amt;
+      weightedFat += (fat * l);
+
+      if (e.me == 1) {
+        mLiters += l;
+        mEarnings += amt;
+        mWeightedFat += (fat * l);
+      } else if (e.me == 2) {
+        eLiters += l;
+        eEarnings += amt;
+        eWeightedFat += (fat * l);
+      }
+
+      final cobf = e.cobf?.toUpperCase().trim();
+      if (cobf == 'C') {
+        cLiters += l;
+        cEarnings += amt;
+      } else if (cobf == 'B') {
+        bLiters += l;
+        bEarnings += amt;
+      }
     }
 
-    _cachedMorningStats = _getSessionStats(1);
-    _cachedEveningStats = _getSessionStats(2);
-    _cachedCowStats = _getAnimalStats('C');
-    _cachedBuffaloStats = _getAnimalStats('B');
+    _cachedTotalLiters = totalLiters;
+    _cachedTotalEarnings = totalEarnings;
+    _cachedAvgFat = totalLiters > 0.0 ? (weightedFat / totalLiters) : 0.0;
+    _cachedAvgRate = totalLiters > 0.0 ? (totalEarnings / totalLiters) : 0.0;
+
+    _cachedMorningStats = {
+      'liters': mLiters,
+      'earnings': mEarnings,
+      'avgFat': mLiters > 0.0 ? (mWeightedFat / mLiters) : 0.0,
+      'avgRate': mLiters > 0.0 ? (mEarnings / mLiters) : 0.0,
+    };
+
+    _cachedEveningStats = {
+      'liters': eLiters,
+      'earnings': eEarnings,
+      'avgFat': eLiters > 0.0 ? (eWeightedFat / eLiters) : 0.0,
+      'avgRate': eLiters > 0.0 ? (eEarnings / eLiters) : 0.0,
+    };
+
+    _cachedCowStats = {
+      'liters': cLiters,
+      'earnings': cEarnings,
+      'percentage': totalLiters > 0.0 ? (cLiters / totalLiters) * 100 : 0.0,
+    };
+
+    _cachedBuffaloStats = {
+      'liters': bLiters,
+      'earnings': bEarnings,
+      'percentage': totalLiters > 0.0 ? (bLiters / totalLiters) * 100 : 0.0,
+    };
+
     _cachedInsights = _generateSmartInsights();
 
     int maxYear = DateTime.now().year;
     if (_allEntries.isNotEmpty) {
-      maxYear = _allEntries.fold<int>(
-        _allEntries.first.trndate.year,
-        (maxVal, e) => e.trndate.year > maxVal ? e.trndate.year : maxVal,
-      );
+      maxYear = _allEntries.first.trndate.year;
+      for (final e in _allEntries) {
+        if (e.trndate.year > maxYear) maxYear = e.trndate.year;
+      }
     }
-    _cachedYearlyLiters = _allEntries
-        .where((e) => e.trndate.year == maxYear)
-        .fold<double>(0.0, (sum, e) => sum + e.liters);
-    _cachedYearlyEarnings = _allEntries
-        .where((e) => e.trndate.year == maxYear)
-        .fold<double>(0.0, (sum, e) => sum + e.amount);
+    double yLiters = 0.0;
+    double yEarnings = 0.0;
+    for (final e in _allEntries) {
+      if (e.trndate.year == maxYear) {
+        yLiters += e.liters;
+        yEarnings += e.amount;
+      }
+    }
+    _cachedYearlyLiters = yLiters;
+    _cachedYearlyEarnings = yEarnings;
   }
 
   @override
@@ -508,15 +568,13 @@ class DashboardScreenState extends State<DashboardScreen> {
             padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
             sliver: SliverList(
               delegate: SliverChildListDelegate([
-                RepaintBoundary(child: _buildAnnouncements(colorScheme)),
+                _buildAnnouncements(colorScheme),
                 const SizedBox(height: 16),
-                RepaintBoundary(child: _buildHeaderCard(isDark, colorScheme)),
+                _buildHeaderCard(isDark, colorScheme),
                 const SizedBox(height: 16),
-                RepaintBoundary(
-                  child: _buildQuickActions(context, colorScheme, l10n),
-                ),
+                _buildQuickActions(context, colorScheme, l10n),
                 const SizedBox(height: 20),
-                RepaintBoundary(child: _buildPeriodFilters(colorScheme)),
+                _buildPeriodFilters(colorScheme),
                 const SizedBox(height: 16),
               ]),
             ),
@@ -531,9 +589,7 @@ class DashboardScreenState extends State<DashboardScreen> {
                 crossAxisSpacing: 12,
               ),
               delegate: SliverChildBuilderDelegate(
-                (context, index) => RepaintBoundary(
-                  child: _buildStatCardAt(index, isDark, colorScheme, l10n),
-                ),
+                (context, index) => _buildStatCardAt(index, isDark, colorScheme, l10n),
                 childCount: 6,
               ),
             ),
@@ -543,31 +599,25 @@ class DashboardScreenState extends State<DashboardScreen> {
             sliver: SliverList(
               delegate: SliverChildListDelegate([
                 if (cowStats['liters'] > 0 || buffaloStats['liters'] > 0)
-                  RepaintBoundary(
-                    child: _buildAnimalComparison(
-                      cowStats,
-                      buffaloStats,
-                      isDark,
-                      colorScheme,
-                      l10n,
-                    ),
-                  ),
-                if (cowStats['liters'] > 0 || buffaloStats['liters'] > 0)
-                  const SizedBox(height: 20),
-                RepaintBoundary(
-                  child: _buildSessionComparison(
-                    morningStats,
-                    eveningStats,
+                  _buildAnimalComparison(
+                    cowStats,
+                    buffaloStats,
                     isDark,
                     colorScheme,
                     l10n,
                   ),
+                if (cowStats['liters'] > 0 || buffaloStats['liters'] > 0)
+                  const SizedBox(height: 20),
+                _buildSessionComparison(
+                  morningStats,
+                  eveningStats,
+                  isDark,
+                  colorScheme,
+                  l10n,
                 ),
                 const SizedBox(height: 20),
                 if (insights.isNotEmpty)
-                  RepaintBoundary(
-                    child: _buildInsightsCard(insights, isDark, colorScheme),
-                  ),
+                  _buildInsightsCard(insights, isDark, colorScheme),
               ]),
             ),
           ),
@@ -711,8 +761,9 @@ class DashboardScreenState extends State<DashboardScreen> {
               final isRefreshAction = index == 0;
               return GestureDetector(
                 onTap: (_isReloading && isRefreshAction) ? null : item.onTap,
-                child: Opacity(
-                  opacity: (_isReloading && isRefreshAction) ? 0.7 : 1,
+                child: AnimatedOpacity(
+                  duration: const Duration(milliseconds: 150),
+                  opacity: (_isReloading && isRefreshAction) ? 0.7 : 1.0,
                   child: Container(
                   width: 82,
                   margin: const EdgeInsets.only(right: 12),
@@ -922,6 +973,7 @@ class DashboardScreenState extends State<DashboardScreen> {
               shape: BoxShape.circle,
             ),
             child: ClipOval(
+              clipBehavior: Clip.hardEdge,
               child: Padding(
                 padding: const EdgeInsets.all(4.0),
                 child: CompanyLogo(),
@@ -1262,6 +1314,7 @@ class DashboardScreenState extends State<DashboardScreen> {
             const SizedBox(height: 18),
             // Double Progress Bar
             ClipRRect(
+              clipBehavior: Clip.hardEdge,
               borderRadius: BorderRadius.circular(6),
               child: SizedBox(
                 height: 10,

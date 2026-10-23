@@ -17,11 +17,12 @@ import '../service/theme_service.dart';
 import '../theme/app_theme.dart';
 import 'package:passbook/screens/dashboard_screen.dart';
 
-void _openScreenAfterDrawer(BuildContext context, Widget screen) {
+void _openScreenAfterDrawer(BuildContext context, Widget Function() screenBuilder) {
   Navigator.of(context).pop();
-  WidgetsBinding.instance.addPostFrameCallback((_) {
+  // Delay route push until drawer slide-out animation settles cleanly at 60fps
+  Future.delayed(const Duration(milliseconds: 220), () {
     if (context.mounted) {
-      Navigator.of(context).push(MaterialPageRoute(builder: (_) => screen));
+      Navigator.of(context).push(MaterialPageRoute(builder: (_) => screenBuilder()));
     }
   });
 }
@@ -42,11 +43,10 @@ class MainScreen extends StatefulWidget {
   State<MainScreen> createState() => _MainScreenState();
 }
 
-class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
+class _MainScreenState extends State<MainScreen> {
   final GlobalKey<DashboardScreenState> _dashboardKey =
       GlobalKey<DashboardScreenState>();
   late final Widget _dashboard;
-  late AnimationController _drawerAnimationController;
   bool _isReloading = false;
 
   @override
@@ -64,11 +64,6 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
           setState(() => _isReloading = loading);
         }
       },
-    );
-
-    _drawerAnimationController = AnimationController(
-      duration: const Duration(milliseconds: 300),
-      vsync: this,
     );
 
     WidgetsBinding.instance.addPostFrameCallback((_) => _runPostLoginSetup());
@@ -99,12 +94,6 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
         showUserMessage(context, mapFcmError(e));
       }
     }
-  }
-
-  @override
-  void dispose() {
-    _drawerAnimationController.dispose();
-    super.dispose();
   }
 
   @override
@@ -159,7 +148,6 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
           icon: const Icon(Icons.menu),
           onPressed: () {
             Scaffold.of(context).openDrawer();
-            _drawerAnimationController.forward();
           },
         ),
       ),
@@ -262,7 +250,7 @@ class _AppDrawer extends StatelessWidget {
                       onTap: () {
                         _openScreenAfterDrawer(
                           context,
-                          MilkSlipScreen(
+                          () => MilkSlipScreen(
                             socCode: userInfo.socCode,
                             memCode: userInfo.membCode,
                             langCode: userInfo.langCode,
@@ -280,7 +268,7 @@ class _AppDrawer extends StatelessWidget {
                       onTap: () {
                         _openScreenAfterDrawer(
                           context,
-                          PassbookScreen(
+                          () => PassbookScreen(
                             socCode: userInfo.socCode,
                             memCode: userInfo.membCode,
                             langCode: userInfo.langCode,
@@ -298,7 +286,7 @@ class _AppDrawer extends StatelessWidget {
                       onTap: () {
                         _openScreenAfterDrawer(
                           context,
-                          CombinedReportScreen(
+                          () => CombinedReportScreen(
                             socCode: userInfo.socCode,
                             memCode: userInfo.membCode,
                             langCode: userInfo.langCode,
@@ -317,7 +305,7 @@ class _AppDrawer extends StatelessWidget {
                       onTap: () {
                         _openScreenAfterDrawer(
                           context,
-                          LedgerScreen(
+                          () => LedgerScreen(
                             socCode: userInfo.socCode,
                             accNo: userInfo.accno,
                             langCode: userInfo.langCode,
@@ -335,7 +323,7 @@ class _AppDrawer extends StatelessWidget {
                             onTap: () {
                               _openScreenAfterDrawer(
                                 context,
-                                MilkSalePage(
+                                () => MilkSalePage(
                                   socCode: userInfo.socCode,
                                   memCode: userInfo.membCode,
                                   langCode: userInfo.langCode,
@@ -353,7 +341,7 @@ class _AppDrawer extends StatelessWidget {
                       onTap: () {
                         _openScreenAfterDrawer(
                           context,
-                          ProfileScreen(
+                          () => ProfileScreen(
                             userInfo: userInfo,
                             langCode: userInfo.langCode,
                           ),

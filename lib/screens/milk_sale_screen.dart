@@ -361,99 +361,218 @@ class _MilkSalePageState extends State<MilkSalePage> {
             children: [
               Expanded(
                 child: SingleChildScrollView(
-                  scrollDirection: Axis.vertical,
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: DataTable(
-                      headingRowColor: WidgetStateProperty.all(
-                        Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
-                      ),
-                      headingRowHeight: 40,
-                      dataRowMinHeight: 38,
-                      dataRowMaxHeight: 38,
-                      border: TableBorder.all(
-                        color: Theme.of(context).colorScheme.outlineVariant,
-                        width: 1,
-                      ),
-                      columns: [
-                        DataColumn(
-                          label: _labelText(
-                            l10n.passbook_date,
-                            style: const TextStyle(fontWeight: FontWeight.w600),
+                  scrollDirection: Axis.horizontal,
+                  child: SizedBox(
+                    width: 580,
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 40,
+                          decoration: BoxDecoration(
+                            color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
+                            border: Border(
+                              bottom: BorderSide(
+                                color: Theme.of(context).colorScheme.outlineVariant,
+                                width: 1,
+                              ),
+                            ),
+                          ),
+                          child: Row(
+                            children: [
+                              SizedBox(
+                                width: 100,
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                  child: Align(
+                                    alignment: Alignment.centerLeft,
+                                    child: _labelText(
+                                      l10n.passbook_date,
+                                      style: const TextStyle(fontWeight: FontWeight.w600),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 80,
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 6.0),
+                                  child: Align(
+                                    alignment: Alignment.center,
+                                    child: _labelText(
+                                      l10n.passbook_session,
+                                      style: const TextStyle(fontWeight: FontWeight.w600),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 70,
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 6.0),
+                                  child: Align(
+                                    alignment: Alignment.center,
+                                    child: _labelText(
+                                      l10n.passbook_cobf,
+                                      style: const TextStyle(fontWeight: FontWeight.w600),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 80,
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                  child: Align(
+                                    alignment: Alignment.centerRight,
+                                    child: _labelText(
+                                      l10n.passbook_liters,
+                                      style: const TextStyle(fontWeight: FontWeight.w600),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 75,
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                  child: Align(
+                                    alignment: Alignment.centerRight,
+                                    child: _labelText(
+                                      l10n.passbook_fat,
+                                      style: const TextStyle(fontWeight: FontWeight.w600),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 80,
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                  child: Align(
+                                    alignment: Alignment.centerRight,
+                                    child: _labelText(
+                                      l10n.passbook_rate,
+                                      style: const TextStyle(fontWeight: FontWeight.w600),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
+                                width: 95,
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                  child: Align(
+                                    alignment: Alignment.centerRight,
+                                    child: _labelText(
+                                      l10n.passbook_amount,
+                                      style: const TextStyle(fontWeight: FontWeight.w600),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                        DataColumn(
-                          label: _labelText(
-                            l10n.passbook_session,
-                            style: const TextStyle(fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        DataColumn(
-                          label: _labelText(
-                            l10n.passbook_cobf,
-                            style: const TextStyle(fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        DataColumn(
-                          label: _labelText(
-                            l10n.passbook_liters,
-                            style: const TextStyle(fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        DataColumn(
-                          label: _labelText(
-                            l10n.passbook_fat,
-                            style: const TextStyle(fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        DataColumn(
-                          label: _labelText(
-                            l10n.passbook_rate,
-                            style: const TextStyle(fontWeight: FontWeight.w600),
-                          ),
-                        ),
-                        DataColumn(
-                          label: _labelText(
-                            l10n.passbook_amount,
-                            style: const TextStyle(fontWeight: FontWeight.w600),
+                        Expanded(
+                          child: ListView.builder(
+                            itemCount: sales.length,
+                            itemExtent: 38.0,
+                            itemBuilder: (context, index) {
+                              final sale = sales[index];
+                              final isDark = Theme.of(context).brightness == Brightness.dark;
+                              final rowBg = index.isEven
+                                  ? (isDark ? const Color(0xFF1E1E1E) : Colors.white)
+                                  : (isDark ? const Color(0xFF252525) : const Color(0xFFF8F9FA));
+
+                              return Container(
+                                color: rowBg,
+                                child: Row(
+                                  children: [
+                                    SizedBox(
+                                      width: 100,
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                        child: Align(
+                                          alignment: Alignment.centerLeft,
+                                          child: _numberText(_dateFormat.format(sale.trDate.toLocal())),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 80,
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 6.0),
+                                        child: Align(
+                                          alignment: Alignment.center,
+                                          child: DynamicText(
+                                            text: _sessionLabel(sale.me),
+                                            langCode: widget.langCode,
+                                            style: const TextStyle(fontSize: 14),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 70,
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 6.0),
+                                        child: Align(
+                                          alignment: Alignment.center,
+                                          child: DynamicText(
+                                            text: _cobfLabel(sale.cobf),
+                                            langCode: widget.langCode,
+                                            style: const TextStyle(fontSize: 14),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 80,
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                        child: Align(
+                                          alignment: Alignment.centerRight,
+                                          child: _numberText(_formatAmount(sale.liters)),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 75,
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                        child: Align(
+                                          alignment: Alignment.centerRight,
+                                          child: _numberText(_formatAmount(sale.fat)),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 80,
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                        child: Align(
+                                          alignment: Alignment.centerRight,
+                                          child: _numberText(_formatAmount(sale.rate)),
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 95,
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                                        child: Align(
+                                          alignment: Alignment.centerRight,
+                                          child: _numberText(_formatAmount(sale.tot)),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              );
+                            },
                           ),
                         ),
                       ],
-                      rows: sales.map((sale) {
-                        return DataRow(
-                          cells: [
-                            DataCell(
-                              _numberText(_dateFormat.format(sale.trDate.toLocal())),
-                            ),
-                            DataCell(
-                              DynamicText(
-                                text: _sessionLabel(sale.me),
-                                langCode: widget.langCode,
-                                style: const TextStyle(fontSize: 14),
-                              ),
-                            ),
-                            DataCell(
-                              DynamicText(
-                                text: _cobfLabel(sale.cobf),
-                                langCode: widget.langCode,
-                                style: const TextStyle(fontSize: 14),
-                              ),
-                            ),
-                            DataCell(
-                              _numberText(_formatAmount(sale.liters)),
-                            ),
-                            DataCell(
-                              _numberText(_formatAmount(sale.fat)),
-                            ),
-                            DataCell(
-                              _numberText(_formatAmount(sale.rate)),
-                            ),
-                            DataCell(
-                              _numberText(_formatAmount(sale.tot)),
-                            ),
-                          ],
-                        );
-                      }).toList(),
                     ),
                   ),
                 ),

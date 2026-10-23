@@ -524,6 +524,8 @@ class _LoginScreenState extends State<LoginScreen>
 
       languageService.changeLocaleFromLangCode(userInfo.langCode);
 
+      if (!mounted) return;
+
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (_) => MainScreen(
@@ -568,116 +570,109 @@ class _LoginScreenState extends State<LoginScreen>
             
             return SingleChildScrollView(
               physics: const BouncingScrollPhysics(),
-              child: ConstrainedBox(
-                constraints: BoxConstraints(
-                  minHeight: constraints.maxHeight,
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: size.width * 0.06,
+                  vertical: isCompactHeight ? 16 : 24,
                 ),
-                child: IntrinsicHeight(
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: size.width * 0.06,
-                      vertical: isCompactHeight ? 16 : 24,
-                    ),
-                    child: FadeTransition(
-                      opacity: _fadeAnimation,
-                      child: SlideTransition(
-                        position: _slideAnimation,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            // Flexible spacing at top
-                            if (!keyboardVisible && !isCompactHeight)
-                              const Spacer(flex: 1),
-                            
-                            // Logo/Header Section
-                            _buildHeader(isDarkMode, isCompactHeight),
-                            
-                            SizedBox(height: isCompactHeight ? 24 : 32),
-                            
-                            // Welcome Text
-                            _buildWelcomeText(isDarkMode, isCompactHeight),
-                            
-                            SizedBox(height: isCompactHeight ? 24 : 32),
-                            
-                            // Login Form
-                            Form(
-                              key: _formKey,
-                              child: Column(
-                                children: [
-                                  _buildTextField(
-                                    controller: _dairyCodeController,
-                                    label: 'Dairy Code',
-                                    hint: 'Enter your dairy code',
-                                    icon: Icons.business_rounded,
-                                    keyboardType: TextInputType.text,
-                                    maxLength: 10,
-                                    validator: (value) {
-                                      if (value == null || value.isEmpty) {
-                                        return 'Please enter dairy code';
-                                      }
-                                      return null;
-                                    },
-                                  ),
-                                  SizedBox(height: isCompactHeight ? 16 : 20),
-                                  _buildTextField(
-                                    controller: _phoneController,
-                                    label: 'Phone Number',
-                                    hint: 'Enter your phone number',
-                                    icon: Icons.phone_rounded,
-                                    keyboardType: TextInputType.phone,
-                                    maxLength: 10,
-                                    readOnly: widget.addAccountMode,
-                                    suffixIcon: widget.addAccountMode
-                                        ? Padding(
-                                            padding: const EdgeInsets.only(right: 14),
-                                            child: Tooltip(
-                                              message:
-                                                  'Phone number is locked to your account',
-                                              child: Icon(
-                                                Icons.lock_rounded,
-                                                size: 20,
-                                                color: isDarkMode
-                                                    ? Colors.white38
-                                                    : Colors.grey.shade500,
-                                              ),
-                                            ),
-                                          )
-                                        : null,
-                                    validator: (value) {
-                                      if (value == null || value.isEmpty) {
-                                        return 'Please enter phone number';
-                                      }
-                                      if (value.length != 10) {
-                                        return 'Phone number must be 10 digits';
-                                      }
-                                      return null;
-                                    },
-                                  ),
-                                ],
+                child: FadeTransition(
+                  opacity: _fadeAnimation,
+                  child: SlideTransition(
+                    position: _slideAnimation,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        // Spacing at top
+                        if (!keyboardVisible && !isCompactHeight)
+                          const SizedBox(height: 20),
+                        
+                        // Logo/Header Section
+                        _buildHeader(isDarkMode, isCompactHeight),
+                        
+                        SizedBox(height: isCompactHeight ? 24 : 32),
+                        
+                        // Welcome Text
+                        _buildWelcomeText(isDarkMode, isCompactHeight),
+                        
+                        SizedBox(height: isCompactHeight ? 24 : 32),
+                        
+                        // Login Form
+                        Form(
+                          key: _formKey,
+                          child: Column(
+                            children: [
+                              _buildTextField(
+                                controller: _dairyCodeController,
+                                label: 'Dairy Code',
+                                hint: 'Enter your dairy code',
+                                icon: Icons.business_rounded,
+                                keyboardType: TextInputType.text,
+                                maxLength: 10,
+                                validator: (value) {
+                                  if (value == null || value.isEmpty) {
+                                    return 'Please enter dairy code';
+                                  }
+                                  return null;
+                                },
                               ),
-                            ),
-                            
-                            SizedBox(height: isCompactHeight ? 24 : 32),
-                            
-                            // Login Button
-                            _buildLoginButton(),
-                            
-                            SizedBox(height: isCompactHeight ? 16 : 24),
-                            
-                            // Help Text
-                            _buildHelpText(isDarkMode),
-                            
-                            // Flexible spacing at bottom
-                            if (!keyboardVisible && !isCompactHeight)
-                              const Spacer(flex: 1),
-                            
-                            // Bottom padding for small screens
-                            if (isCompactHeight || keyboardVisible)
-                              const SizedBox(height: 16),
-                          ],
+                              SizedBox(height: isCompactHeight ? 16 : 20),
+                              _buildTextField(
+                                controller: _phoneController,
+                                label: 'Phone Number',
+                                hint: 'Enter your phone number',
+                                icon: Icons.phone_rounded,
+                                keyboardType: TextInputType.phone,
+                                maxLength: 10,
+                                readOnly: widget.addAccountMode,
+                                suffixIcon: widget.addAccountMode
+                                    ? Padding(
+                                        padding: const EdgeInsets.only(right: 14),
+                                        child: Tooltip(
+                                          message:
+                                              'Phone number is locked to your account',
+                                          child: Icon(
+                                            Icons.lock_rounded,
+                                            size: 20,
+                                            color: isDarkMode
+                                                ? Colors.white38
+                                                : Colors.grey.shade500,
+                                          ),
+                                        ),
+                                      )
+                                    : null,
+                                validator: (value) {
+                                  if (value == null || value.isEmpty) {
+                                    return 'Please enter phone number';
+                                  }
+                                  if (value.length != 10) {
+                                    return 'Phone number must be 10 digits';
+                                  }
+                                  return null;
+                                },
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
+                        
+                        SizedBox(height: isCompactHeight ? 24 : 32),
+                        
+                        // Login Button
+                        _buildLoginButton(),
+                        
+                        SizedBox(height: isCompactHeight ? 16 : 24),
+                        
+                        // Help Text
+                        _buildHelpText(isDarkMode),
+                        
+                        // Spacing at bottom
+                        if (!keyboardVisible && !isCompactHeight)
+                          const SizedBox(height: 20),
+                        
+                        // Bottom padding for small screens
+                        if (isCompactHeight || keyboardVisible)
+                          const SizedBox(height: 16),
+                      ],
                     ),
                   ),
                 ),

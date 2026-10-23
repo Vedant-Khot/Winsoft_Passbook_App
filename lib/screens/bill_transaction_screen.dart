@@ -62,50 +62,115 @@ class _BillTransactionsScreenState extends State<BillTransactionsScreen> {
           }
 
           final bills = snapshot.data!;
+          final isDark = Theme.of(context).brightness == Brightness.dark;
+          final headerBg = isDark ? const Color(0xFF2C2C2C) : const Color(0xFFF1F3F5);
+          final borderColor = isDark ? Colors.white12 : Colors.black12;
+
           return SingleChildScrollView(
-            scrollDirection: Axis.vertical,
-            child: SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: DataTable(
-                headingRowHeight: 40,
-                dataRowMinHeight: 38,
-                dataRowMaxHeight: 38,
-                columns: const [
-                  DataColumn(label: Text('Bill Date')),
-                  DataColumn(label: Text('Period')),
-                  DataColumn(label: Text('Total Liters')),
-                  DataColumn(label: Text('Earnings')),
-                  DataColumn(label: Text('Deductions')),
-                  DataColumn(label: Text('Net Amount')),
+            scrollDirection: Axis.horizontal,
+            child: SizedBox(
+              width: 660,
+              child: Column(
+                children: [
+                  Container(
+                    height: 42,
+                    decoration: BoxDecoration(
+                      color: headerBg,
+                      border: Border(bottom: BorderSide(color: borderColor, width: 1.5)),
+                    ),
+                    child: const Row(
+                      children: [
+                        SizedBox(width: 110, child: _HeaderCell('Bill Date')),
+                        SizedBox(width: 110, child: _HeaderCell('Period')),
+                        SizedBox(width: 110, child: _HeaderCell('Total Liters', isNumeric: true)),
+                        SizedBox(width: 110, child: _HeaderCell('Earnings', isNumeric: true)),
+                        SizedBox(width: 110, child: _HeaderCell('Deductions', isNumeric: true)),
+                        SizedBox(width: 110, child: _HeaderCell('Net Amount', isNumeric: true)),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    child: ListView.builder(
+                      itemCount: bills.length,
+                      itemExtent: 42.0,
+                      itemBuilder: (context, index) {
+                        final bill = bills[index];
+                        final from = bill.fromdate != null
+                            ? DateFormat('dd/MM').format(bill.fromdate!)
+                            : 'N/A';
+                        final to = bill.todate != null
+                            ? DateFormat('dd/MM').format(bill.todate!)
+                            : 'N/A';
+                        final dateStr = bill.billdate != null
+                            ? DateFormat('dd-MM-yyyy').format(bill.billdate!)
+                            : 'N/A';
+                        final rowBg = index.isEven
+                            ? (isDark ? const Color(0xFF1E1E1E) : Colors.white)
+                            : (isDark ? const Color(0xFF252525) : const Color(0xFFF8F9FA));
+
+                        return Container(
+                          color: rowBg,
+                          child: Row(
+                            children: [
+                              SizedBox(width: 110, child: _DataCell(dateStr)),
+                              SizedBox(width: 110, child: _DataCell('$from - $to')),
+                              SizedBox(width: 110, child: _DataCell(bill.liters.toStringAsFixed(2), isNumeric: true)),
+                              SizedBox(width: 110, child: _DataCell(bill.totearn.toStringAsFixed(2), isNumeric: true)),
+                              SizedBox(width: 110, child: _DataCell(bill.totded.toStringAsFixed(2), isNumeric: true)),
+                              SizedBox(width: 110, child: _DataCell(bill.netamt.toStringAsFixed(2), isNumeric: true)),
+                            ],
+                          ),
+                        );
+                      },
+                    ),
+                  ),
                 ],
-                rows: bills.map((bill) {
-                  final from = bill.fromdate != null
-                      ? DateFormat('dd/MM').format(bill.fromdate!)
-                      : 'N/A';
-                  final to = bill.todate != null
-                      ? DateFormat('dd/MM').format(bill.todate!)
-                      : 'N/A';
-                  return DataRow(
-                    cells: [
-                      DataCell(
-                        Text(
-                          bill.billdate != null
-                              ? DateFormat('dd-MM-yyyy').format(bill.billdate!)
-                              : 'N/A',
-                        ),
-                      ),
-                      DataCell(Text('$from - $to')),
-                      DataCell(Text(bill.liters.toStringAsFixed(2))),
-                      DataCell(Text(bill.totearn.toStringAsFixed(2))),
-                      DataCell(Text(bill.totded.toStringAsFixed(2))),
-                      DataCell(Text(bill.netamt.toStringAsFixed(2))),
-                    ],
-                  );
-                }).toList(),
               ),
             ),
           );
         },
+      ),
+    );
+  }
+}
+
+class _HeaderCell extends StatelessWidget {
+  final String text;
+  final bool isNumeric;
+
+  const _HeaderCell(this.text, {this.isNumeric = false});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+      child: Align(
+        alignment: isNumeric ? Alignment.centerRight : Alignment.centerLeft,
+        child: Text(
+          text,
+          style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+        ),
+      ),
+    );
+  }
+}
+
+class _DataCell extends StatelessWidget {
+  final String text;
+  final bool isNumeric;
+
+  const _DataCell(this.text, {this.isNumeric = false});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 10.0),
+      child: Align(
+        alignment: isNumeric ? Alignment.centerRight : Alignment.centerLeft,
+        child: Text(
+          text,
+          style: const TextStyle(fontSize: 13),
+        ),
       ),
     );
   }

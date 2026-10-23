@@ -523,6 +523,7 @@ class _LedgerScreenState extends State<LedgerScreen> {
               borderRadius: BorderRadius.circular(12),
             ),
             child: ClipRRect(
+              clipBehavior: Clip.hardEdge,
               borderRadius: BorderRadius.circular(11),
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
